@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
 
     <!-- Style guide-specific CSS goes here. -->
-    <style>
+    <!-- <style>
     /* This styles individual sections of the style guide */
     .ss-section:not(:last-child) {
       padding-bottom: 4rem;
@@ -90,45 +90,38 @@
         height: 100vh;
         padding-bottom: 5rem;
       }
-    </style>
+    </style> -->
   </head>
   <body>
 
-    <header class="sg-header" id="sg-header">
-      <div class="grid-container">
-        <h1>Style Guide</h1>
-        <p class="lead">This style guide was built with Foundation for Sites. For more information on how to use this responsive front-end framework, check out the documentation, get help from the Foundation community, or request immediate technical support.</p>
-        <a href="https://foundation.zurb.com/sites/docs/" class="button">Visit the Docs</a>
-        <a href="https://foundation.zurb.com/forum" class="secondary button">Foundation Forum</a>
-        <a href="https://foundation.zurb.com/get-involved/support.html" class="secondary button">Technical Support</a>
-      </div>
-    </header>
-
-    <div class="grid-container padded">
-      <div class="grid-x grid-margin-x" data-sticky-container>
-
-        <div class="large-3 medium-4 cell">
-          <div class="sticky" data-sticky data-top-anchor="sg-header:bottom">
-            <ul class="vertical menu sg-side-menu" data-smooth-scroll data-animation-easing="swing">
-
-              {{#each pages}}
-                <li><a href="#{{ anchor }}">{{ title }}</a></li>
-              {{/each}}
-
-            </ul>
+      <div class="l-grid l-grid--max-width">
+        <div class="l-grid__row ">
+          <div class="l-grid__column-12">
+              <h1 class="c-heading u-margin-md u-text-center">Style Guide</h1>
+      
           </div>
         </div>
-
-        <div class="large-9 medium-8 cell">
-          {{#each pages}}
-            <section class="ss-section" id="{{ anchor }}">
-              {{ body }}
-            </section>
-          {{/each}}
-        </div>
-
       </div>
-    </div>
+
+      <div class="l-grid l-grid--max-width">
+          <div class="l-grid__row ">
+            <div class="l-grid__column-medium-4 l-grid__column-large-3">
+                <div class="c-link-list ">
+                    {{#each pages}}
+                      <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#{{ anchor }}"><span class="c-link__text">{{ title }}</span></a></div>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="l-grid__column-medium-8 l-grid__column-large-9">
+                {{#each pages}}
+                  <section class="ss-section" id="{{ anchor }}">
+                    {{ body }}
+                  </section>
+                {{/each}}
+        
+            </div>
+          </div>
+        </div>
 
     <script src="assets/js/app.js"></script>
   </body>
