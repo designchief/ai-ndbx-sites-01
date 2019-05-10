@@ -1,0 +1,19 @@
+.fa { @extend .c-icon;}
+.fa-check { @extend .c-icon--check; }
+.fa-arrow-left { @extend .c-icon--arrow-left; }
+.fa-arrow-right { @extend .c-icon--arrow-right; }
+.fa-arrow-up { @extend .c-icon--arrow-up; }
+.fa-arrow-down { @extend .c-icon--arrow-down; }
+.fa-info-circle { @extend .c-icon--info-circle; }
+.fa-ship { @extend .c-icon--product-sport-sailing-ship; }
+.fa-close { @extend .c-icon--close; }
+.fa-search { @extend .c-icon--search; }
+.fa-heart-o { @extend .c-icon--product-heart; }
+.fa-car { @extend .c-icon--product-car-front; }
+.fa-home { @extend .c-icon--product-house; }
+.fa-medkit { @extend .c-icon--product-health-bag-doctor; }
+.c-icon-navigation__icon.fa { @extend .c-icon-navigation__icon.c-icon; }
+.fa-angle-down { @extend .c-icon--chevron-down; }
+.fa-2x { @extend .c-icon--2x; }
+.fa-minus { @extend .c-icon--minus; }
+.fa-plus { @extend .c-icon--plus; }

@@ -1,0 +1,342 @@
+.c-natural-language-form {
+  font-size: 0; // Temp. fix white space issue 
+  .c-natural-language-form__header__label {
+    padding-top: map-get($sizes, xl);
+    margin-bottom: map-get($sizes, 3m);
+    letter-spacing: map-get($letter-spacings, s);
+  }
+
+  .c-natural-language-form__form-body__label {
+    display: inline;
+    vertical-align: baseline;
+    margin: map-get($sizes, 5xs) map-get($sizes, 3xs) map-get($sizes, 5xs) map-get($sizes, 5xs);
+    font-size: map-get($font-sizes, l);
+    line-height: map-get($line-heights, l) + map-get($sizes, 3xs) + map-get($sizes, 2xs);
+    font-weight: map-get($font-weight, light);
+    letter-spacing: map-get($letter-spacings, s);  
+  }
+
+  // TextField
+  .c-natural-language-form__form-body__text-field {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0;
+    margin: map-get($sizes, 2xs) map-get($sizes, 3xs) map-get($sizes, 5xs) map-get($sizes, 5xs);
+    height: map-get($line-heights, l) + map-get($sizes, 3xs);
+
+    .c-textinput__field {
+      background-color: transparent;
+      font-size: map-get($font-sizes, l);
+      line-height: map-get($line-heights, l);  
+      height: map-get($line-heights, l) + map-get($sizes, 3xs);
+      text-align: center;
+      border-width: map-get($borders, m);
+      border-color: map-get($color-grey-tones, grey-tone-6);
+      padding-bottom: map-get($sizes, 3xs) - map-get($borders, m);
+      font-weight: map-get($font-weight, regular);
+      letter-spacing: map-get($letter-spacings, s);
+    }
+
+    .c-textinput__field:focus {
+      background-color: transparent;
+      color: map-get($color-primary-action, primary-action-dark);
+      border-color: map-get($color-primary-action, primary-action-bright);  
+    }
+  }
+  
+  // Modifier for TextField
+  .c-natural-language-form__form-body__text-field--active .c-textinput__field {
+    background-color: transparent;
+    color: map-get($color-primary-action, primary-action-dark);
+    border-color: map-get($color-primary-action, primary-action-bright);
+  }
+
+  .c-natural-language-form__form-body__text-field--negative {
+    .c-textinput__field {
+      background-color: transparent;
+      color: map_get($color-basic, primary-white);
+      border-color: map_get($color-basic, primary-white);  
+    }
+
+    .c-textinput__field:focus {
+      background-color: transparent;
+      color: map_get($color-basic, primary-white);
+      border-color: map_get($color-basic, primary-white);  
+    }
+  }
+
+  .c-natural-language-form__form-body__text-field--error .c-textinput__field {
+    background-color: transparent;
+    color: map_get($color-process, process-error) !important;
+    border-color: map_get($color-process, process-error) !important;
+  }
+
+  //Selector
+  .c-natural-language-form__form-body__selector {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: map-get($sizes, 2xs) map-get($sizes, 3xs) map-get($sizes, 5xs) map-get($sizes, 5xs);
+    min-height: map-get($line-heights, l) + map-get($sizes, 3xs);
+
+    &:not(.c-select--is-filled) .c-select__selection--rendered {
+      padding-top: map-get($line-heights, l);
+    }
+
+    .c-select-results {
+      padding-top: map-get($sizes, s);
+    }
+
+    .c-select__selection {
+      position: relative;
+      text-align: center;
+      padding-bottom: map-get($sizes, 4xs);
+      border-width: map-get($borders, m);
+      border-color: map-get($color-grey-tones, grey-tone-6);
+    }
+
+    .c-select__chevron {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: map-get($sizes, m);
+
+      &:before {
+        float: none;
+        transform: none;
+      }
+    }
+
+    .c-select__dropdown {
+      text-align: left;
+    }
+
+    .c-select__selection--rendered {
+      padding-right: map-get($sizes, m); // Arrows-size
+      display: inline-block;
+      font-size: map-get($font-sizes, l);
+      font-weight: map-get($font-weight, regular);
+      line-height: map-get($line-heights, l); 
+    }
+  }
+
+  // Modifier for Selector
+  .c-natural-language-form__form-body__selector--active .c-select__selection {
+    color: map-get($color-primary-action, primary-action-dark);
+    border-color: map-get($color-primary-action, primary-action-bright);
+  }
+
+  .c-natural-language-form__footer__quote-button {
+    margin: 0;
+    margin-top: map-get($sizes, l) - map-get($sizes, 2xs);
+    margin-bottom: map-get($sizes, xl);
+  }
+
+  // Tooltip
+  .c-natural-language-form__tooltip {
+    position: absolute;
+  }
+
+  // Mobile 
+  @include media-breakpoint-response(mobile) {
+    .c-natural-language-form__form-body__label {
+      font-size: map-get($font-sizes, m);
+      line-height: map-get($line-heights, m) + map-get($sizes, 3xs) + map-get($sizes, s);
+      margin-bottom: map-get($sizes, 3xs) + map-get($sizes, s);
+    }
+
+    // TextField
+    .c-natural-language-form__form-body__text-field {
+      height: map-get($line-heights, m) + map-get($sizes, 3xs) + (map-get($sizes, s)/2);
+      .c-textinput__field {
+        font-size: map-get($font-sizes, m);
+        line-height: map-get($line-heights, m);  
+        height: map-get($line-heights, m) + map-get($sizes, 3xs);
+      }
+    }
+
+    .c-natural-language-form__form-body__selector {
+      min-height: map-get($line-heights, m) + map-get($sizes, 3xs) + (map-get($sizes, s)/2);
+      .c-select__selection--rendered {
+        font-size: map-get($font-sizes, m);
+        line-height: map-get($line-heights, m); 
+      }
+
+      &:not(.c-select--is-filled) .c-select__selection--rendered {
+        padding-top:  map-get($line-heights, m); 
+      }
+
+      .c-select__chevron{
+        height: map-get($sizes, m);
+      }
+    }
+
+    .c-natural-language-form__footer__quote-button {
+      margin-bottom: map-get($sizes, 3m);
+      margin-top: map-get($sizes, 3m) - map-get($sizes, s);
+    }  
+  }
+
+  // Modifier for Negative Form
+  &.c-natural-language-form--negative {
+    .c-natural-language-form__form-body__label,
+    .c-natural-language-form__form-body__text-field, 
+    .c-natural-language-form__form-body__selector .c-select__selection{
+      color: map-get($color-basic, primary-white );
+      border-color: map-get($color-basic, primary-white );
+    }
+  }
+
+  // Modifier for Small Form
+  &.c-natural-language-form--small {
+    .c-natural-language-form__header__label {
+      font-size: map-get($font-sizes, m);
+      line-height: map-get($line-heights, m);
+    }
+
+    .c-natural-language-form__form-body__label {
+      font-size: map-get($font-sizes, m);
+      line-height: map-get($line-heights, m) + map-get($sizes, 3xs) + (map-get($sizes, s)/2);
+    }
+
+    .c-natural-language-form__form-body__text-field {
+      height: map-get($line-heights, m) + map-get($sizes, 3xs);
+      .c-textinput__field {
+        font-size: map-get($font-sizes, m);
+        line-height: map-get($line-heights, m);  
+        height: map-get($line-heights, m) + map-get($sizes, 3xs);
+      }
+    }
+
+    .c-natural-language-form__form-body__selector {
+      min-height: map-get($line-heights, m) + map-get($sizes, 3xs);
+      .c-select__selection--rendered {
+        font-size: map-get($font-sizes, m);
+        line-height: map-get($line-heights, m); 
+      }
+
+      &:not(.c-select--is-filled) .c-select__selection--rendered {
+        padding-top:  map-get($line-heights, m); 
+      }
+    }
+
+    .c-natural-language-form__form-body__text-field--short {
+      width: 60px;
+    }
+
+    .c-natural-language-form__form-body__text-field--medium {
+      width: 80px;
+    }
+
+    .c-natural-language-form__form-body__text-field--long {
+      width: 120px;
+    }
+
+    .c-natural-language-form__form-body__selector--long {
+      width: 256px;
+    }
+
+    .c-natural-language-span {
+      font-size: map-get($font-sizes, m);
+    }
+
+    // Mobile
+    @include media-breakpoint-response(mobile) {
+      .c-natural-language-form__form-body__label {
+        line-height: map-get($line-heights, m) + map-get($sizes, 3xs) + map-get($sizes, s);
+      }
+
+      .c-natural-language-form__form-body__text-field {
+        height: map-get($line-heights, m) + map-get($sizes, 3xs) + (map-get($sizes, s)/2);
+      }
+
+      .c-natural-language-form__form-body__selector {
+        min-height: map-get($line-heights, m) + map-get($sizes, 3xs) + (map-get($sizes, s)/2);
+      }
+    }
+  }
+
+  // Helper styling for dynamic form 
+  .c-natural-language-form__form-body__text-field--short {
+    width: 80px;
+    max-width: 100%;
+
+    @include media-breakpoint-response(mobile) {
+      width: 60px;
+    }
+  }
+
+  // Need to refactor
+  .c-natural-language-form__form-body__text-field--medium {
+    width: 120px;
+    max-width: 100%;
+
+    @include media-breakpoint-response(mobile) {
+      width: 80px;
+    }
+  }
+
+  // Need to refactor
+  .c-natural-language-form__form-body__text-field--long {
+    width: 160px;
+    max-width: 100%;
+
+    @include media-breakpoint-response(mobile) {
+      width: 120px;
+    }
+  }
+
+  .c-natural-language-form__form-body__selector--long {
+    width: 360px;
+
+    @include media-breakpoint-response(mobile) {
+      width: 256px;
+    }
+  }
+
+  .c-natural-language-span {
+    position: absolute;
+    visibility: hidden;
+    font-size: map-get($font-sizes, l);
+    top: 0;
+    left: 0;
+    padding: 0 map-get($sizes, 2xs);
+  
+    @include media-breakpoint-response(mobile) {
+      font-size: map-get($font-sizes, m);
+    }
+  }
+
+  .c-natural-language-form__tooltip {
+    width: 100%;
+    .c-tooltip__item {
+      border: map-get($borders, xs) solid map_get($color-process, process-error);
+      min-width: 336px;
+      width: 100%;
+      top: map-get($sizes, 2xs);
+    }
+  
+    .c-tooltip__item:before,
+    .c-tooltip__item:after {
+      border: none;
+    }
+  
+    .c-copy--error {
+      color: map_get($color-process, process-error);
+    }
+  
+    @include media-breakpoint-response(mobile) {
+      .c-tooltip__item {
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateX(0) scale(1);
+      }
+    }
+  }
+  
+  //  Firefox RED BOX OF DEATH FIX
+  :-moz-ui-invalid:not(output) {
+    box-shadow: none;
+  }
+}

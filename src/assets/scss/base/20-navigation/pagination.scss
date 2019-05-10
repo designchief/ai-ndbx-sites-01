@@ -1,0 +1,64 @@
+.c-pagination__container {
+  display: flex;
+  margin: 10px 0;
+  padding: map-get($sizes, 5xs);;
+  font-size: map-get($font-sizes, 3xs);
+  line-height: map-get($line-heights, 2xs);
+  font-weight: map-get($font-weight, semibold);
+  color: map-get($color-primary-action, primary-action-dark);
+
+
+  @include media-breakpoint-response(mobile) {
+    margin: 10px 0 40px 0;
+  }
+}
+
+.c-pagination__arrow {
+  height: map-get($sizes, m);
+  width: map-get($sizes, m);
+  font-size: map-get($font-sizes, s);
+}
+
+.c-pagination__item {
+  margin: map-get($sizes, 5xs) map-get($sizes, s);
+  list-style: none;
+
+  &:first-child {
+    margin: map-get($sizes, 5xs);
+  }
+
+  &:nth-child(2) {
+    margin-left: map-get($sizes, 2xs);
+  }
+
+  &:nth-last-child(2) {
+    margin-right: map-get($sizes, 2xs);
+  }
+
+  &:last-child {
+    margin: map-get($sizes, 5xs);
+  }
+}
+
+// Show ellipsis and some page numbers only for larger screens
+.c-pagination__item--expanded-view {
+    display: block;
+
+    @include media-breakpoint-response(mobile) {
+      display: none;
+    }
+}
+
+.c-pagination__ellipsis {
+  color: map-get($color-grey-tones, grey-tone-1);
+}
+
+.c-pagination__link {
+  display: flex;
+  &.is-active {
+    color: map-get($color-grey-tones, grey-tone-1);
+    font-weight: map-get($font-weight, bold);
+    pointer-events: none;
+    cursor: none;
+  }
+}

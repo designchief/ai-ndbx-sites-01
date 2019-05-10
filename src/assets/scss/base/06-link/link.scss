@@ -1,0 +1,237 @@
+.c-link {
+  display: inline-flex;
+  color: map-get($color-primary-action, primary-action-dark); //006192
+  cursor: pointer;
+  font-size: map-get($font-sizes, 3xs);
+  font-weight: map-get($font-weight, semibold);
+  text-transform: uppercase;
+  letter-spacing: map-get($letter-spacings, 2m);
+  line-height: map-get($line-heights, 2xs);
+  position: relative;
+  text-decoration: none;
+  transition: color .2s ease, box-shadow .2s ease;
+  vertical-align: top;
+  z-index: 1;
+  &:hover {
+    color: map-get($color-primary-action, primary-action-medium);
+  }
+
+  &:active {
+    color: map-get($color-basic, primary-brand);
+  }
+  &.c-link--ignore-case {
+    text-transform: none;
+  }
+  &.c-link--capitalize {
+    text-transform: capitalize;
+  }
+  &:focus {
+    [data-whatinput="keyboard"] & {
+      outline: 0;
+      color: map-get($color-basic, primary-white);
+      background-color: map-get($color-functional, accessibility);
+      &:before {
+        position: absolute;
+        margin: -1 * map-get($sizes, 2xs);
+        box-shadow: $accessibility-shadow;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: map-get($color-functional, accessibility);
+        border-radius: map-get($border-radius, xs);
+        z-index:-1;
+      }
+    }
+  }
+  &::before { // fix for the :active selector on IE
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  // variation of link for having an icon on the right side of the linktext
+  .c-link__icon,
+  .c-link__icon.fa {
+    vertical-align: top;
+    line-height: map-get($line-heights, 2xs);
+    float: left;
+    height: map-get($sizes, m);
+    // if there is a Icon in the link (standard on left side)
+    &::before {
+      line-height: inherit;
+      margin: 0 map-get($sizes, 2xs) 0 0;
+      font-size: map-get($sizes, m);
+      width: map-get($sizes, m);
+      height: map-get($sizes, m);
+      display: inline-block;
+    }
+  }
+  &.c-link--icon-right {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    .c-link__icon {
+      &::before {
+        margin: 0 0 0 map-get($sizes, 2xs);
+      }
+    }
+  }
+}
+
+.c-link--center {
+  text-align: center;
+  display: inline-block;
+  .c-link__icon {
+    vertical-align: top;
+    display: inline-block;
+    float: none;
+  }
+
+  .c-link__text {
+    display: inline;
+  }
+}
+
+// ? Why do we need this modifier
+.c-link--block {
+  display: inline-flex;
+
+  &.c-link--center {
+    display: inline-block;
+  }
+}
+
+@mixin c-link--text {
+  font-weight: map-get($font-weight, bold);
+  text-transform: none;
+  letter-spacing: normal;
+  border-radius: map-get($border-radius, s);
+  &:focus {
+    [data-whatinput="keyboard"] & {
+      padding: 0;
+    }
+  }
+}
+
+
+.c-link--text {
+  @include c-link--text;
+}
+
+.c-link.c-link--negative {
+  color: map-get($color-basic, primary-white);
+
+  &:hover,
+  &.c-link-overview-negative--hover {
+    color: map-get($color-grey-tones, grey-tone-5);
+  }
+
+  &:active,
+  &.c-link-overview-negative--pressed {
+    color: map-get($color-grey-tones, grey-tone-4);
+  }
+
+  &:disabled,
+  &[aria-disabled] {
+    color: rgba(map-get($color-basic, primary-white), 0.4);
+  }
+}
+
+.c-link.c-link--black {
+  color: map-get($color-grey-tones, grey-tone-1);
+
+  &:hover,
+  &.c-link-overview-black--hover {
+    color: map-get($color-grey-tones, grey-tone-4);
+  }
+
+  &:active,
+  &.c-link-overview-black--pressed {
+    color: map-get($color-grey-tones, grey-tone-2);
+  }
+
+  &:disabled,
+  &[aria-disabled] {
+    color: map-get($color-grey-tones, grey-tone-5);
+  }
+}
+
+.c-link:disabled,
+.c-link[aria-disabled] {
+  cursor: not-allowed;
+  color: rgba(map-get($color-primary-action, primary-action-dark), 0.4); //006192
+  position: relative;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+//  molecules/22-tied-agent/tied-agent
+.c-tied-agent-info-tooltip__link {
+  color: map-get($color-grey-tones, grey-tone-1);
+  font-weight: map-get($font-weight, regular);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-transform: capitalize;
+
+  &:hover {
+    color: currentColor;
+  }
+}
+
+//  molecules/22-tied-agent/tied-agent
+.c-tied-agent-link .c-link__icon:before {
+  margin-left: 0;
+}
+
+.c-link--no-text-transform {
+  text-transform: none;
+}
+
+.c-header-metabar {
+  [class*=" c-icon--chevron"] {
+    font-size: $font-size-xxxlarge;
+    display: flex;
+    align-content: center;
+  }
+}
+// large link
+.c-link--large {
+  color: map-get($color-primary-action, primary-action-dark); //006192
+  font-weight: map-get($font-weight, regular);
+  font-size: map-get($font-sizes, 2m);
+  letter-spacing: map-get($letter-spacings, s);
+  line-height: map-get($line-heights, 2m);
+  // variation of link for having an icon on the right side of the linktext
+  .c-link__icon {
+    font-size: map-get($sizes, 2m);
+    line-height: map-get($line-heights, m);
+    height: map-get($sizes, 2m);
+    &::before {
+      font-size: map-get($sizes, 2m);
+      height: map-get($sizes, 2m);
+      width: map-get($sizes, 2m);
+      display: inline-block;
+      margin: 0 map-get($sizes, 2xs) 0 0;
+    }
+  }
+  &.c-link--icon-right {
+    .c-link__icon {
+      float: right;
+      &::before {
+        margin: 0 0 0 map-get($sizes, 2xs);
+      }
+    }
+  }
+}
+
+// Depreciated 
+.c-link--two-lines-center {
+  @extend .c-link--center; // sass-lint:disable-line no-extends
+}

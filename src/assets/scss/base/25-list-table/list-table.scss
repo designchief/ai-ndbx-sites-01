@@ -1,0 +1,102 @@
+.c-list-table__header {
+  padding-top: map-get($sizes, 4m);
+}
+
+.c-list-table__footer {
+  text-align: left;
+}
+
+// Multi-select
+.c-list-table__header__button {
+  width: 100%;
+  margin-top: 30px;
+
+  @include media-breakpoint-down(medium) {
+    height: 60px;
+  }
+}
+
+.c-list-table__table-multi-select {
+  margin-bottom: 14px;
+
+  .c-table__header-cell {
+    border-bottom: 2px solid map-get($color-grey-tones, grey-tone-2);
+    border-left: 0px;
+    background-color: map-get($color-basic, primary-white);
+  }
+}
+
+.c-list-table--multi-select {
+  .c-table__container,
+  .c-select__placeholder,
+  .c-results-per-page__input {
+    border-width: 2px;
+  }
+
+  .c-table__container {
+    margin-top: 30px;
+    @include media-breakpoint-response(desktop) {
+      border-top: 2px solid map-get($color-grey-tones, grey-tone-6);
+    }
+  }
+
+  .c-results-per-page__input {
+    border-bottom-color: map-get($color-grey-tones, grey-tone-3);
+  }
+  @include media-breakpoint-down(medium) {
+    .c-divider {
+      border-width: 2px;
+      border-bottom-color: map-get($color-grey-tones, grey-tone-3);
+    }
+
+    .c-select__placeholder {
+      border-bottom-color: map-get($color-grey-tones, grey-tone-6);
+    }
+
+    .c-results-per-page__input {
+      border-width: 1px;
+    }
+  }
+}
+
+// Single-select
+.c-list-table__table-single-select {
+  & .c-table__header-cell {
+    border-top: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    border-bottom: map-get($borders, m) solid map-get($color-grey-tones, grey-tone-2);
+    background-color: map-get($color-basic, primary-white);
+  }
+  & .c-table__row {
+    background-color: map-get($color-basic, primary-white);
+    border-top: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    &:last-child {
+      .c-table__cell {
+        padding-bottom: map-get($sizes, m) - map-get($borders, m);
+      }
+    }
+  }
+  & .c-table__row--highlighted {
+    background-color: map-get($color-soft, soft-blue);
+    border: map-get($borders, xs) solid map-get($color-primary-action, primary-action-bright);
+    border-left: none;
+    border-right: none;
+  }
+  & .c-table__cell {
+    padding-top: map-get($sizes, m);
+    padding-bottom: map-get($sizes, m) - map-get($borders, xs);
+    &:first-child {
+      padding-right: map-get($sizes, s);
+      @include media-breakpoint-down(medium) {
+        padding-left: map-get($sizes, s);
+      }
+    }
+  }
+}
+
+.c-list-table__footer__button {
+  margin-top: map-get($sizes, s);
+  width: 100%;
+  text-transform: none;
+}
+
+

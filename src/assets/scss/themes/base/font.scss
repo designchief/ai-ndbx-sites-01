@@ -1,0 +1,20 @@
+@import '../../common/mixins';
+
+html {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 62.5%;
+}
+
+// Prompt font (Thai)
+@include font-face('Prompt', '../fonts/prompt/Prompt-Light', 300);
+@include font-face('Prompt', '../fonts/prompt/Prompt-LightItalic', 300, italic);
+@include font-face('Prompt', '../fonts/prompt/Prompt-Regular', 400);
+@include font-face('Prompt', '../fonts/prompt/Prompt-Italic', 400, italic);
+@include font-face('Prompt', '../fonts/prompt/Prompt-SemiBold', 600);
+@include font-face('Prompt', '../fonts/prompt/Prompt-SemiBoldItalic', 600, italic);
+@include font-face('Prompt', '../fonts/prompt/Prompt-Bold', 700);
+@include font-face('Prompt', '../fonts/prompt/Prompt-BoldItalic', 700, italic);
+
+html:lang(th) {
+   font-family: 'Prompt', sans-serif !important;
+}

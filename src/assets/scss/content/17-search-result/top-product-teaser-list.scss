@@ -1,0 +1,86 @@
+.c-top-product-teaser-carousel {
+  .c-top-product-teaser-carousel__wrapper {
+    @include media-breakpoint-response(mobile) {
+      margin-bottom: map-get($sizes, 5xs);
+      .c-top-product-teaser {
+        padding: map-get($sizes, 5xs) map-get($sizes, s) map-get($sizes, m);
+        .c-image__img {
+          max-height: 226px;
+        }
+      }
+    }
+  }
+
+  .c-top-product-teaser-carousel__slide--active{
+    @include media-breakpoint-response(mobile) {
+      box-shadow: map-get($shadows, s);
+      border: none !important;
+    }
+  }
+
+  .c-top-product-teaser-carousel__slide {
+
+    @include media-breakpoint-response(mobile) {
+      margin-bottom: 0;
+      border: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+      height: auto !important;
+  
+      > .l-grid__row {
+        height: 100%;
+        display: block;
+      }
+  
+      .c-top-product-teaser__image{
+        margin-bottom: map-get($sizes, 5xs);
+      }
+  
+      .c-top-product-teaser__headline {
+        margin-top: map-get($sizes, m);
+      }
+    }
+  }
+
+  .c-top-product-teaser-carousel__container {
+    .c-top-product-teaser {
+      padding-bottom: map-get($sizes, xl);
+      @include media-breakpoint-response(tablet) {
+        padding-bottom: map-get($sizes, 4m);
+      }
+      @include media-breakpoint-response(mobile) {
+        padding: map-get($sizes, 5xs) map-get($sizes, m) map-get($sizes, m);
+      }
+    }
+
+    .c-top-product-teaser:last-of-type {
+      padding-bottom: map-get($sizes, l);
+      @include media-breakpoint-response(tablet) {
+        padding-bottom: map-get($sizes, l);
+      }
+      @include media-breakpoint-response(mobile) {
+        padding: map-get($sizes, 5xs) map-get($sizes, m) map-get($sizes, m);
+      }
+    }
+  }
+
+  .c-top-product-teaser-carousel__pagination-wrapper {
+    padding: map-get($sizes, 5xs) map-get($sizes, s);
+  }
+
+  .c-top-product-teaser-carousel__pagination {
+    @include media-breakpoint-response(mobile) {
+      width: calc(100% - #{map-get($sizes, s)});
+      padding: map-get($sizes, m) map-get($sizes, 5xs);
+      margin: map-get($sizes, 5xs) map-get($sizes, 2xs) map-get($sizes, s);
+      display: flex;
+      justify-content: center;
+    }
+    .c-carousel__bullet {
+      margin: 0 map-get($sizes, s);
+    }
+  }
+
+  .c-top-product-teaser-carousel__divider {
+    border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    margin-bottom: map-get($sizes, m) - map-get($borders, xs);
+  }
+}

@@ -1,0 +1,511 @@
+// variable only referenced in this file
+$arrow-size: map-get($sizes, 2xs);
+$border-size: map-get($borders, xs);
+
+.c-tooltip {
+  display: inline-block;
+  justify-content: center;
+  position: relative;
+}
+
+.c-tooltip__link .c-button__icon {
+  transition: transform .2s ease-out;
+}
+
+.c-tooltip__link.has-open-tooltip .c-button__icon {
+  transform: rotate(180deg);
+}
+
+ .c-tooltip__button {
+   margin-bottom: 10px;
+   background-color: map-get($color-primary-action, primary-action-bright);
+ }
+
+.c-tooltip__button.has-open-tooltip {
+  background-color: map-get($color-basic, primary-brand);
+  .c-button__icon {
+    transform: rotate(180deg);
+  }
+}
+
+//  organisms/05-header/_user-login-info
+//  molecules/22-tied-agent/tied-agent & molecules/22-tied-agent/your-agent
+.c-tied-agent-info-tooltip__link .c-link__icon,
+.c-user-login-info__link .c-button__icon {
+  transition: transform .2s ease-out;
+}
+
+//  organisms/05-header/_user-login-info
+//  molecules/22-tied-agent/tied-agent & molecules/22-tied-agent/your-agent
+.c-tied-agent-info-tooltip__link.has-open-tooltip .c-link__icon,
+.c-user-login-info__link.has-open-tooltip .c-button__icon {
+  transform: rotate(180deg);
+}
+
+.c-tooltip__item {
+  position: absolute;
+  top: calc(100% + #{$arrow-size + map-get($sizes, 2xs)});
+  left: calc(50% + #{map-get($sizes, 3xs)});
+  visibility: hidden;
+  transform: translateX(-50%) scale(0);
+  min-width: 340px;
+  padding: map-get($sizes, m);
+  transform-origin: top;
+  transition: transform 0.25s ease-out;
+  z-index: 10;
+  border-radius: map-get($border-radius, s);
+  box-shadow: map-get($shadows, s);
+  background-color: map-get($color-basic, primary-white);
+  border: $border-size solid map-get($color-grey-tones, grey-tone-6);
+
+  p {
+    letter-spacing: map-get($letter-spacings, 2xs);
+    font-size: map-get($font-sizes, 3xs);
+    line-height: map-get($line-heights, 2xs);
+    color: map-get($color-grey-tones, grey-tone-1);
+    font-weight: map-get($font-weight, regular);
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+    left: calc(50% - #{$arrow-size});
+  }
+
+  &:after {
+    border-bottom: ($arrow-size + 1) solid map-get($color-basic, primary-white);
+    top: (-1 * $arrow-size);
+  }
+
+  &:before {
+    border-bottom: ($arrow-size + 1) solid map-get($color-grey-tones, grey-tone-6);
+    top: (-1 * ($arrow-size + map-get($borders, m)));
+  }
+
+  .has-error ~ .c-tooltip & {
+    border-color: map-get($color-process, process-error);
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .has-error ~ .c-tooltip & .icon {
+    position: relative;
+    top: 2px;
+    left: -5px;
+  }
+
+  .has-error ~ .c-tooltip &:before,
+  .has-error ~ .c-tooltip &:after {
+    left: 10%;
+  }
+
+  .has-error ~ .c-tooltip &:before {
+    border-bottom-color: map-get($color-process, process-error);
+    filter: blur(0px);
+    margin-bottom: 1px;
+  }
+
+  .has-info ~ .c-tooltip & {
+    width: 100%;
+    padding: 19px 25px 24px 25px;
+  }
+
+  .has-info ~ .c-tooltip &:before,
+  .has-info ~ .c-tooltip &:after {
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+  }
+}
+
+.c-tooltip--right,
+.c-tooltip--left {
+  align-items: center;
+}
+
+.c-tooltip--left .c-tooltip__item,
+.c-tooltip--right .c-tooltip__item {
+  width: calc(100% - #{$arrow-size});
+  top: 50%;
+}
+
+.c-tooltip--right .c-tooltip__item {
+  left: calc(100% + #{$arrow-size + map-get($sizes, 2xs)});
+  visibility: hidden;
+  transform: translateX(0%) translateY(-50%) scale(0);
+  transform-origin: left;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    border-bottom: $arrow-size solid transparent;
+    border-top: $arrow-size solid transparent;
+    border-left: 0;
+    top: calc(50% - #{$arrow-size});
+  }
+
+  &:after {
+    border-right: ($arrow-size + 1) solid map-get($color-basic, primary-white);
+    left: (-1 * $arrow-size);
+  }
+
+  &:before {
+    border-right: ($arrow-size + 1) solid map-get($color-grey-tones, grey-tone-6);
+    left: (-1 * ($arrow-size + map-get($borders, m)));
+  }
+
+}
+
+.c-tooltip--left .c-tooltip__item {
+  left: (-1 * ($arrow-size + map-get($sizes, 2xs)));
+  visibility: hidden;
+  transform: translateX(-100%) translateY(-50%) scale(0);
+  transform-origin: right;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    border-bottom: $arrow-size solid transparent;
+    border-top: $arrow-size solid transparent;
+    border-right: 0;
+    top: calc(50% - #{$arrow-size});
+  }
+
+  &:after {
+    border-left: ($arrow-size + 1) solid map-get($color-basic, primary-white);
+    left: calc(100% - #{$border-size});
+  }
+
+  &:before {
+    border-left: ($arrow-size + 1) solid map-get($color-grey-tones, grey-tone-6);
+    left: calc(100% + #{map-get($borders, xs)});
+  }
+}
+
+.c-tooltip--top .c-tooltip__item {
+  top: auto;
+  bottom: calc(100% + #{$arrow-size + map-get($sizes, 2xs)});
+  transform-origin: bottom;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+    border-bottom: 0;
+    left: calc(50% - #{$arrow-size});
+  }
+
+  &:after {
+    border-top: ($arrow-size + 1) solid map-get($color-basic, primary-white);
+    top: calc(100% - #{$border-size});
+  }
+
+  &:before {
+    border-top: ($arrow-size + 1) solid map-get($color-grey-tones, grey-tone-6);
+    top: calc(100% + #{map-get($borders, xs)});
+  }
+}
+
+.c-tooltip__item.is-open {
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+}
+
+.c-tooltip--left .c-tooltip__item.is-open {
+    visibility: visible;
+    transform: translateX(-100%) translateY(-50%) scale(1);
+}
+
+.c-tooltip--right .c-tooltip__item.is-open {
+    visibility: visible;
+    transform: translateX(0%) translateY(-50%) scale(1);
+}
+
+.c-tooltip .c-copy {
+  margin: 0;  //  Margin will make Tooltip bottom not symmetry with top
+
+  .has-error ~ & {
+    margin: 0;  //  Margin will make Tooltip bottom not symmetry with top
+    color: map-get($color-process, process-error);
+  }
+}
+
+.c-tooltip--inline {
+  display: inline-flex;
+}
+
+.c-tooltip__item {
+  .c-header-metabar__user & {
+    // Extra 1px from border height
+    top: calc(100% + #{$arrow-size + 1px});
+  }
+  .c-header-metabar__agent & {
+    top: 100%;
+  }
+}
+
+.c-tooltip--shadow-large {
+  .c-tooltip__item {
+    box-shadow: map-get($shadows, l);
+  }
+}
+
+.c-tooltip--center-aligned {
+  .c-tooltip__item {
+    p {
+      text-align: center;
+    }
+  }
+}
+
+// New Implementation of Tooltip( NDBXPL:909 )
+
+// variable only referenced in this file
+$arrow-size-v2: map-get($sizes, s);
+$border-size-v2: map-get($borders, xs);
+
+// Required function to calculate tooltip arrow
+@function sqrt($number) {
+  $number: strip-unit($number);
+  $x0: 1;
+  $x1: $x0;
+  @for $i from 1 through 10 {
+      $x1: $x0 - ($x0 * $x0 - abs($number)) / (2 * $x0);
+      $x0: $x1;
+  }
+
+  @return $x1;
+}
+
+@function pow($number, $exponent) {
+  $value: 1;
+  $number: strip-unit($number);
+  @if $exponent > 0 {
+      @for $i from 1 through $exponent {
+      $value: $value * $number;
+      }
+  }
+
+  @return $value;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+      @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function px-unit($number) {
+  @return $number * 1px;
+}
+
+// Arrow
+// .c-tooltip__item:before  is arrow shadow
+// .c-tooltip__arrow:after is arrow border
+// .c-tooltip__arrow:before is arrow cutout
+.c-tooltip__arrow {
+  display: none;
+}
+
+.c-tooltip--v2 {
+  
+  p {
+    text-align: left;
+  }
+
+  .c-tooltip__item { // Arrow Shadow
+    border: 0;
+    box-shadow: none;
+    background-color: unset;
+    min-width: 400px;
+
+    @include media-breakpoint-response(mobile) {
+      min-width: auto;
+      max-width: 400px;
+      width: calc(100vw - #{(map-get($sizes, s) * 2)});
+    }
+  
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: map-get($border-radius, s);
+      box-shadow: map-get($shadows, s);
+      background-color: map-get($color-basic, primary-white);
+      border: $border-size solid map-get($color-grey-tones, grey-tone-6);
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    &:after {
+      content: "";
+      border: 0;
+      position: absolute;
+      width: px-unit(sqrt((pow($arrow-size-v2, 2) / 2)));
+      height: px-unit(sqrt((pow($arrow-size-v2, 2) / 2)));
+      box-shadow: map-get($shadows, s);
+      z-index: -2;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+  .c-tooltip__arrow {
+    display: block;
+    &:after, 
+    &:before {
+      content: "";
+      position: absolute;
+      width: px-unit(sqrt((pow($arrow-size-v2, 2) / 2)));
+      height: px-unit(sqrt((pow($arrow-size-v2, 2) / 2)));
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:after {
+      border: $border-size-v2 solid;
+      border-color: map-get($color-grey-tones, grey-tone-6) transparent transparent map-get($color-grey-tones, grey-tone-6);
+      top: 0;
+    }
+
+    &:before {
+      background-color: map-get($color-basic, primary-white );
+      top: px-unit(sqrt((pow($border-size-v2 * 2, 2) / 2)));
+    }
+  }
+  
+  // Modifier
+  &.c-tooltip--shadow-large .c-tooltip__item {
+    &:before,
+    &:after {
+      box-shadow: map-get($shadows, l);
+    }
+  }
+
+  &.c-tooltip--top .c-tooltip__item {
+    bottom: calc(100% + #{$arrow-size-v2 / 2 + map-get($sizes, 2xs)});
+        // Arrow
+    &:after {
+      top: 100%;
+      left: 50%;
+    }
+
+    .c-tooltip__arrow {
+      &:after,
+      &:before {
+        top: 100%;
+      }
+
+      &:after {
+        left: 50%;
+        border-color: transparent map-get($color-grey-tones, grey-tone-6) map-get($color-grey-tones, grey-tone-6) transparent;
+      }
+
+      &:before {
+        top: calc( 100% - #{px-unit(sqrt((pow($border-size-v2 * 2, 2) / 2)))});
+      }
+    }
+
+  }
+
+  &.c-tooltip--right .c-tooltip__item {
+    left: calc(100% + #{$arrow-size-v2 / 2 + map-get($sizes, 2xs)});
+    
+    // Arrow
+    &:after {
+      top: 50%;
+      left: 0;
+    }
+
+    .c-tooltip__arrow {
+      &:after,
+      &:before {
+        top: 50%;
+      }
+
+      &:after {
+        left: 0;
+        border-color: transparent transparent map-get($color-grey-tones, grey-tone-6) map-get($color-grey-tones, grey-tone-6);
+      }
+
+      &:before {
+        left: px-unit(sqrt((pow($border-size-v2 * 2, 2) / 2)));
+      }
+    }
+  }
+
+  &.c-tooltip--left .c-tooltip__item {
+    left: (-1 * ($arrow-size-v2 / 2 + map-get($sizes, 2xs)));
+    
+    // Arrow
+    &:after {
+      top: 50%;
+      left: 100%;
+    }
+
+    .c-tooltip__arrow {
+      &:after,
+      &:before {
+        top: 50%;
+      }
+
+      &:after {
+        left: 100%;
+        border-color: map-get($color-grey-tones, grey-tone-6) map-get($color-grey-tones, grey-tone-6) transparent transparent;
+      }
+
+      &:before {
+        left: calc( 100% - #{px-unit(sqrt((pow($border-size-v2 * 2, 2) / 2)))});
+      }
+    }
+  }
+}
+
+
+// Fix Overflow tooltip
+.c-tooltip--clone,
+.c-tooltip--v2.c-tooltip--clone  {
+  position: absolute;
+  
+  .c-tooltip__item {
+    width: 400px;
+    
+    @include media-breakpoint-response(mobile) {
+      left: 0;
+      max-width: unset;
+      width: calc(100vw - #{(map-get($sizes, s) * 2)});
+    }
+  }
+
+  @include media-breakpoint-response(mobile) {
+    .c-tooltip__arrow {
+      display: none;
+    }
+  }
+}
+
+.c-tooltip--v2.c-tooltip--clone {
+  visibility: hidden;
+  @include media-breakpoint-response(mobile) {
+    .c-tooltip__item:after{
+      display: none;
+    }
+  }
+}
+
+.js-tooltip-fix-overflow:not(.c-tooltip--clone) {
+  .c-tooltip__item {
+    display: none;
+  }
+}

@@ -1,0 +1,178 @@
+$floating-label-size-top: map-get($sizes, s);
+
+// Provide mixins to reuse those styles without relying on extend through placeholders, will be problematic when overriden.
+@mixin input-focused {
+  color: map-get($color-primary-action, primary-action-bright);
+  background-color: map-get($color-basic, primary-white);
+  border-color: map-get($color-primary-action, primary-action-bright);
+  outline: map-get($borders, m) solid transparent;
+}
+
+@mixin move-floating-label-up {
+  text-overflow: ellipsis;
+  font-size: map-get($font-sizes, 5xs);
+  font-weight: map-get($font-weight, semibold);
+  transform: translate(0px, 0px);
+  line-height: map-get($line-heights, 4xs);
+  letter-spacing: map-get($letter-spacings, m);
+}
+
+@mixin label-focused {
+  color: map-get($color-primary-action, primary-action-bright);
+
+  // ensure error color is shown on the label even when focused
+  .has-error & {
+    color: map-get($color-process, process-error);
+  }
+
+  .has-info & {
+    color: map-get($color-process, process-info);
+  }
+
+  .has-success & {
+    color: map-get($color-process, process-success);
+  }
+}
+
+@mixin textinput {
+  color: map-get($color-grey-tones, grey-tone-1);
+  font-family: inherit;
+  font-size: map-get($font-sizes, xs);
+  font-weight: map-get($font-weight, semibold);
+  line-height: map-get($line-heights, xs );
+  letter-spacing: map-get($letter-spacings, xs);
+  height: map-get($sizes, 2m);
+  width: 100%;
+  display: block;
+  background-image: none;
+  background-clip: padding-box;
+  border: 0;
+  border-bottom: map-get($borders, xs ) solid map-get($color-grey-tones, grey-tone-1);
+  box-sizing: border-box;
+  padding: map-get($sizes, 5xs );
+  padding-bottom: map-get($sizes, 3xs) - map-get($borders, xs); 
+
+  .has-error & {
+    font-weight: map-get($font-weight, bold);
+    border-bottom-color: map-get($color-process, process-error);
+  }
+
+  .has-info & {
+    border-bottom-color: map-get($color-process, process-info);
+  }
+
+  .has-success & {
+    border-bottom-color: map-get($color-process, process-success);
+  }
+}
+
+@mixin textinput-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  font-size: map-get($font-sizes, xs);
+  font-weight: map-get($font-weight, light);
+  line-height: map-get($line-heights, xs);
+}
+
+@mixin textinput-label-floating {
+  cursor: text;  // for ie10
+  pointer-events: none;
+  transform: translate(0px, $floating-label-size-top);
+  transition: transform 0.15s ease-out, font-size 0.15s ease-out, line-height 0.15s ease-out;
+  color: map-get($color-grey-tones, grey-tone-1);
+  letter-spacing: map-get($letter-spacings, xs);
+}
+
+.c-textinput__label  {
+  @include textinput-label;
+}
+
+.c-textinput__label--optional  {
+  //@include textinput-label;
+
+  font-weight: map-get($font-weight, regular);
+
+  .has-error & {
+    color: map-get($color-process, process-error);
+  }
+
+  .has-info & {
+    color: map-get($color-process, process-info);
+  }
+
+  .has-success & {
+    color: map-get($color-process, process-success);
+  }
+}
+
+.c-textinput__label--bottom {
+  color: map-get($color-grey-tones, grey-tone-1);
+  margin: map-get($sizes, 2xs) map-get($sizes, 5xs) map-get($sizes, 5xs) map-get($sizes, 5xs);
+  text-align: right;
+  line-height: map-get($line-heights, 4xs);
+  letter-spacing: map-get($letter-spacings, m);
+  font-size: map-get($font-sizes, 5xs);
+
+  .has-info & {
+    color: map-get($color-process, process-info);
+  }
+
+  .has-success & {
+    color: map-get($color-process, process-success);
+  }
+}
+
+.c-textinput__more-info {
+  position: absolute;
+  right: 0;
+  color: map-get($color-primary-action, primary-action-dark);
+}
+
+.c-textinput__field {
+  @include textinput;
+
+  &:focus {
+    @include input-focused;
+  }
+
+  .has-error & {
+    color: map-get($color-process, process-error);
+  }
+
+  .has-info & {
+    color: map-get($color-process, process-info);
+  }
+
+  .has-success & {
+    color: map-get($color-process, process-success);
+  }
+}
+
+// Floating Behaviour
+.c-textinput__label--floating {
+  @include textinput-label-floating;
+}
+
+.c-textinput__field--floating {
+  // move floating label up when filled or focused
+  &.is-filled,
+  &:focus {
+    &~ .c-textinput__label {
+      @include move-floating-label-up;
+    }
+  }
+
+  // apply focus color only when really focused
+  &:focus ~ .c-textinput__label {
+    @include label-focused;
+  }
+
+  &:focus ~ .c-textinput__label--bottom {
+    @include label-focused;
+  }
+}

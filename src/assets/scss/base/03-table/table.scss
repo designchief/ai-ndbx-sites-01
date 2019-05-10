@@ -1,0 +1,256 @@
+//  Molecule: c-table
+//  Block Modifiers: [light]
+//  Element Modifiers: [c-table__cell--number, c-table__header-cell--number]
+
+// Need to be removed when is already change on AEM
+.l-scroll__container.js-table-scroll-wrapper--top {
+  &::-webkit-scrollbar {
+    height: map-get($sizes, 2xs);
+    background-color: map-get($color-grey-tones, grey-tone-6);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: map-get($color-grey-tones, grey-tone-6);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: map-get($color-primary-action, primary-action-bright);
+  }
+}
+// Need to be removed when is already change on AEM
+.l-scroll__container.js-table-scroll-wrapper--bottom {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
+.c-table {
+  border-collapse: collapse;
+  color: map-get($color-grey-tones, grey-tone-1);
+  font-size: map-get($font-sizes, 3xs);
+  text-align: left;
+  width: 100%;
+  line-height: map-get($line-heights, 2xs);
+
+  @include media-breakpoint-response(mobile) {
+    width: 101%;
+  }
+
+  .c-link {
+    display: inline-table;
+    vertical-align: top;
+    table-layout: fixed;
+
+    .c-icon {
+      font-size: map-get($font-sizes, s);
+      display: table-cell;
+      padding-right: map-get($sizes, 2xs);
+      vertical-align: top;
+
+      &::before {
+        vertical-align: top
+      }
+    }
+  }  
+}
+
+// Scrollbar on table
+.c-table-scroll__container {
+  padding-bottom: map-get($sizes, xs);
+}
+
+.c-table__container {
+  border-bottom: map-get($borders, m) solid map-get($color-grey-tones, grey-tone-2);
+
+  .scrollbar-thumb {
+    background: map-get($color-primary-action, primary-action-bright);
+    border-radius: 0;
+    height: map-get($sizes, 2xs);
+  }
+
+  .scrollbar-track.scrollbar-track-x {
+    display: none;
+    height: map-get($sizes, 2xs);
+    @include media-breakpoint-down('large') {
+      display: block;
+      top: map-get($sizes, 5xs);
+      bottom: auto;
+      opacity: 1;
+    }
+  }
+}
+
+// Table Header (defaults to dark)
+.c-table__header-row {
+  height: map-get($sizes, 2xl);
+}
+.c-table__header-cell {
+  background-color: map-get($color-grey-tones, grey-tone-6);
+  color: map-get($color-grey-tones, grey-tone-1);
+  padding: map-get($sizes, m) - map-get($borders, xs) map-get($sizes, xl) map-get($sizes, m) - map-get($borders, m) map-get($sizes, 5xs);
+  position: relative;
+  &:first-child {
+    padding-left: map-get($sizes, m);
+  }
+
+  @include media-breakpoint-down(medium) { 
+    padding-right: map-get($sizes, m);
+  }
+
+  &.c-table__header-cell--sortable {
+    cursor: pointer;
+  }
+
+  &.c-table__header-cell--sorted {
+    background-color: map-get($color-grey-tones, grey-tone-2);
+    color: map-get($color-basic, primary-white);
+  }
+  &.c-table__header-cell--checkbox {
+    padding-left: map-get($sizes, m);
+    padding-right: map-get($sizes, 5xs);
+  }
+}
+
+.c-table__header-title {
+  letter-spacing: map-get($letter-spacings, 2xs);
+  font-weight: map-get($font-weight, semibold);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c-table__header-title-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+// Table Body
+.c-table__content {
+  .c-table__row {
+    &:first-child {
+      border-top: none;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+.c-table__row {
+  background-color: map-get($color-basic, primary-white);
+  &:nth-child(2n + 1) {
+    background-color: map-get($color-grey-tones, grey-tone-8);
+  }
+}
+
+.c-table__cell {
+  padding: map-get($sizes, m) map-get($sizes, xl) map-get($sizes, m) - map-get($borders, xs) map-get($sizes, 2xs);
+  white-space: normal;
+  &:first-child {
+    padding-left: map-get($sizes, m);
+  }
+
+  @include media-breakpoint-down(medium) { 
+    padding-right: map-get($sizes, m);
+  }
+  // forms(x): c-radio
+  .c-radio__table {
+    width: map-get($sizes, m);
+    height: map-get($sizes, m);
+  }
+}
+
+// Table Sort Indicator
+.c-table__sort-indicator {
+  position: relative;
+  margin-right: map-get($sizes, 2xs);
+  text-align: left;
+  height: map-get($sizes, m);
+  width: map-get($sizes, m);
+  line-height: 0;
+
+  .c-icon--chevron-up, .c-icon--chevron-down {
+    position: absolute;
+    height: map-get($sizes, m);
+    width: map-get($sizes, m);
+    left: map-get($sizes, 3xs);
+  }
+
+  .c-icon--chevron-down {
+    top: map-get($sizes, s);
+  }
+}
+
+.c-table__header-cell--number .c-table__header-title-block {
+  justify-content: flex-end;
+}
+
+// Modifiers
+
+// Block modifiers
+//   c-table--light: Switch table header to lighter colors in the header
+.c-table--light {
+  .c-table__header {
+    border-bottom: map-get($borders, m) solid map-get($color-grey-tones, grey-tone-2);
+    border-top: map-get($borders, m) solid map-get($color-grey-tones, grey-tone-5);
+  }
+
+  .c-table__header-cell {
+    background-color: map-get($color-basic, primary-white);
+
+    //There is no state defined for light header cells marked as sorted
+    &.c-table__header-cell--sorted {
+      color: inherit;
+    }
+  }
+}
+
+// without backgrounds // with border
+.c-table--light.has-border {
+  .c-table__row {
+    background-color: map-get($color-basic, primary-white);
+    border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+  }
+}
+
+// Element Modifiers
+.c-table__header--number,
+.c-table__cell--number {
+  text-align: right;
+}
+.c-table__cell--checkbox {
+  padding-left: map-get($sizes, m);
+}
+
+// Specific table content
+.c-table__number-value {
+  color: inherit;
+}
+
+.c-table__number-value--positive {
+  color: map-get($color-process, process-success);
+}
+
+.c-table__number-value--negative {
+  color: map-get($color-process, process-error);
+}
+
+// c-toggle all in table
+.c-table__header-title .c-table__toggle-all {
+  top: map-get($sizes, 3xs);
+}
+
+.js-table-scroll-wrapper--top,
+.js-table-scroll-wrapper--bottom {
+  width: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

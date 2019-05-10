@@ -1,0 +1,16 @@
+.c-link-list {
+  padding-top: 20px;
+}
+.c-link-list--negative {
+  color: map-get($color-basic, primary-white);
+
+  .c-link {
+    @extend .c-link, .c-link--negative;  // sass-lint:disable-line no-extends
+  }
+}
+.c-link-list__headline {
+  margin-bottom: map-get($sizes, m);
+}
+.c-link-list__link-row {
+  margin-bottom: map-get( $sizes, s );
+}

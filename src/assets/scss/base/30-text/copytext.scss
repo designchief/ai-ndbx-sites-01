@@ -1,0 +1,80 @@
+.c-copy {
+  font-size: map-get($font-sizes, 3xs); // Using Primary Copytext font size
+  line-height: map-get($line-heights, 2xs); // Using Primary Copytext line height
+  letter-spacing: map-get($letter-spacings, 2xs);
+  margin: 0 0 30px;
+
+  &--negative {
+    color: map-get($color-basic, primary-white);
+  }
+}
+
+.c-copy--small {
+  font-size: map-get($font-sizes, 5xs);
+  line-height: map-get($line-heights, 4xs);
+  letter-spacing: map-get($letter-spacings, m);
+  -webkit-font-smoothing: subpixel-antialiased;  // sass-lint:disable-line no-vendor-prefixes
+}
+
+.c-copy--medium {
+  font-size: map-get($font-sizes, 4xs);
+  line-height: map-get($line-heights, 3xs);
+  letter-spacing: map-get($letter-spacings, xs);
+}
+
+.c-copy--large {
+  font-size: map-get($font-sizes, 2xs);
+  line-height: map-get($line-heights, 2xs);
+  letter-spacing: map-get($letter-spacings, xs);
+}
+
+.c-copy--xlarge {
+  font-size: $font-size-xxlarge;
+  line-height: $line-height-xxlarge;
+}
+
+.c-copy--italic {
+  font-style: italic;
+}
+.c-copy--secondary {
+  color: map-get($color-grey-tones, grey-tone-3);
+}
+
+.c-copy--no-margin {
+  margin-bottom: 0px;
+}
+
+.c-copy--inline {
+  display: inline-flex;
+}
+
+.c-copy--auto-width {
+  display: inline-flex;
+  flex: 1 1 auto;
+}
+
+.c-copy--comparison-table-footer-text {
+  margin-bottom: 14px;
+}
+
+.c-copy--article-page {
+  color: map-get($color-grey-tones, grey-tone-1);
+  line-height: 30px;
+}
+
+
+// Exception line-height for copytext
+.c-copy--medium-exception {
+  line-height: map-get($line-heights, 4xs);
+}
+
+.c-copy--large-exception {
+  line-height: map-get($line-heights, xs);
+}
+
+// atom(x): c-link
+.c-copy {
+  .c-link {
+    @include c-link--text;
+  }
+}

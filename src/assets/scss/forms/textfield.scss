@@ -1,0 +1,127 @@
+.c-textfield {
+  position: relative;
+  padding-top: $floating-label-size-top;
+
+  margin-top: 30px;  // 30px pixel away from each textfield
+
+}
+
+.c-textfield--negative {
+  text-align: left;
+
+  .c-textinput__label,
+  .c-textinput__field {
+    color: map-get($color-basic, primary-white);
+    border-color: map-get($color-basic, primary-white);
+  }
+
+  .c-textinput__field--floating:focus ~ .c-textinput__label,
+  .c-textinput__field:focus ~ .c-textinput__label--bottom {
+    color: map-get($color-basic, primary-white);
+  }
+
+  .c-textinput__field {
+    background: transparent;
+  }
+
+  .c-textinput__label--bottom {
+    color: map-get($color-basic, primary-white);
+  }
+}
+
+.c-textfield.c-textfield--center {
+  text-align: center;
+  .c-textinput__field {
+    text-align: center;
+  }
+}
+
+.c-textfield--prefix-suffix {
+  display: block;
+  
+  .c-textfield__prefix-suffix-container {
+    display: flex;
+  }
+
+  .c-textfield__input-container {
+    flex: 1;
+  }
+
+  .c-textfield__prefix,
+  .c-textfield__suffix {
+    height: map-get($sizes, 2m);
+    font-size: map-get($font-sizes, xs);
+    font-weight: map-get($font-weight, semibold);
+    line-height: map-get($line-heights, xs);
+    border-bottom: map-get($borders, xs ) solid map-get($color-grey-tones, grey-tone-1);
+    letter-spacing: map-get($letter-spacings, xs);
+  }
+
+  .c-textfield__prefix {
+    padding-right: map-get($sizes, 2xs); 
+  }
+
+  .c-textfield__suffix {
+    padding-left: map-get($sizes, 2xs); 
+  }
+
+  &.is-focus {
+    .c-textfield__prefix,
+    .c-textfield__suffix {
+      @include input-focused;
+    }
+  }
+
+  &.has-error {
+    .c-textfield__prefix,
+    .c-textfield__suffix {
+      color: map-get($color-process, process-error);
+      font-weight: map-get($font-weight, bold);
+    }
+
+    &:not(.is-focus) {
+      .c-textfield__prefix,
+      .c-textfield__suffix {
+        border-color: map-get($color-process, process-error);
+      }
+    }
+  }
+
+  &.has-info {
+    .c-textfield__prefix,
+    .c-textfield__suffix {
+      color: map-get($color-process, process-info);
+    }
+
+    &:not(.is-focus) {
+      .c-textfield__prefix,
+      .c-textfield__suffix {
+        border-color: map-get($color-process, process-info);
+      }
+    }
+  }
+
+  &.has-success {
+    .c-textfield__prefix,
+    .c-textfield__suffix {
+      color: map-get($color-process, process-success);
+    }
+
+    &:not(.is-focus) {
+      .c-textfield__prefix,
+      .c-textfield__suffix {
+        border-color: map-get($color-process, process-success);
+      }
+    }
+  }
+
+  
+  &.c-textfield--negative {
+    .c-textfield__prefix,
+    .c-textfield__suffix {
+      background-color: transparent;
+      color: map-get($color-basic, primary-white) !important;
+      border-color: map-get($color-basic, primary-white) !important;
+    }
+  }
+}

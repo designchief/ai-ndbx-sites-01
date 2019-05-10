@@ -1,0 +1,107 @@
+.c-teaser-event {
+  position: relative;
+  width: 100%;
+}
+
+.c-teaser-event__content {
+  padding: 20px 15px 30px 15px;
+
+  @include media-breakpoint-response(mobile) {
+    padding: 15px 15px 20px 15px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.c-teaser-event__image-container {
+  margin: 4px 0 20px 0;
+  @include media-breakpoint-response(mobile) {
+    max-height: 226px;
+  }
+  .c-image__img {
+    @include media-breakpoint-response(mobile) {
+      max-height: 226px;
+    }
+  }
+}
+.c-teaser-event__headline {
+  margin: 12px 0 11px 0;
+  text-align: left;
+}
+.c-teaser-event__location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .c-teaser-event__location-name {
+    font-size: $font-size-small;
+    line-height: $line-height-depending-medium;
+    color: map-get($color-grey-tones, grey-tone-1);
+    margin: 0 0 1px 16px;
+  }
+}
+.c-teaser-event__detail {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.c-teaser-event__button-row{
+  text-align: left;
+}
+
+// Date
+.c-teaser-event__range {
+  display: flex;
+  flex: 1 0 auto;
+  align-content: center;
+  align-items: center;
+}
+.c-teaser-event__left {
+  display: flex;
+  flex-direction: row;
+}
+.c-teaser-event__arrow {
+  margin: 0 2px;
+  .c-teaser-event__icon {
+    font-size: 30px;
+  }
+}
+.c-teaser-event__right {
+  display: flex;
+  flex-direction: row;
+}
+.c-teaser-event__day {
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-align: left;
+  color: #414141;
+  margin-right: 6px;
+}
+.c-teaser-event__month {
+  height: 20px;
+  margin-top: 7px;
+  font-size: 20px;
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-align: left;
+  color: #414141;
+}
+.c-teaser-event__year {
+  height: 25px;
+  font-size: 20px;
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-align: left;
+  color: #414141;
+}

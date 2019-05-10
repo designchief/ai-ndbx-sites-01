@@ -1,0 +1,117 @@
+.c-progress-bar {
+  .c-progress-bar--steps {
+    display: flex;
+    height: auto;
+    width: 100%;
+
+    @include media-breakpoint-response(mobile) {
+      display: none;
+    }
+
+    .c-progress-bar__text {
+      color: map-get($color-grey-tones, grey-tone-1);
+      position: relative;
+      top: map-get($sizes, 5xs);
+      text-align: center;
+      width: calc(100% - #{map-get($sizes, 2m)});
+      margin: map-get($sizes, m) map-get($sizes, s) map-get($sizes, 5xs);
+    }
+
+    .c-progress-bar__item {
+      flex: 1;
+      position: relative;
+      text-align: center;
+
+      &:first-child {
+        margin-left: -1 * map-get($sizes, s);
+      }
+  
+      &:last-child{
+        margin-right: -1 * map-get($sizes, s);
+      }
+
+      &:before {
+        width: map-get($sizes, s);
+        height: map-get($sizes, s);
+        font-size: map-get($sizes, 5xs);
+        line-height: map-get($line-heights, 4xs);
+        position: absolute;
+        top: map-get($sizes, 5xs);
+        border-radius: 50%;
+        background: map-get($color-basic, primary-white);
+        color: map-get($color-basic, primary-white);
+        border: map-get($borders, m) solid map-get($color-primary-action, primary-action-bright);
+        z-index: 2;
+        margin-left: -1 * map-get($sizes, 2xs);
+        left: 50%;
+        @extend .c-icon, .c-icon--check;
+      }
+
+      &.c-progress-bar__item--done:before {
+        background: map-get($color-primary-action, primary-action-bright);
+        border: none;
+        font-size: map-get($font-sizes, 3xs);
+        @media screen and (-ms-high-contrast: active) {
+          border: map-get($borders, m) solid map-get($color-high-contrast, yellow);
+        }
+      }
+
+      &.c-progress-bar__item--active:before {
+        width: map-get($sizes, 2xs);
+        height: map-get($sizes, 2xs);
+        padding: map-get($sizes, 4xs);
+        background-color: map-get($color-primary-action, primary-action-bright);
+        background-clip: content-box;
+        box-sizing: content-box;
+      }
+
+      &:after {
+        content: "";
+        border-width: 0 0 map-get($borders, xl) 0;
+        border-style: dotted;
+        border-color: #c2c2c2;
+        border-image-source: url('../images/_dots.svg');
+        border-image-slice: 5;
+        border-image-repeat: round;
+
+        display: block;
+        width: 100%;
+        height: map-get($sizes, 3xs);
+        position: absolute;
+        top: (map-get($sizes, s) - map-get($sizes, 3xs)) / 2;
+        left: calc(50% + #{map-get($sizes, 2xs)});
+
+      }
+
+      &.c-progress-bar__item--linear{
+        margin-right: map-get($sizes, 5xs);
+
+        &:after {
+          content: "";
+          height: map-get($sizes, 3xs);
+          border-bottom: map-get($sizes, 5xs);
+          width: 100%;
+          position: absolute;
+          left: calc(50% - #{map-get($sizes, 2xs)});
+          top: (map-get($sizes, s) - map-get($sizes, 3xs)) / 2;
+          background: map-get($color-primary-action, primary-action-bright);
+
+          @media screen and (-ms-high-contrast: active) {
+            background: map-get($color-high-contrast, yellow);
+          }
+        }
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .c-progress-bar__progress-text { // base(X): _headline
+    font-weight: map-get($font-weight, regular);
+    font-size: map-get($font-sizes, 3xs);
+  }
+}

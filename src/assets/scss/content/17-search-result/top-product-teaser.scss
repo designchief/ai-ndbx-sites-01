@@ -1,0 +1,93 @@
+.c-top-product-teaser {
+  padding-bottom: map-get($sizes, 4m);
+
+  @include media-breakpoint-response(mobile) {
+    margin: map-get($sizes, m) map-get($sizes, 2xs) map-get($sizes, m) - map-get($borders, xs);
+    border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    padding: map-get($sizes, 5xs) map-get($sizes, 2xs);
+  }
+}
+
+.c-top-product-teaser:last-child {
+  padding-bottom: map-get($sizes, l);
+  @include media-breakpoint-response(mobile) {
+    padding-bottom: map-get($sizes, 4m);
+  }
+}
+.c-teaser__image-wrapper {
+  @include media-breakpoint-response(mobile) {
+    margin-bottom: map-get($sizes, m);
+  }
+}
+.c-top-product-teaser__image {
+  @include media-breakpoint-response(mobile) {
+    margin: (-1 * map-get($sizes, m)) (-1 * map-get($sizes, s)) map-get($sizes, 5xs);
+  }
+}
+
+@include media-breakpoint-response(mobile) {
+  .c-top-product-teaser:not(.c-top-product-teaser-carousel__slide) .c-top-product-teaser__image {
+    padding-top: calc((100% + #{map-get($sizes, s) * 2}) * 1/1.8);
+  }
+}
+
+.c-top-product-teaser__headline {
+  font-size: map-get($font-sizes , xs);
+  line-height: map-get($line-heights, xs);
+  letter-spacing: map-get($letter-spacings, xs);
+}
+
+.c-top-product-teaser__copytext{
+  margin-top: map-get($sizes, 2xs);
+  margin-bottom: map-get($sizes, 5xs);
+}
+
+.c-top-product-teaser__link {
+  padding: map-get($sizes, 3xs) map-get($sizes, 5xs);
+  margin-top: map-get($sizes, s);
+  margin-right: map-get($sizes, m);
+  @include media-breakpoint-response(mobile) {
+    padding: map-get($sizes, 5xs);
+    display: block;
+    margin-top: map-get($sizes, s);
+  }
+}
+
+.c-top-product-teaser__date {
+  margin-bottom: map-get($sizes, 2xs);
+}
+
+.c-top-product-teaser__button {
+  margin: map-get($sizes, 5xs);
+
+  @include media-breakpoint-response(mobile) {
+    display: block;
+    width: 100%;
+    margin-top: map-get($sizes, m);
+    font-size: map-get($font-sizes, 3xs);
+    line-height: map-get($line-heights, 2xs);
+    text-transform: uppercase;
+  }
+
+  @include media-breakpoint-up(medium) {
+    margin-top: map-get($sizes, s);
+    float: right;
+    font-size: map-get($font-sizes, 4xs);
+    line-height: map-get($line-heights, 4xs);
+    padding: map-get($sizes, 2xs) - map-get($sizes, 4xs) map-get($sizes, s) - map-get($sizes, 4xs);
+    text-transform: none;
+    width: auto;
+  }
+}
+
+.c-top-product-teaser-carousel {
+  .c-top-product-teaser-carousel__slide {
+    .c-teaser__image-container,
+    .c-image__img {
+      @include media-breakpoint-response(mobile) {
+        max-height: 226px;
+      }
+    }
+  }
+}
+

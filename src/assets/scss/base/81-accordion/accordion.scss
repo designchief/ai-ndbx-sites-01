@@ -1,0 +1,301 @@
+.c-accordion {
+  width: 100%;
+
+  .c-accordion__item-wrapper {
+    margin-top: map-get($sizes, s);
+  }
+
+  .c-accordion__trigger {
+    padding: map-get($sizes, m) map-get($sizes, 2m);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: map-get($color-grey-tones, grey-tone-1);
+    background: map-get($color-grey-tones, grey-tone-8);
+    outline: none;
+    user-select: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .c-accordion__item-title {
+    font-size: map-get($font-sizes, m);
+    font-weight: map-get($font-weight, light);
+    line-height: map-get($line-heights, m);
+    letter-spacing: map-get($letter-spacings, s);
+    text-align: left;
+    margin-right: map-get($sizes, 2m);
+    pointer-events: none;
+  }
+
+  .c-accordion__chevron {
+    margin-left: auto;
+    align-self: flex-start;
+    color: map-get($color-primary-action, primary-action-dark);
+    pointer-events: none;
+    transform: rotate(0deg);
+    transition: all 0.5s;
+    &:before {
+      line-height: map-get($line-heights, m);
+      font-size: map-get($sizes, m);
+    }
+  }
+
+  .c-accordion__item-content {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .6s ease;
+  }
+
+  .c-accordion__item-text {
+    padding: map-get($sizes, m) map-get($sizes, 4xl) (map-get($sizes, 2m) - map-get($sizes , s)) map-get($sizes, 2m);
+    margin: 0;
+  }
+
+  .is-animated + .c-accordion__item-content {
+    max-height: none !important;
+  }
+
+  //accordion with toggles
+  .c-accordion__item-toggle {
+    width: map-get($sizes,2m);
+    height: map-get($sizes,2m);
+    line-height: map-get($line-heights, m);
+    margin-right: map-get($sizes, m);
+    border-radius: 50%;
+    pointer-events: none;
+    background: map-get($color-grey-tones, grey-tone-6);
+    &:focus{
+      outline: none;
+    }
+  }
+
+  // Toggle Modifier
+  .c-accordion__item-toggle--green {
+    background: map-get($color-process, process-success);
+    font-size: map-get($font-sizes, s);
+    color: map-get($color-basic, primary-white);
+  }
+
+  .c-accordion__item-wrapper+ .c-accordion__item-wrapper { // Following Items (not top item)
+    border-top: none;
+  }
+
+  // State
+  .c-accordion__chevron.c-icon--is-rotated {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+  }
+
+  .c-accordion__trigger:disabled {
+    color: map-get($color-grey-tones, grey-tone-5);
+    cursor: not-allowed;
+    .c-accordion__chevron {
+      color: map-get($color-grey-tones, grey-tone-5);
+    }
+  }
+
+  // Accessibility 
+  .c-accordion__trigger:focus {
+    [data-whatinput="keyboard"] & {
+      color: map-get($color-basic, primary-white);
+      @extend .t-bg-accessibility;
+  
+      .c-accordion__chevron {
+        color: map-get($color-basic, primary-white);
+      }
+      .c-accordion__item-toggle {
+        @extend .t-bg-white;
+      }
+      .c-accordion__item-toggle--green {
+        color: map-get($color-vibrant, vibrant-purple);
+      }
+    }
+  }
+  
+  // Modifier
+  &.c-accordion--negative {
+    .c-accordion__trigger {
+      background: map-get($color-basic, primary-white);
+    } 
+  }
+
+  &.c-accordion--light {
+    .c-accordion__item--is-active + .c-accordion__item-content {
+      border-bottom: none;
+    }
+    
+    .c-accordion__item-wrapper {
+      margin-top: map-get($sizes, 5xs); // remove margin
+      border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    }
+
+    .c-accordion__item-wrapper:first-child { // Top Item
+      border-top: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+
+      .c-accordion__trigger {
+        padding-top: map-get($sizes, m) - map-get($borders, xs);
+      }
+    }
+
+    .c-accordion__trigger {
+      background: transparent;
+      color: map-get($color-primary-action, primary-action-dark);
+      padding: map-get($sizes, m) map-get($sizes, 2m) map-get($sizes, m) - map-get($borders, xs);
+    } 
+
+    .c-accordion__item-title {
+      font-size: map-get($font-sizes, xs);
+      line-height: map-get($line-heights, xs);
+      letter-spacing: map-get($letter-spacings, xs);
+      font-weight: map-get($font-weight, regular);
+      margin-right: map-get($sizes, 2m); 
+    }
+
+    .c-accordion__item-text {
+      // Padding Top border xs since border 1px is slide down 
+      padding: map-get($borders, xs) map-get($sizes, 4xl) (map-get($sizes, 2m) - map-get($borders, xs)) map-get($sizes, 2m);
+    }
+
+    .c-accordion__chevron:before {
+      font-size: map-get($sizes, m);
+      line-height: map-get($line-heights, xs);
+    }
+
+    // State Accordion Light
+    .c-accordion__trigger:disabled {
+      color: map-get($color-grey-tones, grey-tone-5);
+    }
+
+    // application toggle 
+    .c-accordion__item-toggle {
+      width: map-get($sizes,m);
+      height: map-get($sizes,m);
+      line-height: map-get($line-heights, 2xs);
+      margin-right: map-get($sizes, s);
+    }
+    .c-accordion__item-toggle--green{
+      background: map-get($color-process, process-success);
+      font-size: map-get($font-sizes, xs);
+      color: map-get($color-basic, primary-white);
+    }
+  }
+
+  @include media-breakpoint-down(small) {
+    // Mobile for default Accordion 
+    .c-accordion__item-wrapper {
+      margin-top: 0;
+    }
+    
+    .c-accordion__item--is-active + .c-accordion__item-content{
+      border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    }
+
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) { // reset margin only for safari
+      .safari_only { 
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+
+    .c-accordion__trigger {
+      padding: map-get($sizes, s);  
+      padding-bottom: map-get($sizes, s) - map-get($borders, xs);
+      border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    }
+    
+    .c-accordion__item-wrapper:first-child .c-accordion__trigger {
+      padding-top: map-get($sizes, s) - map-get($borders, xs);
+      border-top: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    }
+
+    .c-accordion__item-title {
+      font-size: map-get($font-sizes, xs);
+      line-height: map-get($line-heights, xs);
+      font-weight: map-get($font-weight, regular);  
+      letter-spacing: map-get($letter-spacings, xs);
+      margin-right: map-get($sizes, s) 
+    }
+
+    .c-accordion__item-text {
+      padding: map-get($sizes, m) map-get($sizes, s) map-get($sizes, 2m);
+    }
+
+    .c-accordion__chevron {
+      &:before {
+        line-height: map-get($line-heights, xs);
+        font-size: map-get($sizes, m);
+      }
+    }
+
+    .c-accordion__item-toggle {
+      width: map-get($sizes,m);
+      height: map-get($sizes,m);
+      line-height: map-get($line-heights, 2xs);
+      margin-right: map-get($sizes, xs);
+    }
+
+    .c-accordion__item--is-active {
+        border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    }
+
+    // Device: Mobile of c-accordion--light
+    &.c-accordion--light {
+      padding: map-get($sizes, 5xs) map-get($sizes, s);
+
+      .c-accordion__trigger,  // Clear Default mobile spacing 
+      .c-accordion__item-wrapper:first-child .c-accordion__trigger{
+        border: none;
+        padding: map-get($sizes, 5xs);
+      }
+
+      .c-accordion__trigger,
+      .c-accordion__trigger:first-child {
+        padding: map-get($sizes, s) map-get($sizes, 5xs) map-get($sizes, s) - map-get($borders, xs);
+      }
+
+      .c-accordion__item-wrapper:first-child .c-accordion__trigger {
+        padding: map-get($sizes, s) - map-get($borders, xs) map-get($sizes, 5xs) map-get($sizes, s) - map-get($borders, xs);
+      }
+      
+      .c-accordion__item-title {
+        font-size: map-get($font-sizes, 3xs);
+        line-height: map-get($line-heights, 2xs);
+        letter-spacing: map-get($letter-spacings, 2xs);
+        margin-right: map-get($sizes, s);
+      }
+
+      .c-accordion__chevron{
+        height: map-get($line-heights, 2xs);
+
+        &::before {
+          display: inline-block;
+          font-size: map-get($sizes, m);
+          line-height: map-get($line-heights, 2xs);
+        }
+      }
+
+      .c-accordion__item-text {
+        // Padding Top border xs since border 1px is slide down 
+        padding: map-get($borders, xs) map-get($sizes, 5xs) (map-get($sizes, m) - map-get($borders, xs));
+      }
+      
+      .c-accordion__item-toggle {
+        width: map-get($sizes,m);
+        height: map-get($sizes,m);
+        line-height: map-get($line-heights, 2xs);
+        margin-right: map-get($sizes, xs);
+      }
+
+      // Accessibility 
+      .c-accordion__trigger:focus {
+        [data-whatinput="keyboard"] & {
+          color: map-get($color-basic, primary-white);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.c-checkbox {
+  position: relative;
+  display: flex;
+}
+
+.c-checkbox__input {
+  opacity: 0;
+  margin: map-get($sizes, 5xs);
+  height: map-get($sizes, m);
+  width: map-get($sizes, m) + map-get($borders, m);
+}
+
+.c-checkbox__label {
+  display: inline-flex;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  margin-left: map-get($sizes, xs);
+  font-size: map-get($font-sizes, 3xs);
+  line-height: map-get($line-heights, 2xs);
+  align-items: center;
+  letter-spacing: map-get($letter-spacings, 2xs);
+  cursor: pointer;
+
+  &::before {
+    background-color: map-get($color-basic, primary-white);
+    border: map-get($borders, m) solid map-get($color-grey-tones, grey-tone-5);
+    border-radius: map-get($border-radius, s);
+    color: map-get($color-basic, primary-white);
+    font-size: map-get($font-sizes, xs);
+    height: map-get($sizes, m);
+    width: map-get($sizes, m);
+    left: 0;
+    top: 0;
+    // Set c-icon--check to align center
+    line-height: map-get($sizes, m) - (map-get($borders, m) * 2);
+    position: absolute;
+    text-align: left;
+  }
+}
+
+.c-checkbox__label--xxlarge .c-checkbox__label {
+  font-size: map-get($font-sizes, xs);
+  line-height: map-get($line-heights, xs);
+  letter-spacing: map-get($letter-spacings, xs);
+
+  &::before {
+    top: map-get($sizes, 4xs);
+  }
+}
+
+.c-checkbox__input:indeterminate + .c-checkbox__label::after {
+  background-color: map-get($color-primary-action, primary-action-bright);
+  border-radius: 50%;
+  content: " ";
+  height: map-get($sizes, 2xs);
+  width: map-get($sizes, 2xs);
+  left: map-get($sizes, 2xs);
+  top: map-get($sizes, 2xs);
+  position: absolute;
+}
+
+// Negative Checkbox
+.c-checkbox--negative {
+  .c-checkbox__label {
+    color: map-get($color-basic, primary-white);
+  }
+
+  .c-checkbox__input:not(:checked) + .c-checkbox__label::before {
+    background-color: inherit;
+    border: map-get($borders, m) solid map-get($color-basic, primary-white);
+  }
+
+  .c-checkbox__input:checked + .c-checkbox__label::before {
+    background-color: map-get($color-basic, primary-white);
+    color: map-get($color-primary-action, primary-action-dark);
+    border: map-get($borders, m) solid map-get($color-basic, primary-white);
+  }
+
+  .c-checkbox__input:disabled + .c-checkbox__label {
+    color: map-get($color-basic, primary-white);
+    opacity: 0.4;
+  }
+
+  .c-checkbox__input:checked:disabled + .c-checkbox__label::before {
+    color: map-get($color-basic, primary-white);
+  }
+
+  .c-checkbox__input:indeterminate+.c-checkbox__label::before {
+    background-color: inherit;
+  }
+  .c-checkbox__input:indeterminate+.c-checkbox__label::after {
+    background-color: map-get($color-basic, primary-white);
+  }
+
+  .c-checkbox__input:disabled + .c-checkbox__label::before {
+    background-color: rgba(map-get($color-basic, primary-white), 0.40);
+  }
+}
+
+//High contract mode fixes
+@media screen and (-ms-high-contrast: active) {
+  .c-checkbox__input:checked + .c-checkbox__label::before {
+    border-color: map-get($color-high-contrast, "yellow");
+    color: map-get($color-high-contrast, "yellow");
+  }
+
+  .c-checkbox__label {
+    color: map-get($color-high-contrast, "yellow");
+  }
+
+  .c-checkbox__input:indeterminate + .c-checkbox__label::after {
+    background-color: map-get($color-high-contrast, "yellow");
+  }
+}
+
+.c-checkbox__input:checked + .c-checkbox__label::before {
+  background-color: map-get($color-primary-action, primary-action-bright);
+  border-color: map-get($color-primary-action, primary-action-bright);
+}
+
+.c-checkbox__input:not(:checked) + .c-checkbox__label::before {
+  content: "";
+}
+
+.c-checkbox__input:disabled + .c-checkbox__label::before {
+  background-color: map-get($color-grey-tones, grey-tone-7);
+}
+
+.c-checkbox__input:checked:disabled + .c-checkbox__label::before {
+  background-color: map-get($color-grey-tones, grey-tone-5);
+  border-color: map-get($color-grey-tones, grey-tone-5);
+}
+
+.c-checkbox__input:indeterminate:disabled + .c-checkbox__label::after {
+  background-color: map-get($color-basic, primary-white);
+}
+
+.c-checkbox__input:disabled + .c-checkbox__label {
+  cursor: not-allowed;
+  color: map-get($color-grey-tones, grey-tone-5);
+}

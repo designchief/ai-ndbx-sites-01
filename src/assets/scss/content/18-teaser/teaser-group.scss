@@ -1,0 +1,208 @@
+.c-teaser-group {
+  overflow: auto;
+  padding-left: map-get($sizes, 2m);
+  padding-right: map-get($sizes, 2m);
+
+  @include media-breakpoint-response(mobile) {
+    padding-left: map-get($sizes, 5xs);
+    padding-right: map-get($sizes, 5xs);
+  }
+
+  .c-teaser__headline {
+    @include media-breakpoint-response(mobile) {
+      font-size: map-get($font-sizes, s);
+      line-height: map-get($line-heights, m);
+      letter-spacing: map-get($letter-spacings, xs);
+    }
+  }
+
+  .c-teaser {
+    margin-bottom: map-get($sizes, 5xs);
+    flex: 1;
+    display: flex;
+
+    @include media-breakpoint-response(mobile){
+      display: block;
+      flex: none;
+    }
+  }
+
+  .c-teaser__link {
+    position: relative;
+    bottom: 0;
+  }
+
+  //vertical teaser
+  .c-teaser--50-50 {
+    .c-teaser__headline {
+      margin-bottom: map-get($sizes, m);
+      flex: 1 0 auto;
+    }
+
+    .c-teaser__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include media-breakpoint-response (desktop) {
+      min-height: 248px;
+    }
+  }
+
+  .c-teaser-group__headline {
+    margin: map-get($sizes, xl) 0 map-get($sizes, 2m);
+    @include media-breakpoint-response (mobile) {
+      margin: map-get($sizes, 2m) 0 map-get($sizes, 2m);
+    }
+  }
+}
+
+.c-teaser-group__row {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up ('medium') {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.c-teaser-group--horizontal {
+  display: flex;
+}
+
+.c-teaser-group--horizontal,
+// Teaser in three level navigation
+.c-navcontent {
+  overflow: auto;
+
+  @include media-breakpoint-down(medium) {
+    flex-direction: column;
+  }
+
+  .c-teaser {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+
+    &.c-teaser--horizontal-66-33 {
+      flex: 2;
+
+      .c-teaser__link-area {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @include media-breakpoint-down(medium) {
+        flex-basis: auto;
+      }
+
+      .c-teaser__image {
+        padding-bottom: percentage(1/2.6);
+
+        @include media-breakpoint-response(mobile) {
+          padding-bottom: percentage(1/1.8);
+        }
+      }
+    }
+
+    &.c-teaser--horizontal-33-66 {
+      flex: 1;
+
+      .c-teaser__link-area {
+        width: 100%;
+        display: flex;
+
+        @include media-breakpoint-response(desktop) {
+          flex-direction: column;
+        }
+      }
+
+      @include media-breakpoint-down(medium) {
+        flex-direction: row;
+        flex-basis: auto;
+      }
+
+      .c-teaser__image {
+        padding-bottom: percentage(1/1.8);
+
+        @include media-breakpoint-down(medium) {
+          height: 100%;
+        }
+      }
+    }
+
+    .c-teaser__image,
+    .c-teaser__content {
+      width: 100%;
+    }
+
+    .c-teaser__image-container {
+      @include media-breakpoint-response ('tablet') {
+       width: 100%;
+     }
+    }
+
+    .c-teaser__image {
+      position: relative;
+    }
+
+    .c-image__img {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .c-teaser__headline {
+    margin-bottom: map-get($sizes, s);
+    line-height: map-get($line-heights, 2m);
+    letter-spacing: map-get($letter-spacings, s);
+
+    @include media-breakpoint-response(mobile) {
+      line-height: map-get($line-heights, m);
+      margin-bottom: map-get($sizes, m);
+    }
+  }
+
+  .c-teaser__text {
+    margin-bottom: map-get($sizes, m);
+
+    @include media-breakpoint-response(mobile) {
+      margin: map-get($sizes, 5xs) map-get($sizes, 5xs) map-get($sizes, 2m) (map-get($sizes, 3m) - map-get($sizes, m));
+    }
+  }
+
+  .c-teaser__content {
+    padding: map-get($sizes, m) map-get($sizes, 2m) map-get($sizes, 3m);
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-response(mobile) {
+      padding: map-get($sizes, 2m) map-get($sizes, m) map-get($sizes, 4m);
+    }
+  }
+
+  .c-teaser__link {
+    @extend .c-link--center;
+    text-align: left;
+
+    @include media-breakpoint-response(mobile) {
+      text-align: center;
+      align-self: center;
+    }
+  }
+}
+
+.c-teaser-group-horizontal__headline {
+  margin: map-get($sizes, xl) (map-get($sizes, xl) * 2) map-get($sizes, 3m);
+
+  @include media-breakpoint-response(tablet) {
+    margin: map-get($sizes, xl) map-get($sizes, 2m) map-get($sizes, 3m);
+  }
+  @include media-breakpoint-response(mobile) {
+    margin: map-get($sizes, 3m) map-get($sizes, s);
+  }
+}

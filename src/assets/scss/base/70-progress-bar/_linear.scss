@@ -1,0 +1,24 @@
+.c-progressbar {
+  width: 100%;
+  background: map-get($color-grey-tones, grey-tone-7);
+  @media screen and (-ms-high-contrast: active) {
+    background: map-get($color-high-contrast, "white");
+  }
+  height: map-get($sizes, 3xs);
+}
+
+.c-progressbar__indicator {
+  width: 0%;
+  height: map-get($sizes, 3xs);
+  background: map-get($color-primary-action, primary-action-bright);
+  display: block;
+  @media screen and (-ms-high-contrast: active) {
+    background: map-get($color-high-contrast, "yellow");
+  }
+}
+
+// double class to make it more important
+.c-progressbar__status-text.c-progressbar__status-text {
+  margin-top: map-get($sizes, xs);
+  font-style: italic;
+}

@@ -1,0 +1,6 @@
+.c-footnote {
+  color: map-get($color-grey-tones, grey-tone-2);
+  font-size: map-get( $font-sizes, 3xs );
+  font-weight: map-get( $font-weight , regular );
+  line-height: map-get( $line-heights , 2xs );
+}

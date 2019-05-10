@@ -1,0 +1,108 @@
+$scrollWidth: map-get($sizes, 4xs);
+
+.c-search-filter-dropdown__copytext-wrapper {
+  margin: map-get($sizes, 2m) auto map-get($sizes, l);
+
+  @include media-breakpoint-response(mobile) {
+    margin: map-get($sizes, 5xs);
+    padding-top: map-get($sizes, m);
+    padding-bottom: map-get($sizes, m) - map-get($borders, xs);
+    border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+  }
+}
+
+.c-search-filter-dropdown__filter-dropdown-wrapper {
+  margin: map-get($sizes, 2m) auto map-get($sizes, 4m);
+
+  @include media-breakpoint-response(mobile) {
+    margin: map-get($sizes, 5xs);
+  }
+}
+
+.c-search-filter-dropdown {
+
+  // atom(x): c-copytext
+  .c-search-filter-dropdown__copytext {
+    display: inline;
+
+    @include media-breakpoint-response(mobile) {
+      display: block;
+      text-align: center;
+      color: map-get($color-grey-tones, grey-tone-1);
+      margin-bottom: map-get($sizes, 2xs);
+    }
+  }
+  
+  // atom(x): c-headline
+  .c-search-filter-dropdown__headline {
+    @include media-breakpoint-response(mobile) {
+      text-align: center;
+      color: map-get($color-grey-tones, grey-tone-1);
+      margin-bottom: map-get($sizes, 5xs);
+    }
+  }
+
+  // these styles will be moved to atom filter-dropdown
+  // atom(x): c-filter-dropdown
+  .c-search-filter-dropdown__filter-dropdown {
+
+    @include media-breakpoint-response(mobile) {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    [data-scrollbar] {
+      display: flex;
+      visibility: none;
+      position: absolute;
+    }
+  
+    .scrollbar-track-y {
+      width: $scrollWidth;
+    }
+  
+    .scrollbar-thumb {
+      width: $scrollWidth;
+      background: map-get($color-grey-tones, grey-tone-1);
+    }
+  
+    .scroll-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: map-get($sizes, 2m);
+      padding-bottom: map-get($sizes, 5xs);
+    }
+
+    &.is-open {
+      .c-filter-dropdown__menu {
+        @include media-breakpoint-response(mobile) {
+          position: relative;
+        }
+      }
+  
+      [data-scrollbar] {
+        visibility: visible;
+  
+        @include media-breakpoint-response(mobile) {
+          position: relative;
+        }
+      }
+    }
+
+    .c-filter-dropdown__menu {
+      align-items: stretch;
+      overflow: auto;
+      padding: map-get($sizes, 5xs);
+    }
+  
+    .c-filter-dropdown__item {
+      &:last-child:after {
+        content: "";
+        margin-top: map-get($sizes, 2m);
+        display: block;
+      } 
+    }
+  }
+}

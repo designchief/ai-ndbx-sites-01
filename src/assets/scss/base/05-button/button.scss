@@ -1,0 +1,357 @@
+%button-focus {
+  background-color: map-get($color-functional, accessibility);
+  border-color: map-get($color-functional, accessibility);
+  box-shadow: 0px 8px 20px 0px $c-grey-shadow;
+  color: map-get($color-basic, primary-white);
+}
+
+.c-button.c-button--block {
+
+  @include media-breakpoint-up(medium) {
+    width: 100%;
+  }
+}
+
+.c-button {
+  background-color: map-get($color-primary-action, primary-action-bright);
+  border: map-get($borders, m) solid transparent;
+  border-radius: map-get($border-radius, s);
+  color: map-get($color-basic, primary-white);
+  cursor: pointer;
+  font-size: map-get($font-sizes, 3xs);
+  font-weight: map-get($font-weight, semibold);
+  letter-spacing: map-get($letter-spacings, 2m);
+  line-height: map-get($line-heights, 2xs);
+  margin: 0 0 map-get($sizes, m);
+  text-transform: uppercase;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, box-shadow .2s ease;
+  user-select: none;
+  width: auto;
+  padding: map-get($sizes, xs) - map-get($sizes, 4xs) map-get($sizes, 2m) - map-get($sizes, 4xs);
+  hyphens: inherit;
+  word-break: break-word;
+
+  &:hover {
+    background-color: map-get($color-primary-action, primary-action-darker);
+    border-color: map-get($color-primary-action, primary-action-darker);
+    color: map-get($color-basic, primary-white);
+  }
+
+  &:active {
+    background-color: map-get($color-basic, primary-brand);
+    border-color: map-get($color-basic, primary-brand);
+    box-shadow: none;
+    color: map-get($color-basic, primary-white);
+  }
+
+  // :hover should not overwrite the disabled style
+  // use doubling classes for more specifity here
+  &.c-button:disabled {
+    background-color: rgba(map-get($color-primary-action, primary-action-bright), 0.4);
+    border-color: transparent;
+    color: rgba(map-get($color-basic, primary-white), 0.4);
+    cursor: not-allowed;
+  }
+
+  @include media-breakpoint-response(mobile) {
+    display: block;
+    width: 100%;
+  }
+
+  &:focus {
+    outline: map-get($borders, m) solid transparent;
+
+    // show a specific focus stil only when the keyboard is involved.
+    [data-whatinput="keyboard"] & {
+      @extend %button-focus; // sass-lint:disable-line no-extends
+    }
+  }
+}
+
+.c-button--large {
+  font-size: map-get($font-sizes, xs);
+  padding: map-get($sizes, m) - map-get($sizes, 4xs) map-get($sizes, 4m) - map-get($sizes, 4xs);
+
+  @include media-breakpoint-response(mobile) {
+    padding: map-get($sizes, m) - map-get($sizes, 4xs) map-get($sizes, 2m) - map-get($sizes, 4xs);
+  }
+}
+
+.c-button--small {
+  display: inline-block;
+  font-size: map-get($font-sizes, 4xs);
+  line-height: map-get($line-heights, 4xs);
+  padding: map-get($sizes, 2xs) - map-get($sizes, 4xs) map-get($sizes, s) - map-get($sizes, 4xs);
+  text-transform: none;
+  width: auto;
+}
+
+.c-button--icon {
+  .c-button__icon::before {
+    display: inline-block;
+    margin-right: map-get($sizes, 2xs);
+    vertical-align: top;
+    width: map-get($sizes, m);
+    font-size: map-get($font-sizes, s);
+    font-weight: map-get($font-weight, regular);
+  }
+}
+
+.c-button--icon.c-button--small {
+  .c-button__icon {
+    font-size: map-get($font-sizes, 3xs);
+  }
+  .c-button__icon::before {
+    width: map-get($sizes, s);
+    font-size: map-get($font-sizes, 3xs);
+  }
+}
+
+.c-button__icon {
+  pointer-events: none;
+  transition: transform .2s ease-out;
+  font-size: map-get($font-sizes, s);
+  display: inline-block;
+  vertical-align: top;
+
+  &:before {
+    vertical-align: top;
+  }
+}
+
+// variation of button for having an icon on the right side
+.c-button--icon-right {
+
+  @extend .c-button--icon; // sass-lint:disable-line no-extends
+
+  .c-button__icon::before {
+    order: 1;
+    margin: 0 0 0 map-get($sizes, 2xs);
+  }
+}
+
+.c-button--negative {
+  background-color: map-get($color-basic, primary-white);
+  border-color: map-get($color-basic, primary-white);
+  color: map-get($color-primary-action, primary-action-dark); //006192;
+
+  &:hover {
+    background-color: map-get($color-grey-tones, grey-tone-6);
+    border-color: map-get($color-grey-tones, grey-tone-6);
+    color:  map-get($color-primary-action, primary-action-dark); //006192
+  }
+
+  &:active {
+    background-color: map-get($color-grey-tones, grey-tone-5);
+    border-color: map-get($color-grey-tones, grey-tone-5);
+    color:  map-get($color-primary-action, primary-action-dark); //006192
+  }
+
+  &.c-button--negative:disabled {
+    background-color: rgba(map-get($color-basic, primary-white), 0.4);
+    border-color: transparent;
+    color: rgba(map-get($color-grey-tones, grey-tone-1), 0.3);
+  }
+
+  &:focus {
+    [data-whatinput="keyboard"] & {
+      box-shadow: 0px 8px 20px 0px $c-grey-shadow;
+    }
+  }
+
+}
+
+.c-button--secondary {
+  background-color: transparent;
+  border-color: map-get($color-primary-action, primary-action-bright);
+  color: map-get($color-primary-action, primary-action-dark);
+
+  // :hover should not overwrite the disabled style
+  // use doubling classes for more specifity here
+  &.c-button--secondary:disabled {
+    background-color: transparent;
+    border-color: rgba(map-get($color-primary-action, primary-action-bright), 0.4);
+    color:  rgba(map-get($color-primary-action, primary-action-dark), 0.4);
+  }
+}
+
+.c-button--secondary.c-button--negative {
+  color: map-get($color-basic, primary-white);
+  border-color: map-get($color-basic, primary-white);
+
+  &:hover {
+    background-color: map-get($color-grey-tones, grey-tone-6);
+    border-color: map-get($color-grey-tones, grey-tone-6);
+    color:  map-get($color-primary-action, primary-action-dark); //006192
+  }
+
+  &:active {
+    background-color: map-get($color-grey-tones, grey-tone-5);
+    border-color: map-get($color-grey-tones, grey-tone-5);
+    color:  map-get($color-primary-action, primary-action-dark); //006192
+  }
+
+  // :hover should not overwrite the disabled style
+  // use doubling classes for more specifity here
+  &.c-button--secondary:disabled {
+    background-color: transparent;
+    border-color: rgba(map-get($color-basic, primary-white), 0.4);
+    color: rgba(map-get($color-basic, primary-white), 0.4);
+  }
+
+}
+
+.c-button--direct-cta {
+  background-color: map-get($color-direct, direct-green);
+  border-color: transparent;
+
+  &:focus {
+    background-color: map-get($color-direct, direct-green);
+    border-color: transparent;
+  }
+
+  &:hover {
+    background-color: map-get($color-direct, direct-green-dark);
+    border-color: transparent;
+  }
+
+  &:active {
+    background-color: map-get($color-direct, direct-green-darker);
+    border-color: transparent;
+  }
+
+  // :hover should not overwrite the disabled style
+  // use doubling classes for more specifity here
+  &.c-button--direct-cta:disabled {
+    background-color: rgba(map-get($color-direct,  direct-green), 0.4);
+  }
+}
+
+.c-button--direct-emphasis {
+  background-color: map-get($color-direct, direct-orange);
+  border-color: transparent;
+
+  &:focus {
+    background-color: map-get($color-direct, direct-orange);
+    border-color: transparent;
+  }
+
+  &:hover {
+    background-color: map-get($color-direct, direct-orange-dark);
+    border-color: transparent;
+  }
+
+  &:active {
+    background-color: map-get($color-direct, direct-orange-darker);
+    border-color: transparent;
+  }
+
+  // :hover should not overwrite the disabled style
+  // use doubling classes for more specifity here
+  &.c-button--direct-emphasis:disabled {
+    background-color: rgba(map-get($color-direct, direct-orange), 0.4);
+  }
+}
+
+// organisms/05-header/_user-login-info
+.c-user-login-info__button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.c-button--no-margin {
+  margin: 0;
+}
+
+.c-button--link {
+  display: inline-block;
+  text-align: center;
+}
+
+.c-button--solo-icon {
+  font-size: map-get($font-sizes, s);
+  padding: map-get($sizes, xs) - map-get($sizes, 4xs) map-get($sizes, s) - map-get($sizes, 4xs);
+  height: auto;
+  width: auto;
+
+  .c-button__icon {
+    display: inline-block;
+  }
+
+  .c-button__icon::before {
+    margin: map-get($sizes, 5xs);
+    width: map-get($sizes, m);
+    display: inline-block;
+    font-weight: map-get($font-weight, regular);
+  }
+}
+
+.c-button--solo-icon.c-button--small {
+  padding: map-get($sizes, 2xs) - map-get($sizes, 4xs) map-get($sizes, xs) - map-get($sizes, 4xs);
+  width: map-get($sizes, 3m);
+
+  .c-button__icon {
+    font-size: map-get($font-sizes, 3xs);
+    vertical-align: middle;
+    width: map-get($sizes, s);
+
+    &::before {
+      margin: map-get($sizes, 5xs);
+    }
+  }
+}
+
+.c-button.c-button--force-state {
+  pointer-events: none;
+}
+
+.c-button.c-button--force-hover {
+  @extend .c-button, :hover; // sass-lint:disable-line no-extends
+  pointer-events: none;
+}
+
+.c-button.c-button--force-pressed {
+  @extend .c-button, :active; // sass-lint:disable-line no-extends
+  pointer-events: none;
+}
+
+.c-button.c-button--force-focused {
+  @extend %button-focus; // sass-lint:disable-line no-extends
+  pointer-events: none;
+}
+
+.c-button--direct-cta.c-button--force-hover {
+  @extend .c-button--direct-cta, :hover; // sass-lint:disable-line no-extends
+  pointer-events: none;
+}
+
+.c-button--direct-cta.c-button--force-pressed {
+  @extend .c-button--direct-cta, :active; // sass-lint:disable-line no-extends
+  pointer-events: none;
+}
+
+.c-button--direct-emphasis.c-button--force-hover {
+  @extend .c-button--direct-emphasis, :hover; // sass-lint:disable-line no-extends
+  pointer-events: none;
+}
+
+.c-button--direct-emphasis.c-button--force-pressed {
+  @extend .c-button--direct-emphasis, :active; // sass-lint:disable-line no-extends
+  pointer-events: none;
+}
+
+.c-button--negative.c-button--force-hover {
+  @extend .c-button--negative, :hover; // sass-lint:disable-line no-extends
+  pointer-events: none;
+}
+
+.c-button--negative.c-button--force-pressed {
+  @extend .c-button--negative, :active; // sass-lint:disable-line no-extends
+  pointer-events: none;
+}
+
+.c-button--negative.c-button--force-focused {
+  box-shadow: 0px 8px 20px 0px $c-grey-shadow;
+  border-color: transparent;
+  pointer-events: none;
+}

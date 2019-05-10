@@ -1,0 +1,432 @@
+
+@mixin promotional-element-circle($size, $border : 0px) {
+  width: $size - ($border * 2);
+  height: $size  - ($border * 2);
+  border-radius: 50%;
+}
+
+.c-promotional-element__text-small {
+  @extend .c-copy;
+  font-size: map-get($font-sizes, 5xs);
+  line-height: map-get($line-heights, 4xs);
+  font-weight: map-get($font-weight, bold);
+  letter-spacing: map-get($letter-spacings, m);
+  text-align: center;
+  display: block;
+  margin: map-get($sizes, 5xs);
+}
+
+.c-promotional-element {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: map-get($sizes, s) map-get($sizes, m);
+  z-index: 1;
+}
+
+.c-promotional-element__headline {
+  display: block;
+  font-size: map-get($font-sizes, l);
+  line-height: map-get($line-heights, l);
+  font-weight: map-get($font-weight, bold);
+  letter-spacing: map-get($letter-spacings, s);
+  text-align: center;
+  margin: map-get($sizes, 5xs);
+}
+
+.c-promotional-element__inner {
+  margin: map-get($sizes, 5xs) map-get($sizes, s);
+  @extend .u-text-center;
+}
+
+.c-promotional-element__headline-text-small {
+  font-size: map-get($font-sizes, s);
+  line-height: map-get($line-heights, m);
+  font-weight: map-get($font-weight, regular);
+  letter-spacing: map-get($letter-spacings, 2xs);
+  margin-left: map-get($sizes, 3xs);
+}
+
+.c-promotional-element--circle {
+  @include promotional-element-circle(120px);
+}
+
+.c-promotional-element--circle--medium {
+  @include promotional-element-circle(90px);
+}
+
+.c-promotional-element--circle--small {
+  @include promotional-element-circle(80px);
+}
+
+.c-promotional-element--bordered {
+    border-style: solid;
+    border-width: map-get($borders, l);
+}
+
+.c-promotional-element--rotate {
+  transform: rotate(8deg);
+}
+
+.c-promotional-element--rounded-rectangle {
+  width: 128px;
+  height: 104px;
+  border-radius: map-get($border-radius, m);
+}
+
+.c-promotional-element--rounded-rectangle--small {
+  width: 96px;
+  height: 66px;
+  border-radius: map-get($border-radius, m);
+
+  .c-promotional-element__inner {
+    margin: map-get($sizes, 5xs) map-get($sizes, s);
+  }
+}
+
+
+.c-promotional-element--square {
+  width: 96px;
+  height: 104px;
+  border-top: solid map-get($borders, xl);
+  border-bottom: solid map-get($borders, xl);
+  padding: map-get($sizes, 2xs) map-get($sizes, 5xs);
+
+  .c-promotional-element__headline {
+    margin: (-1 * map-get($sizes, 2xs)) map-get($sizes, 5xs);
+  }
+
+  .c-promotional-element__inner {
+    margin: map-get($sizes, 5xs);
+    text-align: left !important;
+  }
+}
+
+.c-promotional-element--three-corner-rounded {
+  width: 152px;
+  height:104px;
+  border-radius: map-get($border-radius, l) map-get($border-radius, l) 0 map-get($border-radius, l);
+}
+
+.c-promotional-element--tiny-rectangle {
+  border-radius: 0 0 map-get($border-radius, m) 0;
+  padding: map-get($sizes, 2xs) map-get($sizes, s);
+
+  .c-promotional-element__inner {
+    margin: map-get($sizes, 5xs);
+  }
+
+  .c-promotional-element__text-small {
+    font-size: map-get($font-sizes, 4xs);
+    font-weight: map-get($font-weight, semibold);
+    letter-spacing: map-get($letter-spacings, xs);
+  }
+}
+
+
+.c-promotional-element--style-1a { // circle, t-bg-white t-rich-petrol,rotate,
+  @extend .c-promotional-element--circle;
+  @extend .c-promotional-element--rotate;
+  @extend .t-bg-white;
+  @extend .t-rich-petrol;
+
+  .c-promotional-element__headline {
+    font-weight: map-get($font-weight, regular);
+  }
+
+  .c-promotional-element__headline-text-small {
+    font-weight: map-get($font-weight, regular);
+  }
+
+  .c-promotional-element__text-small {
+    margin-top: -1 * map-get($sizes, 3xs);
+    font-weight: map-get($font-weight, semibold);
+  }
+}
+
+.c-promotional-element--style-1b { // circle, red, bordered
+  @extend .c-promotional-element--circle;
+  @extend .c-promotional-element--rotate;
+  @extend .c-promotional-element--bordered;
+  @extend .t-rich-red;
+
+  .c-promotional-element__inner {
+    margin: map-get($sizes, 5xs) (map-get($sizes, s) - map-get($borders, l));
+  }
+
+  .c-promotional-element__headline {
+    font-weight: map-get($font-weight, bold);
+  }
+  .c-promotional-element__headline-text-small {
+    font-weight: map-get($font-weight, regular);
+  }
+  .c-promotional-element__text-small {
+    font-weight: map-get($font-weight, bold);
+    margin-top: -1 * map-get($sizes, 3xs);
+  }
+}
+
+.c-promotional-element--style-2a,
+.c-promotional-element--style-2b {
+  @extend .c-promotional-element--circle;
+  @extend .c-promotional-element--bordered;
+  .c-promotional-element__inner {
+    @extend .u-text-left;
+    margin: map-get($sizes, 5xs) (map-get($sizes, m) - map-get($borders, l));
+  }
+  .c-promotional-element__headline {
+    font-weight: map-get($font-weight, bold);
+    margin-top: -1 * map-get($sizes, 2xs);
+  }
+  .c-promotional-element__headline-text-small {
+    font-weight: map-get($font-weight, regular);
+  }
+  .c-promotional-element__text-small {
+    font-weight: map-get($font-weight, semibold);
+  }
+
+  .c-promotional-element__text-small:last-of-type {
+    margin-top: -1 * map-get($sizes, 2xs);
+  }
+}
+
+.c-promotional-element--style-2a {
+  @extend .t-rich-petrol;
+}
+.c-promotional-element--style-2b {
+  @extend .t-white;
+}
+
+.c-promotional-element--style-4 {
+  @extend .c-promotional-element--circle--small;
+  @extend .c-promotional-element--bordered;
+  @extend .t-rich-red;
+
+  .c-promotional-element__inner {
+    margin: map-get($sizes, 5xs) (map-get($sizes, 2xs) - map-get($borders, l));
+
+    .c-promotional-element__text-small {
+      font-weight: map-get($font-weight, bold);
+    }
+  }
+
+  .c-promotional-element__headline {
+    font-size: map-get($font-sizes, 2m);
+    line-height: map-get($line-heights, 2m);
+    font-weight: map-get($font-weight, semibold);
+    letter-spacing: map-get($letter-spacings, s);
+    text-align: center;
+
+    .c-promotional-element__headline-text-small {
+      font-size: map-get($font-sizes, 5xs);
+      line-height: map-get($line-heights, 4xs);
+      font-weight: map-get($font-weight, semibold);
+      letter-spacing: map-get($letter-spacings, m);
+      text-align: center;
+    }
+  }
+}
+
+.c-promotional-element--style-7a {
+  @extend .t-rich-petrol;
+  @extend .t-bg-white;
+  @extend .c-promotional-element--rotate;
+
+  width: 104px;
+  height: 72px;
+  border-radius: map-get($border-radius, m);
+  .c-promotional-element__inner {
+    margin: map-get($sizes, 5xs) map-get($sizes, s);
+    .c-promotional-element__headline {
+      font-size: map-get($font-sizes, 2m);
+      line-height: map-get($line-heights, 2m);
+      font-weight: map-get($font-weight, semibold);
+    }
+    .c-promotional-element__headline-text-small {
+      font-size: map-get($font-sizes, 3xs);
+      line-height: map-get($line-heights, 2xs);
+      font-weight: map-get($font-weight, semibold);
+      text-align: left;
+    }
+    .c-promotional-element__text-small {
+      margin-top:  -1 * map-get($sizes, 2xs);
+      font-weight: map-get($font-weight, semibold);
+      text-align: left;
+    }
+  }
+}
+
+.c-promotional-element--style-7b {
+  @extend .c-promotional-element--style-4;
+  @extend .c-promotional-element--rotate;
+  @extend .t-rich-petrol;
+  @extend .t-bg-white;
+
+  border:none;
+  .c-promotional-element__text-small {
+    margin-top: -1 * map-get($sizes, 2xs);
+    font-weight: map-get($font-weight, semibold);
+  }
+
+  .c-promotional-element__headline .c-promotional-element__headline-text-small {
+    font-size: map-get($font-sizes, 3xs);
+    line-height: map-get($line-heights, 2xs);
+    letter-spacing: map-get($letter-spacings, 2xs);
+    text-align: left;
+  }
+}
+
+.c-promotional-element--style-7c {
+  @extend .c-promotional-element--style-4;
+  @extend .t-rich-red;
+  @extend .t-bg-white;
+  border: none;
+  // color: #CB3B52;
+
+  .c-promotional-element__inner {
+    margin: map-get($sizes, 5xs) map-get($sizes, s);
+  }
+
+  .c-promotional-element__inner .c-promotional-element__headline {
+    margin-top: -1 * map-get($sizes, 2xs);
+    .c-promotional-element__headline-text-small {
+      font-size: map-get($font-sizes, 3xs);
+      line-height: map-get($line-heights, 2xs);
+      letter-spacing: map-get($letter-spacings, 2xs);
+      text-align: left;
+    }
+  }
+
+  .c-promotional-element__inner .c-promotional-element__text-small {
+    font-weight: map-get($font-weight, semibold);
+  }
+
+  .c-promotional-element__inner .c-promotional-element__text-small:last-of-type {
+    margin-top: -1 * map-get($sizes, 2xs);
+    text-align: center;
+  }
+}
+
+.c-promotional-element--style-3a {
+  @extend .c-promotional-element--rounded-rectangle;
+  @extend .t-rich-red;
+  @extend .t-bg-white;
+  @extend .c-promotional-element--rotate;
+  .c-promotional-element__headline {
+    font-weight: map-get($font-weight, regular);
+  }
+
+  .c-promotional-element__text-small {
+    font-weight: map-get($font-weight, semibold);
+  }
+}
+
+.c-promotional-element--style-3b {
+  @extend .c-promotional-element--rounded-rectangle;
+  @extend .t-bg-vibrant-purple;
+  @extend .t-white;
+  @extend .c-promotional-element--rotate;
+}
+
+.c-promotional-element--style-8a {
+  @extend .c-promotional-element--rounded-rectangle;
+  @extend .t-rich-red;
+  @extend .t-bg-white;
+  @extend .c-promotional-element--rotate;
+  width: 128px;
+  height: 80px;
+
+  .c-promotional-element__text-small {
+    font-weight: map-get($font-weight, semibold);
+  }
+}
+
+.c-promotional-element--style-8b {
+  @extend .c-promotional-element--rounded-rectangle--small;
+  @extend .t-white;
+  @extend .t-bg-rich-red;
+  @extend .c-promotional-element--rotate;
+
+  .c-promotional-element__text-small {
+    font-weight: map-get($font-weight, semibold);
+  }
+}
+
+.c-promotional-element--style-5 {
+  @extend .c-promotional-element--square;
+  @extend .t-rich-petrol;
+
+  .c-promotional-element__headline,
+  .c-promotional-element__text-small {
+    text-align: left;
+  }
+
+  .c-promotional-element__text-small {
+    font-weight: map-get($font-weight, semibold);
+  }
+}
+
+.c-promotional-element--style-5-red {
+  @extend .c-promotional-element--square;
+  @extend .t-rich-red;
+}
+
+.c-promotional-element--style-6a {
+  @extend .c-promotional-element--three-corner-rounded;
+  @extend .t-rich-petrol;
+  @extend .t-bg-white;
+
+  .c-promotional-element__headline {
+    margin: map-get($sizes, 5xs);
+    font-weight: map-get($font-weight, semibold);
+    letter-spacing: map-get($letter-spacings, 2xs);
+  }
+
+  .c-promotional-element__headline-text-small {
+    font-size: map-get($font-sizes, 3xs);
+    line-height: map-get($line-heights, 2xs);
+    font-weight: map-get($font-weight, bold);
+    margin: map-get($sizes, 5xs);
+  }
+
+  .c-promotional-element__text-small:last-of-type {
+    margin-top: -1 * map-get($sizes, 2xs);
+    font-weight: map-get($font-weight, regular);
+    font-size: map-get($font-sizes, 3xs);
+    line-height: map-get($line-heights, 2xs);
+    letter-spacing: map-get($letter-spacings, 2xs);
+  }
+
+  .c-promotional-element__inner {
+    margin: map-get($sizes, 5xs) map-get($sizes, s);
+  }
+}
+
+.c-promotional-element--style-6b {
+  @extend .c-promotional-element--style-6a;
+  color: map-get($color-grey-tones, grey-tone-1);
+  background-color: map-get($color-vibrant, vibrant-orange);
+
+}
+
+.c-promotional-element--style-9b {
+  @extend .c-promotional-element--tiny-rectangle;
+  @extend .t-bg-vibrant-blue;
+}
+
+.c-promotional-element--style-9a {
+  @extend .c-promotional-element--tiny-rectangle;
+  @extend .t-bg-vibrant-orange;
+}
+
+.c-promotional-element--style-2a,
+.c-promotional-element--style-2b,
+.c-promotional-element--style-6a,
+.c-promotional-element--style-7c,
+.c-promotional-element--style-9a,
+.c-promotional-element--style-9b {
+  * {
+    text-align: left;
+  }
+}

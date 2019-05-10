@@ -1,0 +1,214 @@
+.c-radio-toggle {
+  display: inline-flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+
+  @include media-breakpoint-response("mobile") {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+.c-radio-toggle__input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.c-radio-toggle__icon {
+  display: none;
+  margin-right: map-get($sizes, 2xs);
+  font-size: map-get($font-sizes, s);
+  color: map-get($color-basic, primary-white);
+  align-items: center;
+}
+
+.c-radio-toggle__text {
+  display: inline-flex;
+  align-content: center;
+  font-size: map-get($font-sizes, 3xs);
+  font-weight: map-get($font-weight, semibold);
+  line-height: map-get($line-heights, 2xs);
+  letter-spacing: map-get($letter-spacings, 2m);
+  text-transform: uppercase;
+
+  @include media-breakpoint-response("mobile") {
+    display: inline-block;
+  }
+}
+
+.c-radio-toggle__input:checked + .c-radio-toggle__label {
+  background-color: map-get($color-primary-action, primary-action-bright);
+  cursor: default;
+  pointer-events: none;
+
+  .c-radio-toggle__icon {
+
+    @include media-breakpoint-response("mobile") {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .c-radio-toggle__text {
+    color: map-get($color-basic, primary-white);
+  }
+}
+
+.c-radio-toggle__label {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  border: map-get($borders, m) solid map-get($color-primary-action, primary-action-bright);
+  border-radius: 0;
+  color: map-get($color-primary-action, primary-action-dark);
+  cursor: pointer;
+  padding: (map-get($sizes, xs) - map-get($borders, m)) (map-get($sizes, 2m) - map-get($borders, m));
+  text-align: center;
+
+  @include media-breakpoint-response("mobile") {
+    border-width: map-get($borders, m) map-get($borders, m) map-get($borders, m) map-get($borders, m);
+    flex: 1 1 auto;
+    align-items: flex-start;
+  }
+}
+
+.c-radio-toggle__input {
+  &:first-child + .c-radio-toggle__label {
+    border-radius: map-get($border-radius, s) 0 0 map-get($border-radius, s);
+    border-width: map-get($borders, m) 0 map-get($borders, m) map-get($borders, m);
+
+    @include media-breakpoint-response("mobile") {
+      border-radius: map-get($border-radius, s) map-get($border-radius, s) 0 0;
+      border-width: map-get($borders, m) map-get($borders, m) 0 map-get($borders, m);
+    }
+  }
+}
+
+.c-radio-toggle__input {
+  &:last-of-type + .c-radio-toggle__label {
+    border-radius: 0 map-get($border-radius, s) map-get($border-radius, s) 0;
+    border-width: map-get($borders, m) map-get($borders, m) map-get($borders, m) 0;
+
+    @include media-breakpoint-response("mobile") {
+      border-radius: 0 0 map-get($border-radius, s) map-get($border-radius, s);
+      border-width: 0 map-get($borders, m) map-get($borders, m) map-get($borders, m);
+    }
+  }
+}
+
+.c-radio-toggle__input {
+  &:hover+.c-radio-toggle__label {
+    background-color: map-get($color-primary-action, primary-action-darker);
+    border-color: map-get($color-primary-action, primary-action-darker);
+    color: map-get($color-basic, primary-white);
+  }
+
+  &:active+.c-radio-toggle__label {
+    background-color: map-get($color-basic, primary-brand);
+    border-color: map-get($color-basic, primary-brand);
+    color: map-get($color-basic, primary-white);
+  }
+
+  &:disabled+.c-radio-toggle__label {
+    color: rgba(map-get($color-primary-action, primary-action-bright), 0.4);
+    border-color: rgba(map-get($color-primary-action, primary-action-bright), 0.4);
+    pointer-events: none;
+    .c-radio-toggle__icon {
+      color: rgba(map-get($color-basic, primary-white), 0.4);
+    }
+  }
+}
+
+.c-radio-toggle__input:checked {
+  &:disabled+.c-radio-toggle__label {
+    background-color: rgba(map-get($color-primary-action, primary-action-bright), 0.4);
+    border-color: transparent;
+    .c-radio-toggle__icon,
+    .c-radio-toggle__text {
+      color: rgba(map-get($color-basic, primary-white), 0.4);
+    }
+  }
+}
+
+// Focus (TODO: please use defined focusstyle from design it is missing yet)
+.c-radio-toggle__input,
+.c-radio-toggle--negative .c-radio-toggle__input  {
+  &:focus+.c-radio-toggle__label {
+    [data-whatinput="keyboard"] & {
+      cursor: not-allowed;
+      background-color: map-get($color-functional, accessibility);
+      border-color: map-get($color-functional, accessibility);
+      box-shadow: map-get($shadows, l);
+      .c-radio-toggle__icon,
+      .c-radio-toggle__text {
+        color: map-get($color-basic, primary-white);
+      }
+    }
+  }
+}
+
+// Small radio toggle
+.c-radio-toggle--small .c-radio-toggle__label {
+  padding: map-get($sizes, 2xs) - map-get($borders, m);
+  flex: 1 0 auto;
+
+  @include media-breakpoint-response("mobile") {
+    padding: (map-get($sizes, xs) - map-get($borders, m)) (map-get($sizes, 2m) - map-get($borders, m));
+  }
+
+  .c-radio-toggle__text {
+    font-size: map-get($font-sizes, 4xs);
+    line-height: map-get($line-heights, 4xs);
+    text-transform: capitalize;
+
+    @include media-breakpoint-response("mobile") {
+      font-size: map-get($font-sizes, 3xs);
+      line-height: map-get($line-heights, 2xs);
+    }
+  }
+}
+
+// negative version on coloured backgrounds
+.c-radio-toggle--negative {
+  .c-radio-toggle__label {
+    border-color: map-get($color-basic, primary-white);
+    color: map-get($color-basic, primary-white);
+  }
+
+  .c-radio-toggle__input:checked+.c-radio-toggle__label {
+    background-color: map-get($color-basic, primary-white);
+    .c-radio-toggle__icon,
+    .c-radio-toggle__text {
+      color: map-get($color-primary-action, primary-action-dark);
+    }
+  }
+}
+
+.c-radio-toggle--negative {
+  .c-radio-toggle__input {
+    &:hover + .c-radio-toggle__label {
+      background-color: map-get($color-grey-tones, grey-tone-6);
+      border-color: map-get($color-grey-tones, grey-tone-6);
+      color: map-get($color-primary-action, primary-action-dark);
+    }
+
+    &:disabled+.c-radio-toggle__label {
+      border-color: rgba(map-get($color-basic, primary-white), 0.4);
+      .c-radio-toggle__text {
+        color: rgba(map-get($color-basic, primary-white), 0.3);
+      }
+    }
+  }
+
+  .c-radio-toggle__input:checked {
+    &:disabled + .c-radio-toggle__label {
+      background-color: rgba(map-get($color-basic, primary-white), 0.4);
+      border-color: transparent;
+      .c-radio-toggle__icon,
+      .c-radio-toggle__text {
+        color: rgba(map-get($color-grey-tones, grey-tone-1), 0.3);
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../common/mixins';
+
+// Allianz Neo font embed
+@include font-face('Allianz Neo', '../fonts/allianz-neo/AllianzNeoW04-Light', 300);
+@include font-face('Allianz Neo', '../fonts/allianz-neo/AllianzNeoW04-LightItalic', 300, italic);
+@include font-face('Allianz Neo', '../fonts/allianz-neo/AllianzNeoW04-Regular', 400);
+@include font-face('Allianz Neo', '../fonts/allianz-neo/AllianzNeoW04-Italic', 400, italic);
+@include font-face('Allianz Neo', '../fonts/allianz-neo/AllianzNeoW04-SemiBold', 600);
+@include font-face('Allianz Neo', '../fonts/allianz-neo/AllianzNeoW04-SemiBoldIt', 600, italic);
+@include font-face('Allianz Neo', '../fonts/allianz-neo/AllianzNeoW04-Bold', 700);
+@include font-face('Allianz Neo', '../fonts/allianz-neo/AllianzNeoW04-BoldItalic', 700, italic);
+
+html {
+    font-family: "Allianz Neo", sans-serif;
+    font-size: 62.5%;
+    font-display: swap;
+}
+
+// Prompt font (Thai)
+@include font-face('Prompt', '../fonts/prompt/Prompt-Light', 300);
+@include font-face('Prompt', '../fonts/prompt/Prompt-LightItalic', 300, italic);
+@include font-face('Prompt', '../fonts/prompt/Prompt-Regular', 400);
+@include font-face('Prompt', '../fonts/prompt/Prompt-Italic', 400, italic);
+@include font-face('Prompt', '../fonts/prompt/Prompt-SemiBold', 600);
+@include font-face('Prompt', '../fonts/prompt/Prompt-SemiBoldItalic', 600, italic);
+@include font-face('Prompt', '../fonts/prompt/Prompt-Bold', 700);
+@include font-face('Prompt', '../fonts/prompt/Prompt-BoldItalic', 700, italic);
+
+html:lang(th) {
+   font-family: 'Prompt', sans-serif !important;
+}
+
+html:lang(el) {
+    font-family: Arial, Helvetica, sans-serif;
+  }

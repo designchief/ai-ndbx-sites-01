@@ -1,0 +1,102 @@
+.c-list {
+  color: map-get($color-grey-tones, grey-tone-1);
+  list-style: none;
+  margin-bottom: 30px;
+  counter-reset: list;
+  font-size: map-get($font-sizes, 2xs);
+  line-height: map-get($line-heights , 2xs);
+  letter-spacing: map-get($letter-spacings, xs);
+  font-weight: map-get($font-weight, regular);
+}
+
+.c-list__item {
+  padding-left: map-get($sizes, xs) + map-get( $sizes, m ); 
+  margin-bottom: map-get( $sizes , s );
+  position: relative;
+  word-break: break-word;
+}
+
+.c-list__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: map-get( $sizes, m );
+  height: map-get( $sizes, m );  
+  min-width: map-get( $sizes, m ); // IE Flex issue
+  text-align: center;
+  overflow: hidden;
+  font-size: map-get( $font-sizes, s );
+}
+
+.c-list__icon {
+  text-align: center;
+  line-height: inherit;
+}
+
+ul .c-list__item:before,
+.c-list__item--icon:before {
+  @extend .c-icon; // sass-lint:disable-line no-extends
+  @extend .c-icon--dot; // sass-lint:disable-line no-extends
+  @extend .c-list__icon; // sass-lint:disable-line no-extends
+  @extend .t-rich-grey; // sass-lint:disable-line no-extends
+}
+
+ol.c-list .c-list__icon::before {
+  counter-increment: list;
+  content: counter(list);
+  font-size: map-get($font-sizes, 2xs);
+  font-weight: map-get( $font-weight, bold);
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+ol.c-list.c-list--ordered-circle .c-list__icon::before {
+    color: map-get($color-basic, primary-white);
+    background-color: map-get($color-rich, rich-grey);
+    width: map-get( $sizes, m);
+    height: map-get( $sizes, m);  
+    line-height: map-get($line-heights , 2xs);
+    font-size: map-get( $font-sizes, 3xs);
+    font-weight: map-get( $font-weight, regular);  
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    // Chrome Workaroud to fix font issue with vertical align
+    /*@media screen and (-webkit-min-device-pixel-ratio:0) {
+      line-height: map-get($line-heights , 2xs) + 1px;
+    }*/
+}
+
+.c-list--icon {
+  .c-list__item:before {
+    display: none;
+  }
+}
+
+.c-list--negative {
+  .c-list__item,
+  .c-list__icon,
+  .c-list__item:before {
+    color: map-get($color-basic, primary-white);
+  }
+}
+
+ol.c-list--negative.c-list--ordered-circle .c-list__icon::before {
+  color: map-get($color-rich, rich-green);
+
+  @media screen and (-ms-high-contrast: active) {
+    color: map-get($color-high-contrast, "green");
+  }
+}
+
+.c-list--small {
+  font-size: map-get($font-sizes, 3xs);
+  letter-spacing: normal;
+}
+
+.c-copy .c-list {
+  font-size: inherit;
+  line-height: inherit;
+}

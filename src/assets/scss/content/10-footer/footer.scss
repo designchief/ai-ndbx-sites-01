@@ -1,0 +1,557 @@
+// @import '../../../stylesheets/base/variables/color-object';
+// Local Element
+%footer__link {
+  color: map-get($color-grey-tones, grey-tone-3);
+  font-size: map-get($font-sizes, 3xs);
+  font-weight: map-get($font-weight, regular);
+  letter-spacing: map-get($letter-spacings, 2xs);
+  line-height: map-get($line-heights, 2xs);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: map-get($color-grey-tones, grey-tone-3);
+    // TODO: when defined by design, use standard focus and hover styles from Link atom
+  }
+}
+
+.c-footer {
+  position: relative;
+
+  .c-footer--active-curtain & {
+    position: static;
+  }
+}
+
+.c-footer__container {
+  position: relative;
+  background: map-get($color-basic, primary-white);
+  z-index: 1;
+
+  @include media-breakpoint-response(mobile) {
+    box-shadow: none;
+ }
+
+  // Shadow variable is not available for this value.
+  .c-footer--active-shadow & {
+    box-shadow: 0 40px 60px -35px $c-black-shadow;
+    transition: box-shadow .3s;
+
+    @include media-breakpoint-response(mobile) {
+      box-shadow: none;
+   }
+  }
+  .c-footer--active-curtain & {
+    z-index: 1;
+
+     @include media-breakpoint-response(mobile) {
+        box-shadow: none;
+     }
+  }
+}
+
+.c-footer__container--curtain-panel {
+  width: 100%;
+
+  .c-footer--active-curtain & {
+    left: map-get($sizes, 5xs);
+    right: map-get($sizes, 5xs);
+    position: fixed;
+    bottom: map-get($sizes, 5xs);
+    z-index: -1;
+  }
+
+  @include media-breakpoint-response(mobile) {
+    position: absolute;
+  }
+
+}
+
+// Actions
+.c-footer__actions {
+  padding: map-get($sizes, l) map-get($sizes, 2m) map-get($sizes, 3m);
+  display: block;
+
+  @include media-breakpoint-response(mobile) {
+    display: none;
+
+    &.is-shown {
+      display: block;
+      padding: map-get($sizes, 5xs) map-get($sizes, s) map-get($sizes, 2xs);
+    }
+  }
+}
+
+.c-footer__action-holder {
+  text-align: center;
+}
+
+.c-footer__action-button {
+  margin-bottom: map-get($sizes, s);
+  width: 100%;
+  display: inherit;
+
+  @include media-breakpoint-response(tablet) {
+    display: none;
+  }
+
+  @include media-breakpoint-response(desktop) {
+    display: inherit;
+  }
+
+  @include media-breakpoint-response(mobile) {
+    margin-bottom: map-get($sizes, 3m);
+  }
+}
+
+.c-footer__action-link {
+  display: none;
+
+  @include media-breakpoint-response(tablet) {
+    display: inline-flex;
+    text-align: left;
+    margin-bottom: map-get($sizes, 3xs);
+  }
+}
+
+.c-footer__action-headline {
+  font-weight: map-get($font-weight, semibold);
+  margin-bottom: map-get($sizes, 3xs);
+
+  @include media-breakpoint-response(mobile) {
+    margin-bottom: map-get($sizes, 2xs);
+    font-size: map-get($font-sizes, xs);
+  }
+}
+
+.c-footer__action-description {
+  margin-bottom: map-get($sizes, m);
+
+  @include media-breakpoint-response(tablet) {
+    color: map-get($color-grey-tones, grey-tone-1);
+    font-size: map-get($font-sizes, 4xs);
+    letter-spacing: map-get($letter-spacings, xs);
+    line-height: map-get($line-heights, 3xs);
+  }
+}
+
+.c-footer__action-footer {
+  @include media-breakpoint-response(tablet) {
+    font-size: map-get($font-sizes, 4xs);
+    letter-spacing: map-get($letter-spacings, xs);
+    line-height: map-get($line-heights, 3xs);
+  }
+}
+
+// Navigation
+.c-footer__navigation {
+  background: map-get($color-grey-tones, grey-tone-8);
+  padding-top: map-get($sizes, 2m);
+
+  @include media-breakpoint-response(mobile) {
+    padding-top: map-get($sizes, 5xs);
+    border-top: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    background-color: map-get($color-basic, primary-white);
+  }
+}
+
+.c-footer__navigation-headline {
+  font-weight: map-get($font-weight, semibold);
+  color: map-get($color-grey-tones, grey-tone-2);
+  margin-bottom: map-get($sizes, m);
+
+  @include media-breakpoint-response(mobile) {
+    background: map-get($color-grey-tones, grey-tone-8);
+    font-size: map-get($font-sizes, xs);
+    margin: map-get($sizes, 5xs);
+    padding: map-get($sizes, s);
+    border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    cursor: pointer;
+  }
+}
+
+.c-footer__navigation-headline::before {
+  display: none;
+
+  @include media-breakpoint-response(mobile) {
+    width: map-get($sizes , m);
+    height: map-get($sizes, m);
+    font-size: map-get($sizes, m);
+    color:  map-get($color-primary-action, primary-action-dark);
+    position: absolute;
+    display: block;
+    right: map-get($sizes, s);
+    top: map-get($sizes, s) + map-get($sizes, 4xs);
+  }
+}
+
+@include media-breakpoint-response(mobile) {
+  .l-grid--max-width.u-background-inherit {
+    padding: map-get($sizes, 5xs);
+
+    .l-grid__row {
+      margin: map-get($sizes, 5xs);
+      
+      .l-grid__column-medium-3 {
+        padding: map-get($sizes, 5xs);
+      }
+    }
+  }
+}
+
+.c-footer__navigation-link {
+  @extend %footer__link;
+  color: map-get($color-grey-tones, grey-tone-2);
+}
+
+.c-footer__navigation-list {
+  list-style: none;
+  margin: map-get($sizes, 5xs);
+  padding: map-get($sizes, 5xs);
+  @include media-breakpoint-response(mobile) {
+    display: none;
+    padding: map-get($sizes, m) map-get($sizes, s) map-get($sizes, s);
+    border-bottom: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+  }
+}
+
+.c-footer__navigation-item {
+  margin-bottom: map-get($sizes, s);
+
+  &:last-child {
+    padding-bottom: map-get($sizes, 5xs);
+  }
+}
+
+// Service Content Container
+// Holds: Legal Links, Social Icons, Copyright and Phone Number
+.c-footer__service {
+  @extend .l-container;
+  display: flex;
+  padding: map-get($sizes, 2m);
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+
+  @include media-breakpoint-response(mobile) {
+    padding: map-get($sizes, 4m) map-get($sizes, s);
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+// Arrange service content differently on larger screens
+.c-footer__service {
+  .c-footer__social {
+    order: 1;
+  }
+
+  .c-footer__copyright {
+    order: -1;
+
+    @include media-breakpoint-response(mobile) {
+      order: 2;
+      margin: map-get($sizes, 5xs);
+    }
+  }
+}
+
+// Social
+.c-footer__social {
+  display: flex;
+  justify-content: center;
+  padding-bottom: map-get($sizes, l);
+
+  @include media-breakpoint-response(mobile) {
+    padding-top: map-get($sizes, 3m);
+  }
+}
+
+.c-footer__social-link {
+  color: map-get($color-grey-tones, grey-tone-3);
+  font-size: map-get($sizes, m);
+  padding: map-get($sizes, 5xs) map-get($sizes, l)/2;
+  text-decoration: none;
+
+  @include media-breakpoint-response(mobile) {
+    padding: map-get($sizes, 5xs) map-get($sizes, 3m)/2;
+  }
+}
+
+// Othe
+.c-footer__copyright {
+  display: inline-block;
+  margin-right: map-get($sizes, 2m);
+}
+
+.c-footer__legal {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-response(mobile) {
+    flex-direction: column;
+  }
+}
+
+.c-footer__legal-link {
+  @extend %footer__link;
+  display: inline-block;
+  margin-right: map-get($sizes, m);
+
+  @include media-breakpoint-response(mobile) {
+    display: block;
+    margin: map-get($sizes, 5xs);
+    padding-bottom: map-get($sizes, m);
+  }
+}
+
+.c-footer__phone {
+  .c-phone-link__icon{
+    color: map-get($color-grey-tones, grey-tone-1);
+  }
+}
+
+.c-footer__logo {
+  display: none;
+  margin-bottom: map-get($sizes, 3m);
+
+  @include media-breakpoint-down("small") {
+    display: inline-block;
+  }
+
+  .c-image__img {
+    width: 128px;
+    margin: 0 auto;
+  }
+}
+
+.c-footer__tagline-headline {
+  color: map-get($color-grey-tones, grey-tone-3);
+  margin-bottom: map-get($sizes, 3m);
+  margin-top: map-get($sizes, 4m);
+  text-align: center;
+}
+
+.c-footer__phone {
+  display: inline-flex;
+
+  .c-phone-link__icon::before {
+    width: map-get($sizes, m);
+    height: map-get($sizes, m);
+    display: inline-block;
+  }
+
+  @include media-breakpoint-response(mobile) {
+    display: none;
+  }
+}
+
+// Only on larger screens
+.c-footer__divider,
+.c-footer__action-footer,
+.c-footer__tagline,
+.c-footer__navigation__illustrator-container {
+  display: block;
+  margin: auto;
+
+  @include media-breakpoint-response(mobile) {
+    display: none;
+  }
+}
+
+.c-footer__curtain-panel {
+  left: map-get($sizes, 5xs);
+  right: map-get($sizes, 5xs);
+  overflow: hidden;
+  text-align: center;
+  padding-top: map-get($sizes, 4m);
+  padding-bottom: map-get($sizes, xl);
+  color: map-get($color-basic, primary-white);
+  background-color: map-get($color-basic, primary-brand);
+
+  @include media-breakpoint-response(mobile) {
+    position: relative;
+    visibility: visible;
+    padding-top: map-get($sizes, 3m);
+    padding-bottom: map-get($sizes, 4m);
+  }
+
+  .c-footer--active-curtain & {
+    position: relative;
+    visibility: visible;
+  }
+}
+
+.c-footer__curtain-panel-container {
+  position: absolute;
+  top: map-get($sizes, 5xs);
+}
+
+.c-footer__curtain-panel-button {
+  margin: map-get($sizes, 5xs);
+}
+
+.c-footer__curtain-panel-headline {
+  margin-bottom: map-get($sizes, s);
+
+  @include media-breakpoint-response(mobile) {
+    margin-bottom: map-get($sizes, m);
+  }
+}
+
+.c-footer__curtain-panel-copytext {
+  margin-bottom: map-get($sizes, 2m);
+  font-size: map-get($font-sizes, xs);
+  font-weight: map-get($font-weight, light);
+  letter-spacing: map-get($letter-spacings, xs);
+  line-height: map-get($line-heights, xs);
+
+  @include media-breakpoint-response(mobile) {
+    margin-bottom: map-get($sizes, 2m);
+    font-size: map-get($font-sizes, 2xs);
+    line-height: map-get($line-heights, 2xs);
+    font-weight: map-get($font-weight, regular);
+  }
+}
+
+//  Super Ordinated Button
+.c-footer__super-ordinated-button {
+  display: none;
+
+  @include media-breakpoint-response(mobile) {
+    display: block;
+    text-align: center;
+    padding: map-get($sizes, 2m) map-get($sizes, s) map-get($sizes, s);
+  }
+}
+
+.c--footer__super-ordinated-button__header {
+  font-size: map-get($exception-font-sizes, m);
+  letter-spacing: map-get($letter-spacings, s);
+  line-height: map-get($line-heights, 3m);
+  font-weight: map-get($font-weight, light);
+  margin-bottom: map-get($sizes, 2m);
+}
+
+.c--footer__super-ordinated-button__label {
+  font-size: map-get($font-sizes, 3xs);
+  letter-spacing: map-get($letter-spacings, 2xs);
+  line-height: map-get($line-heights, 2xs);
+  font-weight: map-get($font-weight, regular);
+  margin-bottom: map-get($sizes, s);
+}
+
+.c--footer__super-ordinated-button__phone-label {
+  margin-bottom: map-get($sizes, 2xs);
+  font-size: map-get($font-sizes, 3xs);
+  letter-spacing: map-get($letter-spacings, 2xs);
+  line-height: map-get($line-heights, 2xs);
+  font-weight: map-get($font-weight, semibold);
+}
+
+.c--footer__super-ordinated-button__telephone-label {
+  font-size: map-get($font-sizes, 2m);
+  letter-spacing: map-get($letter-spacings, s);
+  line-height: map-get($line-heights, 2m);
+  margin-bottom: map-get($sizes, 2m);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c--footer__super-ordinated-button__telephone-label::before {
+  margin-right: map-get($sizes, 2xs);
+  font-size: map-get($sizes, 2m);
+}
+
+.c--footer__super-ordinated-button__label.u-text-weight-bold {
+  @include media-breakpoint-response(mobile) {
+    margin-bottom: map-get($sizes, 2xs);
+  }
+}
+
+.c--footer__super-ordinated-button__telephone-button {
+  text-transform: uppercase;
+  margin-bottom: map-get($sizes, 5xs);
+
+  &.is-hidden {
+    display: none;
+  }
+
+  @include media-breakpoint-response(mobile) {
+    margin-bottom: map-get($sizes, 2m);
+  }
+}
+
+.c-footer__navigation__illustrator-container{
+  width: 100%;
+  background: inherit;
+  margin-left: map-get($sizes, 5xs);
+  margin-right: map-get($sizes, 5xs);
+  .c-image{
+    width: 352px;
+    margin: auto;
+    top: map-get($sizes, s);
+    background: inherit;
+    border-radius: map-get($border-radius, m);
+    @include  media-breakpoint-down('medium') {
+      width: 50%;
+    }
+  }
+  .c-image__img{
+    width: 232px;
+    height: 128px;
+    margin: auto;
+  }
+}
+
+.c-footer--lightweight {
+  .c-footer__social {
+    @include media-breakpoint-response(mobile) {
+      display: none;
+    }
+  }
+
+  .c-footer__copyright {
+    @include media-breakpoint-response(mobile) {
+      margin-top: map-get($sizes, 3m);
+    }
+  }
+}
+
+.c--footer__super-ordinated-button__icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: map-get($sizes, m);
+}
+
+.c--footer__super-ordinated-button__icon {
+  width: 120px;
+  height: 120px;
+  background: map-get($color-primary-action, primary-action-bright);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c--footer__super-ordinated-button__icon::before {
+  color: map-get($color-basic, primary-white);
+  font-size: map-get($sizes, 2xl);
+}
+
+.c--footer__super-ordinated-button__phone-section {
+  display: inline-flex;
+}
+
+.c--footer__super-ordinated-button__phone-icon {
+  width: map-get($sizes, 2m);
+  height: map-get($sizes, 2m);
+  font-size: map-get($sizes, 2m);
+  margin-right: map-get($sizes, 2xs);
+}

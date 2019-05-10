@@ -1,0 +1,149 @@
+.c-search-form {
+  background-color: map-get($color-soft-light, soft-blue-light);
+  padding-top: map-get($sizes, 3m);
+  padding-bottom: map-get($sizes, 3m);
+
+  @include media-breakpoint-response(mobile) {
+    padding-top: map-get($sizes, s) - map-get($sizes, 4xs);
+    padding-bottom: map-get($sizes, s) - map-get($sizes, 4xs);
+  }
+
+    // atom(x): c-button
+  .c-search-form__button {
+    margin: map-get($sizes, 5xs);
+    padding: map-get($sizes, xs) map-get($sizes, 2m);
+    border: none;
+
+
+    @include media-breakpoint-response(mobile) {
+      display: none;
+    }
+  }
+
+  // atom(x): c-button
+  .c-search-form__button--mobile {
+    margin: map-get($sizes, 5xs);
+    padding: map-get($sizes, 2xs) map-get($sizes, s);
+    border: none;
+  }
+}
+
+.c-search-form__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c-search-form__search-icon {
+  align-self: flex-start;
+  margin-top: map-get($sizes, 2xs);
+  margin-right: map-get($sizes, s);
+
+  @include media-breakpoint-response(mobile) {
+    display: none;
+  }
+
+  .c-icon--search {
+    display: block;
+    color: map-get($color-primary-action, primary-action-dark);
+    width: map-get($sizes, m);
+    height: map-get($sizes, m);
+    font-size: map-get($font-sizes, s);
+  
+  }
+
+  .c-icon--search::before {
+    display: block;
+    width: map-get($sizes, m);
+    height: map-get($sizes, m);
+  }
+}
+
+.c-search-form__input-holder {
+  flex: 1 1 100%;
+  align-self: center;
+  background-color: map-get($color-soft-light, soft-blue-light);
+  display: flex;
+  margin-right: map-get($sizes, m);
+
+  @include media-breakpoint-response(mobile) {
+    margin-right: map-get($sizes, s);
+  }  
+}
+
+.c-search-form__input {
+  font-size: map-get($font-sizes, 2m);
+  line-height: map-get($line-heights, 2m);
+  letter-spacing: map-get($letter-spacings, s);
+  outline: none;
+  border: none;
+  color: map-get($color-primary-action, primary-action-dark);
+  font-weight: map-get($font-weight, semibold);
+  width: 100%;
+  padding: map-get($sizes, 5xs) map-get($sizes, 2m) map-get($sizes, 2xs) - map-get($borders, xs) map-get($sizes, 2xs);
+  background-color: map-get($color-soft-light, soft-blue-light);
+  border-bottom: map-get($borders, xs) solid map-get($color-primary-action, primary-action-dark);
+  caret-color: map-get($color-grey-tones, grey-tone-1);
+
+
+  @include media-breakpoint-response(mobile) {
+    height: map-get($sizes, m) + map-get($sizes, 3xs);
+    font-size: map-get($font-sizes, 2xs);
+    line-height: map-get($line-heights, xs);
+    letter-spacing: map-get($letter-spacings, xs);
+    padding: map-get($sizes, 5xs);
+    padding-right: map-get($sizes, m);
+    border-bottom: none;
+    box-shadow: inset 0 (- map-get($borders, xs)) map-get($color-primary-action, primary-action-dark);
+  }
+
+  &::placeholder {
+    font-weight: map-get($font-weight, light);
+    font-size: map-get($font-sizes, 2m);
+    letter-spacing: map-get($letter-spacings, s);
+    line-height: map-get($line-heights, 2m);
+    color: map-get($color-grey-tones, grey-tone-3);
+
+    @include media-breakpoint-response(mobile) {
+      height: map-get($sizes, m) + map-get($sizes, 3xs);
+      font-weight: map-get($font-weight, light);
+      font-size: map-get($font-sizes, 2xs);
+      letter-spacing: map-get($letter-spacings, xs);
+      line-height: map-get($line-heights, xs);
+    }
+  }
+
+  //IE clear button hack
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+.c-search-form__close-icon {
+  align-self: center;
+  margin-left: - map-get($sizes, m);
+  
+  @include media-breakpoint-response(mobile) {
+    margin-left: - map-get($sizes, s);
+  }
+   
+  &::before {
+    color: map-get($color-primary-action, primary-action-dark);
+    font-size: map-get($font-sizes, s);
+    cursor: pointer;
+    display: block;
+    width: map-get($sizes, m);
+    height: map-get($sizes, m);
+    
+    @include media-breakpoint-response(mobile) {
+      font-size: map-get($font-sizes, 3xs);
+      width: map-get($sizes, s);
+      height: map-get($sizes, s);
+    }
+  }
+}
+
+.c-search-form__actions {
+  flex: 0 0 auto;
+}

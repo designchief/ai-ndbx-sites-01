@@ -1,0 +1,43 @@
+.c-progress-bar-linear {
+  .c-progress-bar-linear__title {
+    margin-bottom: map-get($sizes, m);
+  }
+
+  .c-progress-bar-linear__description {
+    margin-top: map-get($sizes, 2xs);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // atom(x): c-copy
+  .c-progress-bar-linear__description-text {
+    font-weight: map-get($font-weight, light);
+    margin: map-get($sizes, 5xs);
+
+    &:nth-child(1) {
+      margin-right: map-get($sizes, 2xs); 
+    }
+
+    &:nth-child(2) {
+      margin-left: map-get($sizes, 2xs);
+      text-align: right;
+    }
+  }
+
+  @include media-breakpoint-response(mobile) {
+    // atom(x): c-copy
+    .c-progress-bar-linear__description-text {
+      text-align: center;
+      font-weight: map-get($font-weight, regular);
+    }
+    // atom(x): c-progressbar
+    .c-progress-bar-linear__progress {
+      display: none;
+    }
+
+    .c-progress-bar-linear__description {
+      display: none;
+    }
+  }
+}
+
