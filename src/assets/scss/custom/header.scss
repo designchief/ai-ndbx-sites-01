@@ -1,11 +1,34 @@
-.c-header-metabar__descriptor {
-    border-left: 1px solid map-get($color-grey-tones, grey-tone-6);
-    height: 40px;
-    text-align: center;
-    padding-left: 30px;
-    margin-left:30px;
-  
-    @include media-breakpoint-response (tablet) {
-      padding-left: 20px;
-    }
-  }
+// Metabar
+.c-header-metabar__basic-link {
+  height: 40px;
+  border-left: 1px solid #D9D9D9;
+  margin-left: 24px;
+  padding-left: 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+
+}
+
+.c-header-metabar__basic-link--end {
+  border-left: 0px;
+  margin-left: 0;
+}
+
+// Phone Link
+.c-header__phone-link {
+
+}
+
+// Main Nav - Show Icons on Tablet
+// @media (min-width: 704px) and (max-width: 991px) {
+//     .c-subnavbar__icon {
+//         display: block;
+//     }
+//     .c-subnavbar__icon + .c-subnavbar__title {
+//       margin-left: 34px;
+//     }
+// }
