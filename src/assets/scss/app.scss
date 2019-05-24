@@ -1,13 +1,13 @@
 @charset 'utf-8';
 
-@import 'pattern-lab/style';
+// Importing Pattern Lab Sass resources to enable customisation
+@import 'pattern-lab-1.4/themes/allianz/variables/sizes.scss';
+@import 'pattern-lab-1.4/common/breakpoints';
+@import 'pattern-lab-1.4/common/grid';
+@import 'pattern-lab-1.4/themes/allianz/color-object';
 
-// @import 'themes/allianz/theme';
+// Importing Pattern Lab dist styles
+@import 'pattern-lab-1.4/style';
 
-// @import 'common';
-
-// @import 'base';
-// @import 'content';
-// @import 'forms';
-// @import 'global';
-// @import 'pages';
+// AI Customisation
+@import 'custom/header';

@@ -1,0 +1,181 @@
+@import '../../common/mixins';
+@import "../../../../node_modules/allianz-icons/dist/icons.scss";
+@import 'icon-object';
+@import 'fa-icon-mapping';
+
+@include font-face('Allianz-Icons', '../fonts/allianz-icons/Allianz-Icons', normal, normal, woff2 woff);
+
+/* pattern lab icons */
+.c-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    font-family: 'Allianz-Icons';
+    font-size: inherit;
+  }
+}
+
+.c-icon--functional:before {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+// Stacked Icons
+// -------------------------
+
+.c-icon--stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.c-icon--stack-1x, .c-icon--stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.c-icon--stack-1x {
+  line-height: inherit;
+}
+
+.c-icon--stack-2x {
+  font-size: 2em;
+}
+
+.c-icon--inverse {
+  color: map-get($color-basic, primary-white);
+}
+
+// Icon Sizes
+// -------------------------
+
+/* makes the font 33% larger relative to the icon container */
+.c-icon--lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+
+.c-icon--2x {
+  font-size: 2em;
+}
+
+.c-icon--3x {
+  font-size: 3em;
+}
+
+.c-icon--4x {
+  font-size: 4em;
+}
+
+.c-icon--5x {
+  font-size: 5em;
+}
+
+.c-icon--xs {
+  font-size: map-get($sizes, m);
+}
+
+.c-icon--s {
+  font-size: map-get($sizes, 3m);
+}
+
+.c-icon--m {
+  font-size: map-get($sizes, 4m);
+}
+
+.c-icon--l {
+  font-size: map-get($sizes, 2xl);
+}
+
+.c-icon--xl {
+  font-size: map-get($sizes, 5xl);
+}
+
+// Icon Variants
+// -------------------------
+.c-icon--outline {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid;
+  box-sizing: border-box;
+
+  &.c-icon--xs {
+    border-width: map-get($borders, xs);;
+    width: map-get($sizes, 3m);
+    height: map-get($sizes, 3m);
+  }
+  &.c-icon--s {
+    border-width: map-get($borders, s);
+    width: map-get($sizes, xl);
+    height: map-get($sizes, xl);
+  }
+  &.c-icon--m {
+    border-width: map-get($borders, m);;
+    width: map-get($sizes, 3xl);
+    height: map-get($sizes, 3xl);
+  }
+  &.c-icon--l {
+    border-width: map-get($borders, l);;
+    width: map-get($sizes, 5xl) + map-get($sizes, m);
+    height: map-get($sizes, 5xl) + map-get($sizes, m);
+  }
+  &.c-icon--xl {
+    border-width: map-get($borders, xl);
+    width: map-get($sizes, 5xl) + map-get($sizes, xl);
+    height: map-get($sizes, 5xl) + map-get($sizes, xl);
+  }
+}
+
+.c-icon--fill {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: soild transparent;
+  border-radius: 50%;
+  background: map-get($color-grey-tones, grey-tone-1);
+  color: map-get($color-basic, primary-white);
+
+  &.c-icon--xs {
+    border-width: map-get($borders, xs);
+    width: map-get($sizes, 3m);
+    height: map-get($sizes, 3m);
+  }
+  &.c-icon--s {
+    border-width: map-get($borders, s);
+    width: map-get($sizes, xl);
+    height: map-get($sizes, xl);
+  }
+  &.c-icon--m {
+    border-width: map-get($borders, m);
+    width: map-get($sizes, 3xl);
+    height: map-get($sizes, 3xl);
+  }
+  &.c-icon--l {
+    border-width: map-get($borders, l);
+    width: map-get($sizes, 5xl) + map-get($sizes, m);
+    height: map-get($sizes, 5xl) + map-get($sizes, m);
+  }
+  &.c-icon--xl {
+    border-width: map-get($borders, xl);
+    width: map-get($sizes, 5xl) + map-get($sizes, xl);
+    height: map-get($sizes, 5xl) + map-get($sizes, xl);
+  }
+}
