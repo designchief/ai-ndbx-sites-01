@@ -18,17 +18,40 @@
   margin-left: 0;
 }
 
-// Phone Link
-.c-header__phone-link {
-
+// Adding option to remove divider from Sub Nav
+.c-navcontent--no-divider {
+  &:before {
+    display: none;
+  }
 }
 
-// Main Nav - Show Icons on Tablet
-// @media (min-width: 704px) and (max-width: 991px) {
-//     .c-subnavbar__icon {
-//         display: block;
-//     }
-//     .c-subnavbar__icon + .c-subnavbar__title {
-//       margin-left: 34px;
-//     }
-// }
+// Mobile Nav
+// Adding padding option for level 0 content
+.c-accordion__item--level-0 {
+  .accordion__content--padded {
+    background-color: #F5F5F5;
+    padding: 25px;
+    padding-left: 60px; }
+}
+
+// CTA Tile for Mobile Nav
+.c-nav-card-tile {
+  margin: 0;
+
+  .c-nav-card-tile__container {
+    width: 100%;
+    padding: 20px 15px 34px;
+    display: block;
+    text-align: center; 
+  }
+
+}
+@media (max-width: 703px) {
+  .c-nav-card-tile {
+    margin: 0;
+    
+    .c-nav-card-tile__container {
+      padding: 20px 10px 34px;
+    }
+  } 
+}

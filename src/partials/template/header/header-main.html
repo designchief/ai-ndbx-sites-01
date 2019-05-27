@@ -10,11 +10,17 @@
                             </a>
                         </li>
                         <li role="menuitem" class="c-main-navbar__item">
-                            <a id="nav2" aria-expanded="false" aria-label="Advice" href="#" class="c-main-navbar__link js-main-navigation-link"><span class="c-main-navbar__title">Advice</span>
+                            <a id="nav2" aria-expanded="false" aria-label="MyAllianz" href="#" class="c-main-navbar__link js-main-navigation-link"><span class="c-main-navbar__title">MyAllianz</span>
                             </a>
                         </li>
                         <li role="menuitem" class="c-main-navbar__item">
-                            <a id="nav3" aria-expanded="false" aria-label="Contact" href="#" class="c-main-navbar__link js-main-navigation-link"><span class="c-main-navbar__title">Contact</span></a>
+                            <a id="nav3" aria-expanded="false" aria-label="About" href="#" class="c-main-navbar__link js-main-navigation-link"><span class="c-main-navbar__title">About</span></a>
+                        </li>
+                        <li role="menuitem" class="c-main-navbar__item">
+                            <a id="nav4" aria-expanded="false" aria-label="Claims" href="#" class="c-main-navbar__link js-main-navigation-link"><span class="c-main-navbar__title">Claims</span></a>
+                        </li>
+                        <li role="menuitem" class="c-main-navbar__item u-hidden-medium-down">
+                            <a id="nav5" aria-expanded="false" aria-label="Documents" href="#" class="c-main-navbar__link js-main-navigation-link"><span class="c-main-navbar__title">Documents</span></a>
                         </li>
                     </ul>
                 </div>
@@ -23,7 +29,6 @@
                 </div>
             </div>
         </div>
-
         <!--Mobile-->
         <div class="c-navigation--compact">
             <div class="c-mobilebar">
@@ -31,13 +36,12 @@
                     <img alt="Logo" src="{{root}}assets/img/allianz-logo.png">
                 </a>
                 <div class="c-mobilebar__action">
-                    <div class="c-search t-bg-white">
-                        <a class="c-link c-link--block c-searchbar__opener js-search-opener" href='#' aria-label="Search"><span aria-hidden="true" class="c-link__icon c-icon c-icon--search c-icon--functional c-searchbar__search-icon"></span><!-- Fix White Space issue --><span class="c-link__text">Search</span></a>
-                    </div>
+                    <a href="#" class="c-mobilebar__action c-mobilebar__open">
+                        <i aria-hidden="true" class="c-icon c-icon--phone-o c-icon--functional"></i>
+                    </a>
                 </div>
-
                 <div class="c-mobilebar__action">
-                    <a href="#" class="c-mobilebar__action c-mobilebar__open js-tied-agent-link-mobile">
+                    <a href="#" class="c-mobilebar__action c-mobilebar__open">
                         <i aria-hidden="true" class="c-icon c-icon--user-o c-icon--functional"></i>
                     </a>
                 </div>
@@ -47,69 +51,8 @@
                     </a>
                 </div>
             </div>
-            <div class=" c-mobilebar__descriptor-hidden u-invisible">
-                <div class="c-header-descriptor js-descriptor-mobile ">
-                    <span class="c-header-descriptor__label">Descriptor</span>
-                </div>
-
-            </div>
-            <div class="c-flyout c-flyout--search-bar">
-                <div class="c-flyout__layout">
-                    <div class="c-flyout__content">
-                        <div class="l-grid__row">
-                            <div class="l-grid__column-12">
-                                <div class="c-searchbar js-searchbar c-searchbar--hidden">
-                                    <div class="c-searchbar__form">
-                                        <div class="c-searchbar__icon"><i aria-hidden="true" class="c-icon c-icon--search c-searchbar__search-icon"></i>
-                                        </div>
-                                        <div class="c-searchbar__input-holder">
-                                            <input type="text" placeholder="   To search start typing.." class="c-searchbar__input js-searchbar__input">
-                                        </div>
-                                        <a class="c-link c-link--block u-margin-right-sm u-hidden-small-down" href='#' aria-label=" "><span aria-hidden="true" class="c-link__icon c-icon c-icon--microphone"></span>
-                                            <!-- Fix White Space issue
---><span class="c-link__text"> </span></a>
-
-                                        <a class="c-link c-link--block c-searchbar__link--mobile js-searchbar__clear-button--mobile" href='#' aria-label=" "><span aria-hidden="true" class="c-link__icon c-icon c-icon--close"></span>
-                                            <!-- Fix White Space issue
---><span class="c-link__text"> </span></a>
-
-                                        <div class="c-searchbar__actions">
-                                            <button class="c-button c-button c-searchbar__button js-searchbar__search-button u-hidden-medium-down">
-                                                Search
-                                            </button>
-
-                                            <button class="c-button c-button c-button--secondary c-searchbar__button js-searchbar__cancel-button u-hidden-medium-down">
-                                                Cancel
-                                            </button>
-
-                                            <button class="c-button c-button--icon
-c-button c-searchbar__button js-searchbar__search-button u-margin-left-0 u-hidden-large-up">
-                                                <span class="c-button__icon c-icon c-icon--check"></span>
-                                            </button>
-
-                                            <button class="c-button c-button--icon
-c-button c-button--secondary c-searchbar__button js-searchbar__cancel-button u-hidden-large-up">
-                                                <span class="c-button__icon c-icon c-icon--close"></span>
-                                            </button>
-
-                                            <button class="c-button c-button--small c-searchbar__button--mobile js-searchbar__go-button--mobile js-searchbar__search-button u-hidden-medium-up">
-                                                GO
-                                            </button>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-
-
-    <!--Desktop-->
     <div class="c-flyout c-flyout--sub-navigation js-flyout--sub-navigation">
         <div class="c-flyout__layout">
             <div class="c-flyout__content">
@@ -166,19 +109,153 @@ c-button c-button--secondary c-searchbar__button js-searchbar__cancel-button u-h
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
-
-                            {{> header-subnav-car-desktop}}
-                            {{> header-subnav-home-desktop}}
-                            {{> header-subnav-pet-desktop}}
-                            {{> header-subnav-boat-desktop}}
-                            {{> header-subnav-travel-desktop}}
-                            {{> header-subnav-schools-desktop}}
-
+                            </div> {{> header-subnav-car-desktop}} {{> header-subnav-home-desktop}} {{> header-subnav-pet-desktop}} {{> header-subnav-boat-desktop}} {{> header-subnav-travel-desktop}} {{> header-subnav-schools-desktop}}
                         </div>
                     </div>
                 </div>
-
+                <div data-parent-id="nav2" class="c-subnavigation js-sub-navigation" style="display: none;">
+                    <div class="c-subnavigation__content">
+                        <div class="l-grid l-grid--max-width ">
+                            <div class="l-grid__row">
+                                <div class="l-grid__column-12">
+                                    <div class="c-subnavbar">
+                                        <ul role="menu" class="c-subnavbar__list">
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Overview" aria-label="Overview" id="nav2sub1" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Car" class="c-subnavbar__icon c-icon c-icon--product-person c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Overview">Overview</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="FAQs" aria-label="FAQs" id="nav2sub2" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Car" class="c-subnavbar__icon c-icon c-icon--product-help-question c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="FAQs">FAQs</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Login" aria-label="Login" id="nav2sub3" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Car" class="c-subnavbar__icon c-icon c-icon--product-door c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Login">Login</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Register" aria-label="Register" id="nav2sub4" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Car" class="c-subnavbar__icon c-icon c-icon--product-pen c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Register">Register</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-parent-id="nav3" class="c-subnavigation js-sub-navigation" style="display: none;">
+                    <div class="c-subnavigation__content">
+                        <div class="l-grid l-grid--max-width "> {{> header-subnav-about-desktop}} </div>
+                    </div>
+                </div>
+                <div data-parent-id="nav4" class="c-subnavigation js-sub-navigation" style="display: none;">
+                    <div class="c-subnavigation__content">
+                        <div class="l-grid l-grid--max-width ">
+                            <div class="l-grid__row">
+                                <div class="l-grid__column-12">
+                                    <div class="c-subnavbar">
+                                        <ul role="menu" class="c-subnavbar__list">
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Car" aria-label="Car" id="nav4sub1" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Car" class="c-subnavbar__icon c-icon c-icon--product-car-front c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Car">Car</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Home" aria-label="Home" id="nav4sub2" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Home" class="c-subnavbar__icon c-icon c-icon--product-house c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Home">Home</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Pet" aria-label="Pet" id="nav4sub3" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Pet" class="c-subnavbar__icon c-icon c-icon--product-animal-paw c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Pet">Pet</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Boat" aria-label="Boat" id="nav4sub4" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Boat" class="c-subnavbar__icon c-icon c-icon--product-sport-sailing-ship c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Boat">Boat</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Horse &amp; Rider" aria-label="Horse &amp; Rider" id="nav4sub5" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Horse &amp; Rider" class="c-subnavbar__icon c-icon c-icon--product-animal-horse c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Horse &amp; Rider">Horse &amp; Rider</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Schools" aria-label="Schools" id="nav4sub6" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Schools" class="c-subnavbar__icon c-icon c-icon--product-student-school-graduation c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Schools">Schools</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-parent-id="nav5" class="c-subnavigation js-sub-navigation" style="display: none;">
+                    <div class="c-subnavigation__content">
+                        <div class="l-grid l-grid--max-width ">
+                            <div class="l-grid__row">
+                                <div class="l-grid__column-12">
+                                    <div class="c-subnavbar">
+                                        <ul role="menu" class="c-subnavbar__list">
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Car" aria-label="Car" id="nav5sub1" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Car" class="c-subnavbar__icon c-icon c-icon--product-car-front c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Car">Car</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Home" aria-label="Home" id="nav5sub2" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Home" class="c-subnavbar__icon c-icon c-icon--product-house c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Home">Home</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Pet" aria-label="Pet" id="nav5sub3" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Pet" class="c-subnavbar__icon c-icon c-icon--product-animal-paw c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Pet">Pet</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Boat" aria-label="Boat" id="nav5sub4" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Boat" class="c-subnavbar__icon c-icon c-icon--product-sport-sailing-ship c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Boat">Boat</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Horse &amp; Rider" aria-label="Horse &amp; Rider" id="nav5sub5" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Horse &amp; Rider" class="c-subnavbar__icon c-icon c-icon--product-animal-horse c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Horse &amp; Rider">Horse &amp; Rider</span>
+                                                </a>
+                                            </li>
+                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
+                                                <a aria-expanded="false" title="Schools" aria-label="Schools" id="nav5sub6" href="#" class="c-subnavbar__link js-sub-navigation-link ">
+                                                    <span aria-hidden="true" title="Schools" class="c-subnavbar__icon c-icon c-icon--product-student-school-graduation c-icon--functional"></span>
+                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Schools">Schools</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Mobile -->
                 <div class="c-navigation__accordion js-navigation-mobile" style="display: none;" data-test="1">
                     <ul role="menu" class="c-accordion c-accordion--level-0">
@@ -200,34 +277,9 @@ c-button c-button--secondary c-searchbar__button js-searchbar__cancel-button u-h
                                             </div>
                                         </a>
                                         <div data-parent-id="nav1sub1" class="accordion__content js-navcontent-mobile" style="display: none;">
-                                            <a href="#" class="c-link c-navigation__accordion__link">
-                                                Car
-                                            </a>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Car
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Car insurance" href="#" class="c-navcontent__links">Car insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Classic car insurance" href="#" class="c-navcontent__links">Classic car
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Truck insurance" href="#" class="c-navcontent__links">Truck insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Legal protection" href="#" class="c-navcontent__links">Legal protection</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Lorel protection" href="#" class="c-navcontent__links">Lorel protection</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            <div>{{> header-subnav-car-links-01}}</div>
+                                            <div>{{> header-subnav-car-links-02}}</div>
+                                            <div>{{> header-subnav-car-links-03}}</div>
                                         </div>
                                     </li>
                                     <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
@@ -239,542 +291,80 @@ c-button c-button--secondary c-searchbar__button js-searchbar__cancel-button u-h
                                             </div>
                                         </a>
                                         <div data-parent-id="nav1sub2" class="accordion__content js-navcontent-mobile" style="display: none;">
-                                            <a href="#" class="c-link c-navigation__accordion__link">
-                                                Home
-                                            </a>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Home
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Home insurance" href="#" class="c-navcontent__links">Home insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Fire insurance" href="#" class="c-navcontent__links">Fire insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Flood insurance" href="#" class="c-navcontent__links">Flood insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Nuclear Explosion insurance" href="#" class="c-navcontent__links">Nuclear Explosion
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Legal protection" href="#" class="c-navcontent__links">Legal protection</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Lorel protection" href="#" class="c-navcontent__links">Lorel protection</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Natural Disasters" href="#" class="c-navcontent__links">Natural
-                                                                Disasters</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Apartment
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Apartment insurance" href="#" class="c-navcontent__links">Apartment
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Fire insurance" href="#" class="c-navcontent__links">Fire insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Theft insurance" href="#" class="c-navcontent__links">Theft insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Legal protection" href="#" class="c-navcontent__links">Legal protection</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Lorel protection" href="#" class="c-navcontent__links">Lorel protection</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            <div>{{> header-subnav-home-links-01}}</div>
+                                            <div>{{> header-subnav-home-links-02}}</div>
+                                            <div>{{> header-subnav-home-links-03}}</div>
+                                            <div>{{> header-subnav-home-links-04}}</div>
                                         </div>
                                     </li>
                                     <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
                                         <a id="nav1sub3" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-pension-rocker-chair c-icon--functional"></span>
-                                            <span class="c-accordion__title">Pension</span>
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-animal-paw c-icon--functional"></span>
+                                            <span class="c-accordion__title">Pet</span>
                                             <div class="c-accordion__indicator">
                                                 <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
                                             </div>
                                         </a>
                                         <div data-parent-id="nav1sub3" class="accordion__content js-navcontent-mobile" style="display: none;">
-                                            <a href="#" class="c-link c-navigation__accordion__link">
-                                                Pension
-                                            </a>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Pension
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Senior Pension" href="#" class="c-navcontent__links">Senior Pension</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Youth Pension" href="#" class="c-navcontent__links">Youth Pension</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Whatever Pension" href="#" class="c-navcontent__links">Whatever Pension</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Subsidies" href="#" class="c-navcontent__links">Subsidies</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Mutual Funds" href="#" class="c-navcontent__links">Mutual Funds</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Protection
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Non-employment protection" href="#" class="c-navcontent__links">Non-employment
-                                                                protection</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Accident protection" href="#" class="c-navcontent__links">Accident
-                                                                protection</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Non-accident protection" href="#" class="c-navcontent__links">Non-accident
-                                                                protection</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Pet
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Cat Insurance" href="#" class="c-navcontent__links">Cat Insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Dog Insurance" href="#" class="c-navcontent__links">Dog Insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Python Insurance" href="#" class="c-navcontent__links">Python Insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Alligator Insurance" href="#" class="c-navcontent__links">Alligator
-                                                                Insurance</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            <div>{{> header-subnav-pet-links-01}}</div>
                                         </div>
                                     </li>
                                     <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
                                         <a id="nav1sub4" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-sport-sailing-ship c-icon--functional"></span>
+                                            <span class="c-accordion__title">Boat</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                        <div data-parent-id="nav1sub4" class="accordion__content js-navcontent-mobile" style="display: none;">
+                                            <div>{{> header-subnav-boat-links-01}}</div>
+                                        </div>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a id="nav1sub5" class="c-accordion__button js-sub-navigation-link-mobile">
                                             <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-plane c-icon--functional"></span>
                                             <span class="c-accordion__title">Travel</span>
                                             <div class="c-accordion__indicator">
                                                 <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
                                             </div>
                                         </a>
-                                        <div data-parent-id="nav1sub4" class="accordion__content js-navcontent-mobile" style="display: none;">
-                                            <a href="#" class="c-link c-navigation__accordion__link">
-                                                Travel
-                                            </a>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Domestic Travel
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Accident insurance" href="#" class="c-navcontent__links">Accident
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Incident insurance" href="#" class="c-navcontent__links">Incident
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Theft insurance" href="#" class="c-navcontent__links">Theft insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Legal protection" href="#" class="c-navcontent__links">Legal protection</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        International Travel
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Accident insurance" href="#" class="c-navcontent__links">Accident
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Incident insurance" href="#" class="c-navcontent__links">Incident
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Theft insurance" href="#" class="c-navcontent__links">Theft insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Legal protection" href="#" class="c-navcontent__links">Legal protection</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Mobility
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Car" href="#" class="c-navcontent__links">Car</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Boat" href="#" class="c-navcontent__links">Boat</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Plane" href="#" class="c-navcontent__links">Plane</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Tricycle" href="#" class="c-navcontent__links">Tricycle</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Spaceship" href="#" class="c-navcontent__links">Spaceship</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Teleportation" href="#" class="c-navcontent__links">Teleportation</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Foods
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Local food" href="#" class="c-navcontent__links">Local food</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Fast food" href="#" class="c-navcontent__links">Fast food</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Slow food" href="#" class="c-navcontent__links">Slow food</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Vegetarian food" href="#" class="c-navcontent__links">Vegetarian food</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
-                                        <a id="nav1sub5" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-injury-plaster c-icon--functional"></span>
-                                            <span class="c-accordion__title">Health</span>
-                                            <div class="c-accordion__indicator">
-                                                <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
-                                            </div>
-                                        </a>
                                         <div data-parent-id="nav1sub5" class="accordion__content js-navcontent-mobile" style="display: none;">
-                                            <a href="#" class="c-link c-navigation__accordion__link">
-                                                Health
-                                            </a>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Health
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Basic health insurance" href="#" class="c-navcontent__links">Basic health
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Extended health insurance" href="#" class="c-navcontent__links">Extended health
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Seniority health insurance" href="#" class="c-navcontent__links">Seniority health
-                                                                insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Cancer insurance" href="#" class="c-navcontent__links">Cancer insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Live insurance" href="#" class="c-navcontent__links">Live insurance</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Death insurance" href="#" class="c-navcontent__links">Death insurance</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Protection
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Heart protection" href="#" class="c-navcontent__links">Heart protection</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Liver protection" href="#" class="c-navcontent__links">Liver protection</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Brain protection" href="#" class="c-navcontent__links">Brain protection</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Tips
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Living healthy" href="#" class="c-navcontent__links">Living healthy</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Detox tips" href="#" class="c-navcontent__links">Detox tips</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Faqs
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="What&#39;s covered" href="#" class="c-navcontent__links">What&#39;s
-                                                                covered</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Am I gonna die?" href="#" class="c-navcontent__links">Am I gonna die?</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="what&#39;s not covered?" href="#" class="c-navcontent__links">what&#39;s not
-                                                                covered?</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            <div>{{> header-subnav-travel-links-01}}</div>
                                         </div>
                                     </li>
                                     <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
-                                        <a id="nav1sub6" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-paper-document c-icon--functional"></span>
-                                            <span class="c-accordion__title">Document</span>
+                                        <a href="#" id="nav1sub6" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-building c-icon--functional"></span>
+                                            <span class="c-accordion__title">Business</span>
                                             <div class="c-accordion__indicator">
-                                                <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
                                             </div>
                                         </a>
-                                        <div data-parent-id="nav1sub6" class="accordion__content js-navcontent-mobile" style="display: none;">
-                                            <a href="#" class="c-link c-navigation__accordion__link">
-                                                Document
-                                            </a>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Neque porro quisquam est qui
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 1" href="#" class="c-navcontent__links">Document 1</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 44" href="#" class="c-navcontent__links">Document 44</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 555" href="#" class="c-navcontent__links">Document 555</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 9999" href="#" class="c-navcontent__links">Document 9999</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Document
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 224" href="#" class="c-navcontent__links">Document 224</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 336" href="#" class="c-navcontent__links">Document 336</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 112" href="#" class="c-navcontent__links">Document 112</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 448" href="#" class="c-navcontent__links">Document 448</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Document
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 333" href="#" class="c-navcontent__links">Document 333</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 666" href="#" class="c-navcontent__links">Document 666</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Document
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 0" href="#" class="c-navcontent__links">Document 0</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document X" href="#" class="c-navcontent__links">Document X</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 65535" href="#" class="c-navcontent__links">Document 65535</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Document
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Document 404 Not found" href="#" class="c-navcontent__links">Document 404 Not
-                                                                found</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="c-navcontent__links">
-                                                    <h3 class="c-navcontent__headline">
-                                                        Document
-                                                    </h3>
-                                                    <ul role="menu" class="c-navcontent__list">
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Confidential Document" href="#" class="c-navcontent__links">Confidential
-                                                                Document</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Classified Document" href="#" class="c-navcontent__links">Classified
-                                                                Document</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Not So Classified Document" href="#" class="c-navcontent__links">Not So Classified
-                                                                Document</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Not a Confidential Document" href="#" class="c-navcontent__links">Not a Confidential
-                                                                Document</a>
-                                                        </li>
-                                                        <li role="menuitem" aria-describedby="levelID3" class="c-navcontent__list-item">
-                                                            <a aria-label="Totally Not a Confidential Document" href="#" class="c-navcontent__links">Totally Not
-                                                                a Confidential Document</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </li>
                                     <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
                                         <a id="nav1sub7" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon c-link__icon c-icon c-icon--arrow-right c-icon--functional"></span>
-                                            <span class="c-accordion__title">Overview</span>
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-student-school-graduation c-icon--functional"></span>
+                                            <span class="c-accordion__title">Schools</span>
                                             <div class="c-accordion__indicator">
                                                 <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
                                             </div>
                                         </a>
+                                        <div data-parent-id="nav1sub7" class="accordion__content js-navcontent-mobile" style="display: none;">
+                                            <div>{{> header-subnav-schools-links-01}}</div>
+                                            <div>{{> header-subnav-schools-links-02}}</div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div data-parent-id="nav2" class="c-subnavigation js-sub-navigation" style="display: none;">
-                    <div class="c-subnavigation__content">
-                        <div class="l-grid l-grid--max-width ">
-                            <div class="l-grid__row">
-                                <div class="l-grid__column-12">
-                                    <div class="c-subnavbar">
-                                        <ul role="menu" class="c-subnavbar__list">
-                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
-                                                <a aria-expanded="false" title="FAQS" aria-label="FAQS" id="nav2sub1" href="#" class="c-subnavbar__link js-sub-navigation-link ">
-                                                    <span aria-hidden="true" class="c-subnavbar__title" title="FAQS">FAQS</span>
-                                                </a>
-                                            </li>
-                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
-                                                <a aria-expanded="false" title="Help" aria-label="Help" id="nav2sub2" href="#" class="c-subnavbar__link js-sub-navigation-link ">
-                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Help">Help</span>
-                                                </a>
-                                            </li>
-                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
-                                                <a aria-expanded="false" title="About" aria-label="About" id="nav2sub3" href="#" class="c-subnavbar__link js-sub-navigation-link ">
-                                                    <span aria-hidden="true" class="c-subnavbar__title" title="About">About</span>
-                                                </a>
-                                            </li>
-                                            <li role="menuitem" aria-describedby="levelID2" class="c-subnavbar__item">
-                                                <a aria-expanded="false" title="Overview" aria-label="Overview" id="nav1sub7" href="#" class="c-subnavbar__link js-sub-navigation-link c-subnavbar__link--overview u-hidden-large-up">
-                                                    <span aria-hidden="true" title="Overview" class="c-subnavbar__icon c-link__icon c-icon c-icon--arrow-right c-icon--functional"></span>
-                                                    <span aria-hidden="true" class="c-subnavbar__title" title="Overview">Overview</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mobile -->
                 <div class="c-navigation__accordion js-navigation-mobile" style="display: none;" data-test="1">
                     <ul role="menu" class="c-accordion c-accordion--level-0">
                         <li role="menuitem" class="c-accordion__item c-accordion__item--level-0">
                             <a id="nav2" href="#" class="c-accordion__button js-main-navigation-link-mobile">
-                                <span class="c-accordion__title">Advice</span>
+                                <span class="c-accordion__title">MyAllianz</span>
                                 <div class="c-accordion__indicator">
                                     <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
                                 </div>
@@ -782,38 +372,38 @@ c-button c-button--secondary c-searchbar__button js-searchbar__cancel-button u-h
                             <div data-parent-id="nav2" class="accordion__content js-sub-navigation-mobile" style="display: none;">
                                 <ul role="menu" class="c-accordion c-accordion--level-1">
                                     <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
-                                        <a id="nav2sub1" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon "></span>
-                                            <span class="c-accordion__title">FAQS</span>
-                                            <div class="c-accordion__indicator">
-                                                <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
-                                        <a id="nav2sub2" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon "></span>
-                                            <span class="c-accordion__title">Help</span>
-                                            <div class="c-accordion__indicator">
-                                                <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
-                                        <a id="nav2sub3" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon "></span>
-                                            <span class="c-accordion__title">About</span>
-                                            <div class="c-accordion__indicator">
-                                                <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
-                                        <a id="nav1sub7" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon c-link__icon c-icon c-icon--arrow-right c-icon--functional"></span>
+                                        <a href="#" id="nav2sub1" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-person c-icon--functional"></span>
                                             <span class="c-accordion__title">Overview</span>
                                             <div class="c-accordion__indicator">
-                                                <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav2sub2" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-help-question c-icon--functional"></span>
+                                            <span class="c-accordion__title">FAQS</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav2sub3" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-door c-icon--functional"></span>
+                                            <span class="c-accordion__title">Login</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav2sub4" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-pen c-icon--functional"></span>
+                                            <span class="c-accordion__title">Register</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
                                             </div>
                                         </a>
                                     </li>
@@ -822,71 +412,85 @@ c-button c-button--secondary c-searchbar__button js-searchbar__cancel-button u-h
                         </li>
                     </ul>
                 </div>
-                <div data-parent-id="" class="c-subnavigation js-sub-navigation" style="display: none;">
-                    <div class="c-subnavigation__content">
-                        <div class="l-grid l-grid--max-width ">
-                            <div class="l-grid__row">
-                                <div class="l-grid__column-12">
-                                    <div class="c-subnavbar">
-                                        <ul role="menu" class="c-subnavbar__list">
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mobile -->
                 <div class="c-navigation__accordion js-navigation-mobile" style="display: none;" data-test="1">
                     <ul role="menu" class="c-accordion c-accordion--level-0">
                         <li role="menuitem" class="c-accordion__item c-accordion__item--level-0">
                             <a id="nav3" href="#" class="c-accordion__button js-main-navigation-link-mobile">
-                                <span class="c-accordion__title">Contact</span>
+                                <span class="c-accordion__title">About</span>
                                 <div class="c-accordion__indicator">
                                     <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
                                 </div>
                             </a>
-                            <div data-parent-id="" class="accordion__content js-sub-navigation-mobile" style="display: none;">
-                                <ul role="menu" class="c-accordion c-accordion--level-1">
-                                </ul>
+                            <div data-parent-id="nav3" class="accordion__content accordion__content--padded js-sub-navigation-mobile" style="display: none;">
+                                <div>{{> header-subnav-about-links-01}}</div>
+                                <div>{{> header-subnav-about-links-02}}</div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div data-parent-id="menu1" class="c-subnavigation js-sub-navigation" style="display: none;">
-                    <div class="c-subnavigation__content">
-                        <div class="l-grid l-grid--max-width ">
-                            <div class="l-grid__row">
-                                <div class="l-grid__column-12">
-                                    <div class="c-subnavbar">
-                                        <ul role="menu" class="c-subnavbar__list">
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mobile -->
-                <div class="c-navigation__accordion js-navigation-mobile" style="display: none;">
+                <div class="c-navigation__accordion js-navigation-mobile" style="display: none;" data-test="1">
                     <ul role="menu" class="c-accordion c-accordion--level-0">
                         <li role="menuitem" class="c-accordion__item c-accordion__item--level-0">
-                            <span href="#" class="c-accordion__button js-main-navigation-link-mobile">
-                                <span class="c-accordion__title js-main-navigation-link-mobile">Private</span>
+                            <a id="nav4" href="#" class="c-accordion__button js-main-navigation-link-mobile">
+                                <span class="c-accordion__title">Claims</span>
                                 <div class="c-accordion__indicator">
                                     <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
                                 </div>
-                            </span>
-                            <div data-parent-id="menu1" class="accordion__content js-sub-navigation-mobile" style="display: none;">
+                            </a>
+                            <div data-parent-id="nav4" class="accordion__content js-sub-navigation-mobile" style="display: none;">
                                 <ul role="menu" class="c-accordion c-accordion--level-1">
                                     <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
-                                        <a href="#" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon  js-sub-navigation-link-mobile"></span>
-                                            <span class="c-accordion__title js-sub-navigation-link-mobile">Public</span>
+                                        <a href="#" id="nav4sub1" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-car-front c-icon--functional"></span>
+                                            <span class="c-accordion__title">Car</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav4sub2" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-house c-icon--functional"></span>
+                                            <span class="c-accordion__title">Home</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav4sub3" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-animal-paw c-icon--functional"></span>
+                                            <span class="c-accordion__title">Pet</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav4sub4" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-sport-sailing-ship c-icon--functional"></span>
+                                            <span class="c-accordion__title">Boat</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav4sub4" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-animal-horse c-icon--functional"></span>
+                                            <span class="c-accordion__title">Horse &amp; Rider</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav4sub4" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-student-school-graduation c-icon--functional"></span>
+                                            <span class="c-accordion__title">Schools</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
                                         </a>
                                     </li>
                                 </ul>
@@ -894,38 +498,69 @@ c-button c-button--secondary c-searchbar__button js-searchbar__cancel-button u-h
                         </li>
                     </ul>
                 </div>
-                <div data-parent-id="menu2" class="c-subnavigation js-sub-navigation" style="display: none;">
-                    <div class="c-subnavigation__content">
-                        <div class="l-grid l-grid--max-width ">
-                            <div class="l-grid__row">
-                                <div class="l-grid__column-12">
-                                    <div class="c-subnavbar">
-                                        <ul role="menu" class="c-subnavbar__list">
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mobile -->
-                <div class="c-navigation__accordion js-navigation-mobile" style="display: none;">
+                <div class="c-navigation__accordion js-navigation-mobile" style="display: none;" data-test="1">
                     <ul role="menu" class="c-accordion c-accordion--level-0">
                         <li role="menuitem" class="c-accordion__item c-accordion__item--level-0">
-                            <span href="#" class="c-accordion__button js-main-navigation-link-mobile">
-                                <span class="c-accordion__title js-main-navigation-link-mobile">English</span>
+                            <a id="nav5" href="#" class="c-accordion__button js-main-navigation-link-mobile">
+                                <span class="c-accordion__title">Documents</span>
                                 <div class="c-accordion__indicator">
                                     <span aria-hidden="true" class="c-icon c-icon--chevron-down  c-icon--functional"></span>
                                 </div>
-                            </span>
-                            <div data-parent-id="menu2" class="accordion__content js-sub-navigation-mobile" style="display: none;">
+                            </a>
+                            <div data-parent-id="nav5" class="accordion__content js-sub-navigation-mobile" style="display: none;">
                                 <ul role="menu" class="c-accordion c-accordion--level-1">
                                     <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
-                                        <a href="#" class="c-accordion__button js-sub-navigation-link-mobile">
-                                            <span aria-hidden="true" class="c-accordion__icon  js-sub-navigation-link-mobile"></span>
-                                            <span class="c-accordion__title js-sub-navigation-link-mobile">Deutsch</span>
+                                        <a href="#" id="nav5sub1" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-car-front c-icon--functional"></span>
+                                            <span class="c-accordion__title">Car</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav5sub2" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-house c-icon--functional"></span>
+                                            <span class="c-accordion__title">Home</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav5sub3" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-animal-paw c-icon--functional"></span>
+                                            <span class="c-accordion__title">Pet</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav5sub4" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-sport-sailing-ship c-icon--functional"></span>
+                                            <span class="c-accordion__title">Boat</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav5sub4" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-animal-horse c-icon--functional"></span>
+                                            <span class="c-accordion__title">Horse &amp; Rider</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem" class="c-accordion__item c-accordion__item--level-1">
+                                        <a href="#" id="nav5sub4" class="c-accordion__button js-sub-navigation-link-mobile">
+                                            <span aria-hidden="true" class="c-accordion__icon c-icon c-icon--product-student-school-graduation c-icon--functional"></span>
+                                            <span class="c-accordion__title">Schools</span>
+                                            <div class="c-accordion__indicator">
+                                                <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                            </div>
                                         </a>
                                     </li>
                                 </ul>
@@ -933,36 +568,38 @@ c-button c-button--secondary c-searchbar__button js-searchbar__cancel-button u-h
                         </li>
                     </ul>
                 </div>
-                <div class="c-navigation__accordion js-navigation-mobile" style="display: none;">
+                <div class="c-navigation__accordion js-navigation-mobile" style="display: none;" data-test="1">
                     <ul role="menu" class="c-accordion c-accordion--level-0">
                         <li role="menuitem" class="c-accordion__item c-accordion__item--level-0">
-                            <span href="#" class="c-accordion__button c-accordion__button--user-info">
-                                <span class="c-accordion__title--user-info--heading">My</span>
-                                <span class="c-accordion__title--user-info">Customer number 0326562</span>
-                                <span class="c-accordion__title--user-info">John Doe</span>
-                            </span>
-                            <span href="#" class="c-accordion__button c-accordion__button--user-menu">
-                                <span class="c-accordion__title js-main-navigation-link-mobile">My
-                                    overview</span>
+                            <a href="#" id="nav6" class="c-accordion__button js-main-navigation-link-mobile">
+                                <span class="c-accordion__title">Blog</span>
                                 <div class="c-accordion__indicator">
-                                    <span aria-hidden="true" class="c-icon c-icon--arrow-right c-icon--functional"></span>
+                                    <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
                                 </div>
-                            </span>
-                            <span href="#" class="c-accordion__button c-accordion__button--user-menu">
-                                <span class="c-accordion__title js-main-navigation-link-mobile">My profile &amp;
-                                    settings</span>
-                                <div class="c-accordion__indicator">
-                                    <span aria-hidden="true" class="c-icon c-icon--arrow-right c-icon--functional"></span>
-                                </div>
-                            </span>
-                            <span href="#" class="c-accordion__button c-accordion__button--user-menu">
-                                <button class="c-button c-button--secondary c-accordion__button__logout-button">
-                                    Logout
-                                </button>
-
-                            </span>
+                            </a>
                         </li>
                     </ul>
+                </div>
+                <div class="c-navigation__accordion js-navigation-mobile" style="display: none;" data-test="1">
+                    <ul role="menu" class="c-accordion c-accordion--level-0">
+                        <li role="menuitem" class="c-accordion__item c-accordion__item--level-0">
+                            <a href="#" id="nav7" class="c-accordion__button js-main-navigation-link-mobile">
+                                <span class="c-accordion__title">Contact</span>
+                                <div class="c-accordion__indicator">
+                                    <span aria-hidden="true" class="c-icon c-icon--arrow-right  c-icon--functional"></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-navigation__accordion js-navigation-mobile" style="display: none;">
+                    <div class="c-nav-card-tile">
+                        <div class="c-nav-card-tile__container t-bg-primary-action-bright t-primary-white">
+                            <div class="c-icon c-icon--m c-icon--product-headset-support"></div>
+                            <p><a class="c-link c-link--negative c-link--block" href='#' aria-label="+35314484848"><span aria-hidden="true" class="c-link__icon c-icon c-icon--phone-o"></span><!-- Fix White Space issue --><span class="c-link__text">{{> roi-tel-number}}</span></a></p>
+                            <p class="c-copy u-text-center u-margin-bottom-0">Available today from 8 am to 6 pm</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
