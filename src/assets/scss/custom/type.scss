@@ -1,6 +1,6 @@
 // Remove Hyphenation
 
-p, li, h1, h2, h3, h4, h5, h6, dl {
+p, li, h1, h2, h3, h4, h5, h6, dl, span {
     word-break: keep-all;
     -moz-hyphens: none;
     -ms-hyphens: none;

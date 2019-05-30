@@ -1,0 +1,11 @@
+// Custom SVG
+
+.custom-svg {
+    &.c-icon {
+        svg {
+            width: map-get($sizes, 4m);
+            height: map-get($sizes, 4m);
+            margin-top: 16px;
+        }
+    }
+}

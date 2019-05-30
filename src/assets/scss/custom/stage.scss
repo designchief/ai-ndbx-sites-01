@@ -1,0 +1,11 @@
+// Stage Overides
+
+.c-stage--with-navigation {
+    .c-stage__headline {
+        margin-bottom: map-get($sizes, xs);
+
+        @include media-breakpoint-response(mobile) {
+            margin-bottom: map-get($sizes, 2xs);
+        }
+    }
+}

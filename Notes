@@ -1,1 +1,1 @@
-npm install @allianz/ndbx-styles --save
+git subtree push --prefix dist origin gh-pages

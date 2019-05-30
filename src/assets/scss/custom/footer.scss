@@ -1,0 +1,51 @@
+// Overide Action Button hide on Tablet
+
+@media (min-width: 704px) and (max-width: 991px) {
+    .c-footer__action-button {
+        display: inherit;
+    }
+}
+
+
+@media (max-width: 703px) {
+    .c-footer__tagline {
+        display: block;
+    }
+}
+
+.c-footer__social--ai {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.c-footer__socialtile {
+    text-align: center;
+    padding-top: map-get($sizes, 4m);
+    padding-bottom: map-get($sizes, 4m);
+
+    @include media-breakpoint-response(mobile) {
+        padding-top: map-get($sizes, 3m);
+        padding-bottom: map-get($sizes, 4m);
+    }
+}
+
+.c-footer__signoff {
+    padding-top: map-get($sizes, m);
+    padding-bottom: map-get($sizes, m);
+}
+
+.c-footer__service--ai {
+    @extend .l-container;
+    display: flex;
+    padding: map-get($sizes, 2m);
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+
+    @include media-breakpoint-response(mobile) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
