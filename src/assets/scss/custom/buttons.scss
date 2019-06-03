@@ -1,0 +1,9 @@
+// Add extended button option
+
+.c-button {
+    &.c-button--extended {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}

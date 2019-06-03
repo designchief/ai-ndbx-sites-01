@@ -2,28 +2,74 @@
 
 .custom-svg {
     &.c-icon {
+        
+        
+
         svg {
+            // position: relative;
             width: map-get($sizes, 4m);
             height: map-get($sizes, 4m);
-            margin-top: 16px;
+        }
+
+        &.c-icon--xs {
+            svg {
+                width: map-get($sizes, m);
+                height: map-get($sizes, m);
+                // margin-top: -12px;
+            }
+        }
+
+        &.c-icon--s {
+            svg {
+                width: map-get($sizes, 3m);
+                height: map-get($sizes, 3m);
+            }
+        }
+
+        &.c-icon--m {
+            svg {
+                width: map-get($sizes, 4m);
+                height: map-get($sizes, 4m);
+            }
+        }
+
+        &.c-icon--l {
+            svg {
+                width: map-get($sizes, 2xl);
+                height: map-get($sizes, 2xl);
+            }
+        }
+
+        &.c-icon--xl {
+            svg {
+                width: map-get($sizes, 5xl);
+                height: map-get($sizes, 5xl);
+            }
         }
     }
 }
 
 .c-tile__product--container {
-
     .custom-svg {
         &.c-icon {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            
             svg {
-                width: map-get($sizes, 3xl);
-                height: map-get($sizes, 3xl);
-                margin-top: 16px;
+                margin-right: auto;
+                margin-left: auto;
+                width: 4.8rem;
+                height: 4.8rem;
+                // position: relative;
+                // top: 50%;
+                // margin-top: -2.4rem;
 
-                // @include media-breakpoint-response(mobile) {
-                //     width: 154px;
-                //     height: 154px;
-                //     margin-top: 16px;
-                // }
+                @include media-breakpoint-response(mobile) {
+                    width: 9.6rem;
+                    height: 9.6rem;
+                }
             }
         }
     }
