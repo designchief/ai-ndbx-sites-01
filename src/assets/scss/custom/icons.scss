@@ -3,8 +3,6 @@
 .custom-svg {
     &.c-icon {
         
-        
-
         svg {
             // position: relative;
             width: map-get($sizes, 4m);
@@ -74,61 +72,3 @@
         }
     }
 }
-
-
-
-
-
-// .c-icon--stack-2x {
-//     font-size: 2em;
-//   }
-  
-//   .c-icon--inverse {
-//     color: map-get($color-basic, primary-white);
-//   }
-  
-  // Icon Sizes
-  // -------------------------
-  
-  /* makes the font 33% larger relative to the icon container */
-//   .c-icon--lg {
-//     font-size: (4em / 3);
-//     line-height: (3em / 4);
-//     vertical-align: -15%;
-//   }
-  
-//   .c-icon--2x {
-//     font-size: 2em;
-//   }
-  
-//   .c-icon--3x {
-//     font-size: 3em;
-//   }
-  
-//   .c-icon--4x {
-//     font-size: 4em;
-//   }
-  
-//   .c-icon--5x {
-//     font-size: 5em;
-//   }
-  
-//   .c-icon--xs {
-//     font-size: map-get($sizes, m);
-//   }
-  
-//   .c-icon--s {
-//     font-size: map-get($sizes, 3m);
-//   }
-  
-//   .c-icon--m {
-//     font-size: map-get($sizes, 4m);
-//   }
-  
-//   .c-icon--l {
-//     font-size: map-get($sizes, 2xl);
-//   }
-  
-//   .c-icon--xl {
-//     font-size: map-get($sizes, 5xl);
-//   }
