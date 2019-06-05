@@ -11,9 +11,11 @@
     <style>
     /* This styles individual sections of the style guide */
     .ss-section:not(:last-child) {
-      padding-bottom: 4rem;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 4rem;
+      border: 0;
+      border-bottom: 1px solid #D9D9D9;
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      margin-top: 48px;
     }
 
     /* This styles code blocks used for examples. */
@@ -22,10 +24,11 @@
       padding: 1rem;
       overflow-x: scroll;
       margin-bottom: 1.5rem;
+      background: #F5F5F5;
     }
 
     /* This styles the example rows used in the grid documentation. */
-    .grid-x.display {
+    /* .grid-x.display {
       background: #eee;
       font-size: 11px;
       margin-bottom: 10px;
@@ -36,10 +39,10 @@
       .grid-x.display .cell:nth-child(2), .grid-x.display .cell.small-centered, .grid-x.display .cell.large-centered {
         background: #e1e1e1; }
       .grid-x.display .cell.color-end {
-        background: #d4d4d4; }
+        background: #d4d4d4; } */
 
     /* This styles the color blocks used in the color documentation. */
-    .color-block {
+    /* .color-block {
       border-radius: 2px;
       display: block;
       padding: 8px 8px 6px;
@@ -89,35 +92,26 @@
         overflow: auto;
         height: 100vh;
         padding-bottom: 5rem;
-      }
+      } */
     </style>
   </head>
   <body>
-
-      <div class="l-grid l-grid--max-width">
-        <div class="l-grid__row ">
-          <div class="l-grid__column-12">
-              <h1 class="c-heading u-margin-md u-text-center">Style Guide</h1>
-      
+    <div class="l-grid l-grid--max-width u-margin-top-m">
+      <div class="l-grid__row ">
+        <div class="l-grid__column-medium-4 l-grid__column-large-3">
+          <div class="c-link-list sticky-list-styleguide"> 
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#the-grid"><span class="c-link__text">The Grid</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#colors"><span class="c-link__text">Colors</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#typography"><span class="c-link__text">Typography</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#buttons"><span class="c-link__text">Buttons</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#forms"><span class="c-link__text">Forms</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#new-section"><span class="c-link__text">New Section</span></a></div>
           </div>
         </div>
-      </div>
-
-      <div class="l-grid l-grid--max-width">
-          <div class="l-grid__row ">
-            <div class="l-grid__column-medium-4 l-grid__column-large-3">
-                <div class="c-link-list ">
-                      <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#the-grid"><span class="c-link__text">The Grid</span></a></div>
-                      <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#colors"><span class="c-link__text">Colors</span></a></div>
-                      <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#typography"><span class="c-link__text">Typography</span></a></div>
-                      <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#buttons"><span class="c-link__text">Buttons</span></a></div>
-                      <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#forms"><span class="c-link__text">Forms</span></a></div>
-                      <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#new-section"><span class="c-link__text">New Section</span></a></div>
-                </div>
-            </div>
-            <div class="l-grid__column-medium-8 l-grid__column-large-9">
-                  <section class="ss-section" id="the-grid">
-                    <h1>The Grid</h1><p class="lead">Problem: You&#39;ve got tons of content, each needing different sized cells, and don&#39;t know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
+        <div class="l-grid__column-medium-8 l-grid__column-large-9">
+          <h1 class="c-heading u-text-weight-semibold u-margin-bottom-s">AI NDBX Style Guide</h1>
+          <hr class="c-divider u-margin-top-m u-margin-bottom-m" aria-hidden="true" />
+          <section class="ss-section" id="the-grid"> <h1>The Grid</h1><p class="lead">Problem: You&#39;ve got tons of content, each needing different sized cells, and don&#39;t know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
 
 <hr>
 <h2>Overview</h2><p>The grid is built around two key elements: grid-x and cells. grid-container create a max-width and contain the grid, and cells create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a grid-x or cell.</p>
@@ -206,10 +200,8 @@
 <div class="grid-x display">
   <div class="small-3 cell">3</div>
   <div class="small-9 cell">9, last</div>
-</div>
-                  </section>
-                  <section class="ss-section" id="colors">
-                    <h1>Colors</h1><p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>_settings.scss</code></p>
+</div> </section> 
+          <section class="ss-section" id="colors"> <h1>Colors</h1><p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>_settings.scss</code></p>
 
 <hr>
 <div class="row up-1 medium-up-3 large-up-5">
@@ -243,10 +235,8 @@
       #0a0a0a
     </div>
   </div>
-</div>
-                  </section>
-                  <section class="ss-section" id="typography">
-                    <h1>Typography</h1><p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
+</div> </section> 
+          <section class="ss-section" id="typography"> <h1>Typography</h1><p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
 
 <hr>
 <h2>Headings</h2><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>
@@ -271,10 +261,8 @@
 <h6>Heading Level 6</h6>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
-
-                  </section>
-                  <section class="ss-section" id="buttons">
-                    <h1>Buttons</h1><p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the web, we follow similar conventions.</p>
+ </section> 
+          <section class="ss-section" id="buttons"> <h1>Buttons</h1><p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the web, we follow similar conventions.</p>
 
 <hr>
 <h2>Primary Buttons</h2><p>These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the <code>.tiny</code>, <code>.small</code>, and <code>.large</code> classes.</p>
@@ -296,10 +284,8 @@
 <div class="ss-code-live"><a href="#" class="secondary large button">Large button</a>
 <a href="#" class="secondary button">Regular button</a>
 <a href="#" class="secondary small button">Small button</a>
-<a href="#" class="secondary tiny button">Tiny button</a></div>
-                  </section>
-                  <section class="ss-section" id="forms">
-                    <h1>Forms</h1><p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
+<a href="#" class="secondary tiny button">Tiny button</a></div> </section> 
+          <section class="ss-section" id="forms"> <h1>Forms</h1><p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
 
 <hr>
 <h2>Elements of a Form</h2><p>A form should be marked up using its default HTML properties. The ones we make use of include (in hierarchical order):</p>
@@ -429,23 +415,18 @@
       <textarea placeholder="placeholder"></textarea>
     </div>
   </div>
-</form></div>
-                  </section>
-                  <section class="ss-section" id="new-section">
-                    <h1>New Section</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora omnis suscipit id ut laborum recusandae molestias hic aliquid <strong>expedita!</strong> <a href="zurb.com">Non dicta</a>, autem obcaecati error, id ab voluptate unde culpa nulla.</p>
+</form></div> </section> 
+          <section class="ss-section" id="new-section"> <h1>New Section</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora omnis suscipit id ut laborum recusandae molestias hic aliquid <strong>expedita!</strong> <a href="zurb.com">Non dicta</a>, autem obcaecati error, id ab voluptate unde culpa nulla.</p>
 <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
 
 <div class="ss-code-live"><a href="#" class="button">Button</a>
 <a href="#" class="button">Button</a>
-<a href="#" class="button">Button</a></div>
-                  </section>
-        
-            </div>
-          </div>
+<a href="#" class="button">Button</a></div> </section> 
         </div>
-
+      </div>
+    </div>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
