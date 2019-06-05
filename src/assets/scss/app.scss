@@ -2,18 +2,27 @@
 
 // Importing Pattern Lab Sass resources to enable customisation
 @import 'pattern-lab-1.4/themes/allianz/variables/sizes.scss';
+@import 'pattern-lab-1.4/themes/allianz/variables/typography.scss';
 @import 'pattern-lab-1.4/themes/allianz/color-object';
 @import 'pattern-lab-1.4/common/breakpoints';
 @import 'pattern-lab-1.4/common/grid';
+@import 'pattern-lab-1.4/common/utilities/spacing';
+
 
 
 // Importing Pattern Lab dist styles
 @import 'pattern-lab-1.4/style';
 
 // AI Customisation
+@import 'custom/utilities';
 @import 'custom/type';
 @import 'custom/buttons';
 @import 'custom/icons';
 @import 'custom/header';
 @import 'custom/footer';
 @import 'custom/stage';
+@import 'custom/tile';
+@import 'custom/carousel';
+
+// Mockups - Not for production
+@import 'custom/styleguide';

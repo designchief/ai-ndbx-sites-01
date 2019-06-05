@@ -1,0 +1,8 @@
+// Tile Overides
+
+.c-carousel--no-overflow {
+    .swiper-slide-duplicate,
+    .swiper-slide-duplicate-active {
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+// Additional Colours
+
+$color-vibrant-lightest : (
+    vibrant-purple-lightest      : #F0E7F5,
+);
+
+.t-bg {
+    //background vibrant light
+    @each $key,
+    $color in $color-vibrant-lightest {
+        &-#{$key} {
+            background-color: $color;
+        }
+    }
+}

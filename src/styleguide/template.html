@@ -11,9 +11,11 @@
     <style>
     /* This styles individual sections of the style guide */
     .ss-section:not(:last-child) {
-      padding-bottom: 4rem;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 4rem;
+      border: 0;
+      border-bottom: 1px solid #D9D9D9;
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      margin-top: 48px;
     }
 
     /* This styles code blocks used for examples. */
@@ -22,10 +24,11 @@
       padding: 1rem;
       overflow-x: scroll;
       margin-bottom: 1.5rem;
+      background: #F5F5F5;
     }
 
     /* This styles the example rows used in the grid documentation. */
-    .grid-x.display {
+    /* .grid-x.display {
       background: #eee;
       font-size: 11px;
       margin-bottom: 10px;
@@ -36,10 +39,10 @@
       .grid-x.display .cell:nth-child(2), .grid-x.display .cell.small-centered, .grid-x.display .cell.large-centered {
         background: #e1e1e1; }
       .grid-x.display .cell.color-end {
-        background: #d4d4d4; }
+        background: #d4d4d4; } */
 
     /* This styles the color blocks used in the color documentation. */
-    .color-block {
+    /* .color-block {
       border-radius: 2px;
       display: block;
       padding: 8px 8px 6px;
@@ -89,40 +92,28 @@
         overflow: auto;
         height: 100vh;
         padding-bottom: 5rem;
-      }
+      } */
     </style>
   </head>
   <body>
-
-      <div class="l-grid l-grid--max-width">
-        <div class="l-grid__row ">
-          <div class="l-grid__column-12">
-              <h1 class="c-heading u-margin-md u-text-center">Style Guide</h1>
-      
+    <div class="l-grid l-grid--max-width u-margin-top-m">
+      <div class="l-grid__row ">
+        <div class="l-grid__column-medium-4 l-grid__column-large-3">
+          <div class="c-link-list sticky-list-styleguide"> 
+            {{#each pages}} 
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#{{ anchor }}"><span class="c-link__text">{{ title }}</span></a></div>
+            {{/each}} 
           </div>
+        </div>
+        <div class="l-grid__column-medium-8 l-grid__column-large-9">
+          <h1 class="c-heading u-text-weight-semibold u-margin-bottom-s">AI NDBX Style Guide</h1>
+          <hr class="c-divider u-margin-top-m u-margin-bottom-m" aria-hidden="true" />
+          {{#each pages}} 
+          <section class="ss-section" id="{{ anchor }}"> {{ body }} </section> 
+          {{/each}}
         </div>
       </div>
-
-      <div class="l-grid l-grid--max-width">
-          <div class="l-grid__row ">
-            <div class="l-grid__column-medium-4 l-grid__column-large-3">
-                <div class="c-link-list ">
-                    {{#each pages}}
-                      <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#{{ anchor }}"><span class="c-link__text">{{ title }}</span></a></div>
-                    {{/each}}
-                </div>
-            </div>
-            <div class="l-grid__column-medium-8 l-grid__column-large-9">
-                {{#each pages}}
-                  <section class="ss-section" id="{{ anchor }}">
-                    {{ body }}
-                  </section>
-                {{/each}}
-        
-            </div>
-          </div>
-        </div>
-
+    </div>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
