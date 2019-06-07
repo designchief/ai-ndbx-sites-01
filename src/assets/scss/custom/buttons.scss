@@ -9,3 +9,22 @@
         text-align: center;
     }
 }
+
+// Add button group option
+
+.c-button-group {
+    .c-button {
+        margin-bottom: 0;
+    }
+
+    @include media-breakpoint-response(mobile) {
+        .c-button {
+            margin-bottom: map-get($sizes, m);
+        }
+        div:last-of-type {
+            .c-button {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

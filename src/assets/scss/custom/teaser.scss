@@ -1,0 +1,10 @@
+// Teaser Overides
+
+// Standard Section Tile
+.c-teaser-group {
+    padding-bottom: map-get($sizes, l);
+
+    @include media-breakpoint-response(mobile) {
+        padding-bottom: map-get($sizes, 4m);
+    }
+}

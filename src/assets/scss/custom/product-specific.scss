@@ -1,0 +1,13 @@
+// Tile Overides
+
+.car {
+    .c-stage,
+    .c-benefit-communication-tile,
+    .c-teaser-group,
+    .c-section {
+
+        em {
+            color: map-get($color-rich, rich-blue);
+        }
+    }
+}

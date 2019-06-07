@@ -2,6 +2,7 @@
 
 // Importing Pattern Lab Sass resources to enable customisation
 @import 'pattern-lab-1.4/themes/allianz/variables/sizes.scss';
+@import 'pattern-lab-1.4/themes/allianz/variables/borders.scss';
 @import 'pattern-lab-1.4/themes/allianz/variables/typography.scss';
 @import 'pattern-lab-1.4/themes/allianz/color-object';
 @import 'pattern-lab-1.4/common/breakpoints';
@@ -24,6 +25,8 @@
 @import 'custom/tile';
 @import 'custom/carousel';
 @import 'custom/navbar';
+@import 'custom/teaser';
+@import 'custom/product-specific';
 
 // Mockups - Not for production
 @import 'custom/styleguide';
