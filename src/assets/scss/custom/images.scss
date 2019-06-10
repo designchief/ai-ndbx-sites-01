@@ -1,0 +1,7 @@
+// Size option for c-image
+
+.c-image__img {
+    &.c-image--medium-height {
+        max-height: 420px;
+    }
+}

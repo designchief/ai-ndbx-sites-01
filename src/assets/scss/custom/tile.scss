@@ -23,41 +23,7 @@
 }
 
 
-// Standard Section Tile
-.c-section {
-    text-align: center;
-    padding-top: map-get($sizes, 3m);
-    padding-bottom: map-get($sizes, l);
 
-    @include media-breakpoint-response(mobile) {
-        padding-top: map-get($sizes, 2m);
-        padding-bottom: map-get($sizes, 4m);
-    }
-
-    .c-section__content {
-        display: flex;
-        margin: 0 auto;
-        flex-direction: column;
-    }
-
-    .c-section__content-image {
-        display: flex;
-        justify-content: center;
-    }
-
-    .c-section__image {
-        padding-bottom: 14px;
-
-        .c-image__img {
-            height: 44px;
-            width: 44px;
-        }
-    }
-
-    .c-section__text {
-        line-height: 24px;
-    }
-}
 
 
 

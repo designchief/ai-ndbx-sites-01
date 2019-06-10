@@ -7,3 +7,15 @@ p, li, h1, h2, h3, h4, h5, h6, dl, span {
     -webkit-hyphens: none;
     hyphens: none;
 }
+
+p {
+    q {
+        display: block;
+    }
+
+    cite {
+        display: block;
+        margin-top: map-get($sizes, 2xs) !important;
+        color: map-get($color-grey-tones, grey-tone-3);
+    }
+}
