@@ -1,0 +1,11 @@
+// List customisation
+
+.c-list--links {
+    .c-list__item {
+        padding-left: 0;
+
+        &:before {
+            display: none;
+        }
+    }  
+}

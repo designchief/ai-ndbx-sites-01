@@ -8,3 +8,22 @@
         padding-bottom: map-get($sizes, 4m);
     }
 }
+
+// Adding missing image-left option
+.c-teaser--33-66 {
+    &.c-teaser--33-66-image-left-fix {
+        .c-teaser__content {
+            order: 2;
+            @include media-breakpoint-up ('large') {
+              width: 66.666%;
+            }
+          }
+        
+          .c-teaser__image-container {
+            order: 1;
+            @include media-breakpoint-up ('large') {
+              width: 33.333%;
+            }
+          }
+    }
+}
