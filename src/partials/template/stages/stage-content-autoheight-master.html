@@ -1,0 +1,26 @@
+<div class="c-stage c-stage--content-page c-stage--auto-height c-stage--negative">
+    <div class="c-stage__wrapper">
+        {{> breadcrumb-master}}
+        <div class="c-stage__image-container">
+            <picture class="c-image c-stage__image c-stage__image--cover ">
+                <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="{{root}}assets/img/stage/{{stage-image}}.jpg" />
+            </picture>
+        </div>
+        <div class="c-stage__content l-grid l-grid--max-width">
+            <div class="l-grid__row justify-content-center">
+                <div class="l-grid__column-large-8">
+                    <h4 class="c-heading c-stage__topline">{{{stage-topline}}}</h4>
+                </div>
+                <div class="l-grid__column-large-10">
+                        <h1 class="c-heading c-stage__headline">{{{stage-headline}}}</h1>
+                </div>
+                <div class="l-grid__column-large-8">
+                    <p class="c-copy">{{{stage-copy}}}</p>
+                </div>
+                <div class="l-grid__column-medium-8">
+                    <a href="#" class="c-button">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

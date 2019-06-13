@@ -13,3 +13,8 @@ $color-vibrant-lightest : (
         }
     }
 }
+
+// Smooth Anchor Links
+html {
+    scroll-behavior: smooth;
+}

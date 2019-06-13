@@ -27,3 +27,46 @@
           }
     }
 }
+
+.c-teaser--document {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: map-get($sizes, m);
+  overflow: hidden;
+
+  @include media-breakpoint-response (mobile) {
+    margin-bottom: map-get($sizes, s);
+  }
+
+  .c-teaser__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+  .c-teaser__wrapper {
+    padding: 30px 30px 15px 30px;
+
+    @include media-breakpoint-response (mobile) {
+      padding: 30px 20px 15px 20px;
+    }
+  }
+  .c-heading {
+    text-align: center;
+  }
+  .c-teaser__text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .c-teaser__link-area {
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex: 0 1 auto;
+
+    @include media-breakpoint-response(mobile) {
+      display: block;
+    }
+  }
+}

@@ -10,4 +10,10 @@
             color: map-get($color-rich, rich-blue);
         }
     }
+
+    .c-stage--negative {
+        em {
+            color: map-get($color-soft, soft-blue);
+        }
+    }
 }

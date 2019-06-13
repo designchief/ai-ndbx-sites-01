@@ -1,0 +1,12 @@
+// Page Sections
+
+.page-section {
+    border-top: map-get($borders, xs) solid map-get($color-grey-tones, grey-tone-6);
+    margin-top: map-get($sizes, m);
+    padding-top: map-get($sizes, 2m);
+
+    @include media-breakpoint-response(mobile) {
+        margin-top: map-get($sizes, s);
+        padding-top: map-get($sizes, m);
+    }
+}

@@ -1,20 +1,24 @@
 // Stage Overides
 
+.c-stage--auto-height {
+    height: auto !important;
+    min-height: auto !important;
+}
+
+.c-stage--content-page {
+    .c-stage__content {
+        height: auto !important;
+        min-height: auto !important;
+    }
+}
+
 .c-stage--cutout {
     height: auto;
     overflow: hidden;
     .c-stage__cutout-image {
         margin-bottom: 0;
 
-        .c-image__ill {
-            width: 252px;
-            height: 140px;
-    
-            @include media-breakpoint-response(mobile) {
-                width: 216px;
-                height: 120px;
-            }
-        }
+        
     }
 } 
 
