@@ -287,7 +287,7 @@
 
 
 ```html
-<div class="c-teaser c-teaser--33-66 ">
+<div class="c-teaser c-teaser--33-66">
   <div class="l-grid l-grid--max-width u-padding-none">
     <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
       <div class="c-teaser__image-container">
@@ -322,6 +322,31 @@
     </div>
   </div>
 </div>
+
+---
+
+## c-teaser--33-66-image-left-fix
+
+
+```html
+<div class="c-teaser c-teaser--33-66 c-teaser--33-66-image-left-fix">
+  <div class="l-grid l-grid--max-width u-padding-none">
+    <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
+      <div class="c-teaser__image-container">
+        <picture class="c-image c-teaser__image ">
+          <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+      </div>
+      <div class="c-teaser__content t-bg-soft-blue-light">
+        <p class="c-copy c-teaser__date">Subheadline / Date</p>
+        <h3 class="c-heading c-teaser__headline">Headline title</h3>
+        <p class="c-copy c-teaser__text">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+        <a class="c-link c-link--block c-teaser__link" aria-label="Read more"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue --><span class="c-link__text">Read more</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+```
 <div class="c-teaser c-teaser--33-66 c-teaser--33-66-image-left-fix">
   <div class="l-grid l-grid--max-width u-padding-none">
     <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
@@ -421,5 +446,186 @@
                 <span class="c-link c-link--block c-teaser__link" aria-label="Read more"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue --><span class="c-link__text">Read more</span></span>
             </div>
         </a>
+    </div>
+</div>
+
+---
+
+## c-teaser--vertical-50-50
+
+
+```html
+<div class="c-teaser c-teaser--vertical-50-50">
+    <div class="l-grid l-grid--max-width u-padding-none">
+        <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+            <div class="c-teaser__image-container">
+                <picture class="c-image c-teaser__image">
+                    <img class="c-image__img c-teaser__image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                </picture>
+            </div>
+            <div class="c-teaser__content t-bg-soft-blue-light">
+                <h3 class="c-heading c-teaser__content__headline u-text-weight-light u-text-small-center-down">Headline title</h3>
+                <p class="c-copy c-teaser__content__text">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt:</p>
+                <ul class="c-list c-list--small c-teaser__content__list">
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> Select your individual options </li>
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> Come back to us to change at any time </li>
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> All changes and upgrades are immediately effective </li>
+                </ul>
+                <a class="c-button c-teaser__content__button">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+```
+<div class="c-teaser c-teaser--vertical-50-50">
+    <div class="l-grid l-grid--max-width u-padding-none">
+        <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+            <div class="c-teaser__image-container">
+                <picture class="c-image c-teaser__image">
+                    <img class="c-image__img c-teaser__image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                </picture>
+            </div>
+            <div class="c-teaser__content t-bg-soft-blue-light">
+                <h3 class="c-heading c-teaser__content__headline u-text-weight-light u-text-small-center-down">Headline title</h3>
+                <p class="c-copy c-teaser__content__text">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt:</p>
+                <ul class="c-list c-list--small c-teaser__content__list">
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> Select your individual options </li>
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> Come back to us to change at any time </li>
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> All changes and upgrades are immediately effective </li>
+                </ul>
+                <a class="c-button c-teaser__content__button">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+---
+
+## c-teaser--vertical-50-50-image-right
+## c-teaser--negative
+
+
+```html
+<div class="c-teaser c-teaser--vertical-50-50 c-teaser--negative c-teaser--vertical-50-50-image-right">
+    <div class="l-grid l-grid--max-width u-padding-none">
+        <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+            <div class="c-teaser__image-container">
+                <picture class="c-image c-teaser__image">
+                    <img class="c-image__img c-teaser__image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                </picture>
+            </div>
+            <div class="c-teaser__content t-bg-rich-blue">
+                <h3 class="c-heading c-teaser__content__headline u-text-weight-light u-text-small-center-down">Headline title</h3>
+                <p class="c-copy c-teaser__content__text">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt:</p>
+                <ul class="c-list c-list--small c-teaser__content__list c-list--negative">
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> Select your individual options </li>
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> Come back to us to change at any time </li>
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> All changes and upgrades are immediately effective </li>
+                </ul>
+                <a class="c-button c-teaser__content__button c-button--negative">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+```
+<div class="c-teaser c-teaser--vertical-50-50 c-teaser--negative c-teaser--vertical-50-50-image-right">
+    <div class="l-grid l-grid--max-width u-padding-none">
+        <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+            <div class="c-teaser__image-container">
+                <picture class="c-image c-teaser__image">
+                    <img class="c-image__img c-teaser__image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                </picture>
+            </div>
+            <div class="c-teaser__content t-bg-rich-blue">
+                <h3 class="c-heading c-teaser__content__headline u-text-weight-light u-text-small-center-down">Headline title</h3>
+                <p class="c-copy c-teaser__content__text">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt:</p>
+                <ul class="c-list c-list--small c-teaser__content__list c-list--negative">
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> Select your individual options </li>
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> Come back to us to change at any time </li>
+                    <li class="c-list__item c-list__item--icon c-teaser__content__list-item"> All changes and upgrades are immediately effective </li>
+                </ul>
+                <a class="c-button c-teaser__content__button c-button--negative">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+---
+
+## Edge-to-Edge
+## c-teaser--50-50-without-image 
+
+```html
+<div class="c-teaser__area">
+    <div class="c-teaser-left-background t-bg-rich-blue"></div>
+    <div class="c-teaser-right-background t-bg-soft-blue"></div>
+    <div class="l-grid l-grid--max-width u-padding-none">
+        <div class="c-teaser c-teaser--50-50-without-image">
+            <div class="c-teaser__without-image-50 t-bg-rich-blue">
+                <div class="c-teaser__container c-teaser__content c-teaser__content--negative u-padding-none">
+                    <div class="c-teaser__wrapper">
+                        <a href="#">
+                            <p class="c-copy c-teaser__date">Subheadline / Date</p>
+                            <h3 class="c-heading c-teaser__headline">Headline title</h3>
+                            <p class="c-copy c-teaser__text">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                        </a>
+                    </div>
+                    <div class="c-teaser__link-area">
+                        <a class="c-link c-link--block c-link--negative" href='#' aria-label="Read more"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue --><span class="c-link__text">Read more</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-teaser__without-image-50 t-bg-soft-blue">
+                <div class="c-teaser__container c-teaser__content  u-padding-none">
+                    <div class="c-teaser__wrapper">
+                        <a href="#">
+                            <p class="c-copy c-teaser__date">Subheadline / Date</p>
+                            <h3 class="c-heading c-teaser__headline">Headline title</h3>
+                            <p class="c-copy c-teaser__text">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                        </a>
+                    </div>
+                    <div class="c-teaser__link-area">
+                        <a class="c-link c-link--block" href='#' aria-label="Visit page"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue --><span class="c-link__text">Visit page</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+<div class="c-teaser__area">
+    <div class="c-teaser-left-background t-bg-rich-blue"></div>
+    <div class="c-teaser-right-background t-bg-soft-blue"></div>
+    <div class="l-grid l-grid--max-width u-padding-none">
+        <div class="c-teaser c-teaser--50-50-without-image">
+            <div class="c-teaser__without-image-50 t-bg-rich-blue">
+                <div class="c-teaser__container c-teaser__content c-teaser__content--negative u-padding-none">
+                    <div class="c-teaser__wrapper">
+                        <a href="#">
+                            <p class="c-copy c-teaser__date">Subheadline / Date</p>
+                            <h3 class="c-heading c-teaser__headline">Headline title</h3>
+                            <p class="c-copy c-teaser__text">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                        </a>
+                    </div>
+                    <div class="c-teaser__link-area">
+                        <a class="c-link c-link--block c-link--negative" href='#' aria-label="Read more"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue --><span class="c-link__text">Read more</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-teaser__without-image-50 t-bg-soft-blue">
+                <div class="c-teaser__container c-teaser__content  u-padding-none">
+                    <div class="c-teaser__wrapper">
+                        <a href="#">
+                            <p class="c-copy c-teaser__date">Subheadline / Date</p>
+                            <h3 class="c-heading c-teaser__headline">Headline title</h3>
+                            <p class="c-copy c-teaser__text">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                        </a>
+                    </div>
+                    <div class="c-teaser__link-area">
+                        <a class="c-link c-link--block" href='#' aria-label="Visit page"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue --><span class="c-link__text">Visit page</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
