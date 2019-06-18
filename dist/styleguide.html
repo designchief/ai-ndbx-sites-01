@@ -15,6 +15,9 @@
           <div class="c-link-list sticky-list-styleguide"> 
             <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#text-sizes"><span class="c-link__text">Text Sizes</span></a></div>
             <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#text-weights"><span class="c-link__text">Text Weights</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#colours"><span class="c-link__text">Colours</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#icons"><span class="c-link__text">Icons</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#images"><span class="c-link__text">Images</span></a></div>
             <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#links"><span class="c-link__text">Links</span></a></div>
             <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#lists"><span class="c-link__text">Lists</span></a></div>
             <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#teasers"><span class="c-link__text">Teasers</span></a></div>
@@ -25,13 +28,14 @@
             <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#tables"><span class="c-link__text">Tables</span></a></div>
             <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#cards"><span class="c-link__text">Cards</span></a></div>
             <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#media"><span class="c-link__text">Media</span></a></div>
-            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#lists"><span class="c-link__text">Lists</span></a></div>
-            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#lists"><span class="c-link__text">Lists</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#tooltips"><span class="c-link__text">Tooltips</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#tabs"><span class="c-link__text">Tabs</span></a></div>
             <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#comparison"><span class="c-link__text">Comparison</span></a></div>
           </div>
         </div>
         <div class="l-grid__column-medium-10">
           <h1 class="c-heading u-text-weight-semibold">AI NDBX Style Guide</h1>
+          <p class="c-copy">This usage guide demos the core HTML markup for AI NDBX Sites and is based on the code found on <a class="c-link c-link--text" href='https://api.allianz.com/ndbx/' aria-label="text link"><span class="c-link__text">Pattern Lab</span></a>. <br>Further documentation, additional components and options are available on Pattern Lab and the HTML markup there should work as expected. Some customisations have been made so check this page 1st for reference.</p>
           <hr class="c-divider u-margin-top-m u-margin-bottom-m" aria-hidden="true" />
           <section class="ss-section" id="text-sizes"> <h1>Text Sizes</h1><hr>
 <h2>c-copy</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span>Copytext default: Font Size - 16px, Line Height - 24px<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
@@ -91,6 +95,303 @@
 <h2>u-text-weight-bold</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading u-text-weight-bold"</span>&gt;</span>H3 Bold<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-text-weight-bold"</span>&gt;</span>Copytext Bold<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre></div><p><h3 class="c-heading u-text-weight-bold">H3 Bold</h3></p>
 <p class="c-copy u-text-weight-bold u-margin-bottom-0">Copytext Bold</p> </section> 
+          <section class="ss-section" id="colours"> <h1>Colours</h1><p>A full list NDBX colours can be found on <a href="https://api.allianz.com/ndbx/?p=global-colors">Pattern Lab</a>.</p>
+<p>Colouring can be applied to text <code>.t-colour-key</code>, background <code>.t-bg-colour-key</code> and border <code>.t-border-colour-key</code> elements as per below.</p>
+<p>Product groups (Car, Home, Pet, Boat, Business, MyAllianz &amp; Customers) have specfific colours that should be applied to backgrounds and text. A reference for these colours can be found here in <a href="https://sketch.cloud/s/yyxGz/a/JbMPMb/play">Product Style</a>.</p>
+<hr>
+<h2>Text Colour</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading"</span>&gt;</span>Headline text with <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"t-rich-red"</span>&gt;</span>coloured text section<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy t-primary-brand"</span>&gt;</span>Paragraph text coloured<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre></div><p><h2 class="c-heading">Headline text with <span class="t-rich-red">coloured text section</span></h2></p>
+<p class="c-copy t-primary-brand">Paragraph text coloured</p>
+
+<hr>
+<h2>Background Colour</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"t-bg-vibrant-blue-light u-padding-md"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading"</span>&gt;</span>Standard headline text<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"t-bg-grey-tone-3 u-padding-md"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading c-heading--negative"</span>&gt;</span>Standard headline text<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="t-bg-vibrant-blue-light u-padding-md">
+    <h2 class="c-heading">Standard headline text</h2>
+</div>
+<div class="t-bg-grey-tone-3 u-padding-md">
+    <h2 class="c-heading c-heading--negative">Standard headline text</h2>
+</div>
+
+<hr>
+<h2>Border Colour</h2><p>Inline styles just added to display a border for demo <code>style=&quot;border-width: 1px; border-style: solid;&quot;</code>.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"t-border-vibrant-blue u-padding-md"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"border-width: 1px; border-style: solid;"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading"</span>&gt;</span>Standard headline text<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"t-border-grey-tone-5 u-padding-md"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"border-width: 1px; border-style: solid;"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading"</span>&gt;</span>Standard headline text<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="t-border-vibrant-blue u-padding-md" style="border-width: 1px; border-style: solid;">
+    <h2 class="c-heading">Standard headline text</h2>
+</div>
+<div class="t-border-grey-tone-5 u-padding-md" style="border-width: 1px; border-style: solid;">
+    <h2 class="c-heading">Standard headline text</h2>
+</div> </section> 
+          <section class="ss-section" id="icons"> <h1>Icons</h1><p>A full refernce for AI NDBX Sites icons can be found on the <a href="components/icons.html">Icons Page</a>.</p>
+<p>Standard icons can be changed on the site by updating the <code>c-icon--specific-icon</code> class.</p>
+<p>Custom icons (Not part of supplied icon font) have there own SVG markup partials for inline injection.</p>
+<hr>
+<h2>Standard icons</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--s c-icon--product-car-front"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--m c-icon--product-car-front"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--l t-primary-action-bright c-icon--product-car-front"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--xl t-rich-red c-icon--product-car-front"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--m t-bg-primary-action-bright t-white c-icon--fill  u-margin-bottom-m c-icon--product-car-front"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--m t-border-primary-action-bright t-primary-action-bright c-icon--outline c-icon--product-car-front"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span></code></pre></div><p><i class="c-icon c-icon--s c-icon--product-car-front"></i>
+<i class="c-icon c-icon--m c-icon--product-car-front"></i>
+<i class="c-icon c-icon--l t-primary-action-bright c-icon--product-car-front"></i>
+<i class="c-icon c-icon--xl t-rich-red c-icon--product-car-front"></i><br>
+<i class="c-icon c-icon--m t-bg-primary-action-bright t-white c-icon--fill  u-margin-bottom-m c-icon--product-car-front"></i><br>
+<i class="c-icon c-icon--m t-border-primary-action-bright t-primary-action-bright c-icon--outline c-icon--product-car-front"></i></p>
+<hr>
+<h2>Custom icons</h2><p>The <code>custom-svg</code> class replaces the <code>c-icon--specific-icon</code> class and custom SVG code is added inline.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--s custom-svg"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">"http://www.w3.org/2000/svg"</span> <span class="hljs-attribute">viewBox</span>=<span class="hljs-value">"0 0 24 24"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">g</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"none"</span> <span class="hljs-attribute">fill-rule</span>=<span class="hljs-value">"evenodd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">rect</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"24"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"24"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">path</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"currentColor"</span> <span class="hljs-attribute">d</span>=<span class="hljs-value">"M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">g</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--m custom-svg"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">"http://www.w3.org/2000/svg"</span> <span class="hljs-attribute">viewBox</span>=<span class="hljs-value">"0 0 24 24"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">g</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"none"</span> <span class="hljs-attribute">fill-rule</span>=<span class="hljs-value">"evenodd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">rect</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"24"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"24"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">path</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"currentColor"</span> <span class="hljs-attribute">d</span>=<span class="hljs-value">"M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">g</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--l t-primary-action-bright custom-svg"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">"http://www.w3.org/2000/svg"</span> <span class="hljs-attribute">viewBox</span>=<span class="hljs-value">"0 0 24 24"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">g</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"none"</span> <span class="hljs-attribute">fill-rule</span>=<span class="hljs-value">"evenodd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">rect</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"24"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"24"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">path</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"currentColor"</span> <span class="hljs-attribute">d</span>=<span class="hljs-value">"M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">g</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--xl t-rich-red custom-svg"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">"http://www.w3.org/2000/svg"</span> <span class="hljs-attribute">viewBox</span>=<span class="hljs-value">"0 0 24 24"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">g</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"none"</span> <span class="hljs-attribute">fill-rule</span>=<span class="hljs-value">"evenodd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">rect</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"24"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"24"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">path</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"currentColor"</span> <span class="hljs-attribute">d</span>=<span class="hljs-value">"M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">g</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--m t-bg-primary-action-bright t-white c-icon--fill  u-margin-bottom-m custom-svg"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">"http://www.w3.org/2000/svg"</span> <span class="hljs-attribute">viewBox</span>=<span class="hljs-value">"0 0 24 24"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">g</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"none"</span> <span class="hljs-attribute">fill-rule</span>=<span class="hljs-value">"evenodd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">rect</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"24"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"24"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">path</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"currentColor"</span> <span class="hljs-attribute">d</span>=<span class="hljs-value">"M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">g</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--m t-border-primary-action-bright t-primary-action-bright c-icon--outline custom-svg"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">"http://www.w3.org/2000/svg"</span> <span class="hljs-attribute">viewBox</span>=<span class="hljs-value">"0 0 24 24"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">g</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"none"</span> <span class="hljs-attribute">fill-rule</span>=<span class="hljs-value">"evenodd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">rect</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"24"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"24"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">path</span> <span class="hljs-attribute">fill</span>=<span class="hljs-value">"currentColor"</span> <span class="hljs-attribute">d</span>=<span class="hljs-value">"M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">g</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span></code></pre></div><p><i class="c-icon c-icon--s custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+<i class="c-icon c-icon--m custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+<i class="c-icon c-icon--l t-primary-action-bright custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+<i class="c-icon c-icon--xl t-rich-red custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i><br>
+<i class="c-icon c-icon--m t-bg-primary-action-bright t-white c-icon--fill  u-margin-bottom-m custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i><br>
+<i class="c-icon c-icon--m t-border-primary-action-bright t-primary-action-bright c-icon--outline custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i></p>
+ </section> 
+          <section class="ss-section" id="images"> <h1>Images</h1><hr>
+<h2>c-image</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span></code></pre></div><picture class="c-image">
+    <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg"/>
+</picture>
+
+<hr>
+<h2>c-image with caption</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">figcaption</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__caption u-margin-top-sm"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-text-center"</span>&gt;</span>Caption for image<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">figcaption</span>&gt;</span></code></pre></div><p><picture class="c-image">
+    <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
+</picture></p>
+<figcaption class="c-image__caption u-margin-top-sm">
+    <p class="c-copy u-text-center">Caption for image</p>
+</figcaption>
+
+<hr>
+<h2>c-image cropped variations</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--1by1dot1 - 1:1.1 ratio<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1by1dot1"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--1dot2by1 - 1.2:1 ratio<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot2by1"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--1dot8by1 - 1.8:1 ratio<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot8by1"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--2dot6by1 - 2.6:1 ratio<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--2dot6by1"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="l-grid__row">
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--1by1dot1 - 1:1.1 ratio</p>
+        <picture class="c-image c-image--1by1dot1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--1dot2by1 - 1.2:1 ratio</p>
+        <picture class="c-image c-image--1dot2by1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--1dot8by1 - 1.8:1 ratio</p>
+        <picture class="c-image c-image--1dot8by1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--2dot6by1 - 2.6:1 ratio</p>
+        <picture class="c-image c-image--2dot6by1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+</div>
+
+<hr>
+<h2>c-image position variations</h2><p>Images are styled to cover the given area and are positioned center-center. These poisition overides allow the image to be cropped so the focal area is in view.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--top-left<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot2by1 c-image--top-left"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--top-center<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot2by1 c-image--top-center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--top-right<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot2by1 c-image--top-right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--middle-left<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot2by1 c-image--middle-left"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--middle-center<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot2by1 c-image--middle-center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--middle-right<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot2by1 c-image--middle-right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--bottom-center<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot2by1 c-image--bottom-center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-10"</span>&gt;</span>c-image--bottom-right<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--1dot2by1 c-image--bottom-right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/teaser/teaser-car-lake.jpg"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="l-grid__row">
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--top-left</p>
+        <picture class="c-image c-image--1dot2by1 c-image--top-left">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--top-center</p>
+        <picture class="c-image c-image--1dot2by1 c-image--top-center">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--top-right</p>
+        <picture class="c-image c-image--1dot2by1 c-image--top-right">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--middle-left</p>
+        <picture class="c-image c-image--1dot2by1 c-image--middle-left">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--middle-center</p>
+        <picture class="c-image c-image--1dot2by1 c-image--middle-center">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--middle-right</p>
+        <picture class="c-image c-image--1dot2by1 c-image--middle-right">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--bottom-center</p>
+        <picture class="c-image c-image--1dot2by1 c-image--bottom-center">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--bottom-right</p>
+        <picture class="c-image c-image--1dot2by1 c-image--bottom-right">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+</div> </section> 
           <section class="ss-section" id="links"> <h1>Links</h1><hr>
 <h2>text link</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span>Ut enim ad minim <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--text"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">'#'</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"text link"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__text"</span>&gt;</span>text link<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre></div><p class="c-copy">Ut enim ad minim <a class="c-link c-link--text" href='#' aria-label="text link"><span class="c-link__text">text link</span></a> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 
@@ -1642,30 +1943,218 @@
     data-lat="48.104576" 
     data-lng="11.645687">
 </div> </section> 
-          <section class="ss-section" id="lists"> <h1>Lists</h1><hr>
-<h2>c-list (unordered)</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list__item"</span>&gt;</span> Select your individual options <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list__item"</span>&gt;</span> Come back to us to change at any time <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list__item"</span>&gt;</span> All changes and upgrades are immediately effective <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list__item"</span>&gt;</span> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div><ul class="c-list">
-    <li class="c-list__item"> Select your individual options </li>
-    <li class="c-list__item"> Come back to us to change at any time </li>
-    <li class="c-list__item"> All changes and upgrades are immediately effective </li>
-    <li class="c-list__item"> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. </li>
-</ul> </section> 
-          <section class="ss-section" id="lists"> <h1>Lists</h1><hr>
-<h2>c-list (unordered)</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list__item"</span>&gt;</span> Select your individual options <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list__item"</span>&gt;</span> Come back to us to change at any time <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list__item"</span>&gt;</span> All changes and upgrades are immediately effective <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-list__item"</span>&gt;</span> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div><ul class="c-list">
-    <li class="c-list__item"> Select your individual options </li>
-    <li class="c-list__item"> Come back to us to change at any time </li>
-    <li class="c-list__item"> All changes and upgrades are immediately effective </li>
-    <li class="c-list__item"> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. </li>
-</ul> </section> 
+          <section class="ss-section" id="tooltips"> <h1>Tooltips</h1><hr>
+<h2>c-tooltip</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row u-text-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6 u-padding-md"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip c-tooltip--v2 js-toggle-tooltip js-tooltip-adaptable js-tooltip-fix-overflow"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block js-toggle-tooltip__link "</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"tooltip-overview-1"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tooltip"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip__item"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip__arrow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"tooltip-overview-1"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-left-sm"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6 u-padding-md"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--top js-tooltip-adaptable js-tooltip-fix-overflow"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block js-toggle-tooltip__link "</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"tooltip-overview-4"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tooltip"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip__item"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip__arrow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"tooltip-overview-4"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-left-sm"</span>&gt;</span>c-tooltip--top<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6 u-padding-md"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--right js-tooltip-adaptable js-tooltip-fix-overflow"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block js-toggle-tooltip__link "</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"tooltip-overview-3"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tooltip"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip__item"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip__arrow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"tooltip-overview-3"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-left-sm"</span>&gt;</span>c-tooltip--right<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6 u-padding-md"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--left js-tooltip-adaptable js-tooltip-fix-overflow"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block js-toggle-tooltip__link "</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"tooltip-overview-2"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tooltip"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip__item"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tooltip__arrow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"tooltip-overview-2"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-left-sm"</span>&gt;</span>c-tooltip--left<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="l-grid__row u-text-center">
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-1">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-1" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">Default</p>
+    </div>
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--top js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-4">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-4" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">c-tooltip--top</p>
+    </div>
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--right js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-3">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-3" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">c-tooltip--right</p>
+    </div>
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--left js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-2">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-2" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">c-tooltip--left</p>
+    </div>
+</div> </section> 
+          <section class="ss-section" id="tabs"> <h1>Tabs</h1><hr>
+<h2>c-tabs</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs js-tabs l-grid l-grid--max-width"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__nav l-grid__column-small-12 "</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__nav-item active"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">data-content-id</span>=<span class="hljs-value">"FirstContent"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"FirstInput"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__input"</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">"FirstContent"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"tab-1"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">checked</span> <span class="hljs-attribute">aria-selected</span>=<span class="hljs-value">"true"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"FirstTab"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"FirstInput"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__label"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__label-container"</span>&gt;</span> Lorem <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__icon c-icon c-icon--chevron-down"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__icon c-icon c-icon--chevron-up"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__content-item u-hidden-medium-up"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">h5</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading c-heading--subsection-large c-heading__tabs"</span>&gt;</span> strud exercitation ullamc <span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__nav-item "</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">data-content-id</span>=<span class="hljs-value">"SecondContent"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"SecondInput"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__input"</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">"SecondContent"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"tab-1"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"SecondTab"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"SecondInput"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__label"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__label-container"</span>&gt;</span> Ipsum <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__icon c-icon c-icon--chevron-down"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__icon c-icon c-icon--chevron-up"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__content-item u-hidden-medium-up"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">h5</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading c-heading--subsection-large c-heading__tabs"</span>&gt;</span> Ut enim ad minim veniam <span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__nav-item "</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">data-content-id</span>=<span class="hljs-value">"ThirdContent"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ThirdInput"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__input"</span> <span class="hljs-attribute">aria-controls</span>=<span class="hljs-value">"ThirdContent"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"tab-1"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ThirdTab"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"-1"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ThirdInput"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__label"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__label-container"</span>&gt;</span> Dolor <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__icon c-icon c-icon--chevron-down"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__icon c-icon c-icon--chevron-up"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__content-item u-hidden-medium-up"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">h5</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading c-heading--subsection-large c-heading__tabs"</span>&gt;</span> Veniam, quis nostrud exe <span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__content offset-large-1 offset-medium-1 l-grid__column-large-10 l-grid__column-medium-10 u-hidden-small-down"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"FirstContent"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__content-item active"</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"FirstTab"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tabpanel"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h5</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading c-heading--subsection-large c-heading__tabs"</span>&gt;</span> strud exercitation ullamc <span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"SecondContent"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__content-item "</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"SecondTab"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tabpanel"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h5</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading c-heading--subsection-large c-heading__tabs"</span>&gt;</span> Ut enim ad minim veniam <span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ThirdContent"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-tabs__content-item "</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"ThirdTab"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tabpanel"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h5</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading c-heading--subsection-large c-heading__tabs"</span>&gt;</span> Veniam, quis nostrud exe <span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="c-tabs js-tabs l-grid l-grid--max-width">
+    <div class="l-grid__row">
+        <ul class="c-tabs__nav l-grid__column-small-12 " role="tablist">
+            <li class="c-tabs__nav-item active" tabindex="0" data-content-id="FirstContent" role="tab">
+                <input id="FirstInput" tabindex="-1" class="c-tabs__input" aria-controls="FirstContent" name="tab-1" type="radio" checked aria-selected="true" />
+                <label id="FirstTab" tabindex="-1" for="FirstInput" class="c-tabs__label">
+                    <div class="c-tabs__label-container"> Lorem </div>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-down"></span>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-up"></span>
+                </label>
+                <div class="c-tabs__content-item u-hidden-medium-up">
+                    <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> strud exercitation ullamc </h5>
+                    <p class="c-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+            <li class="c-tabs__nav-item " tabindex="-1" data-content-id="SecondContent" role="tab">
+                <input id="SecondInput" tabindex="-1" class="c-tabs__input" aria-controls="SecondContent" name="tab-1" type="radio" />
+                <label id="SecondTab" tabindex="-1" for="SecondInput" class="c-tabs__label">
+                    <div class="c-tabs__label-container"> Ipsum </div>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-down"></span>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-up"></span>
+                </label>
+                <div class="c-tabs__content-item u-hidden-medium-up">
+                    <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Ut enim ad minim veniam </h5>
+                    <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+                </div>
+            </li>
+            <li class="c-tabs__nav-item " tabindex="-1" data-content-id="ThirdContent" role="tab">
+                <input id="ThirdInput" tabindex="-1" class="c-tabs__input" aria-controls="ThirdContent" name="tab-1" type="radio" />
+                <label id="ThirdTab" tabindex="-1" for="ThirdInput" class="c-tabs__label">
+                    <div class="c-tabs__label-container"> Dolor </div>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-down"></span>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-up"></span>
+                </label>
+                <div class="c-tabs__content-item u-hidden-medium-up">
+                    <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Veniam, quis nostrud exe </h5>
+                    <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+                </div>
+            </li>
+        </ul>
+        <div class="c-tabs__content offset-large-1 offset-medium-1 l-grid__column-large-10 l-grid__column-medium-10 u-hidden-small-down" tabindex="0">
+            <div id="FirstContent" class="c-tabs__content-item active" aria-labeledby="FirstTab" role="tabpanel">
+                <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> strud exercitation ullamc </h5>
+                <p class="c-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="SecondContent" class="c-tabs__content-item " aria-labeledby="SecondTab" role="tabpanel">
+                <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Ut enim ad minim veniam </h5>
+                <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+            </div>
+            <div id="ThirdContent" class="c-tabs__content-item " aria-labeledby="ThirdTab" role="tabpanel">
+                <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Veniam, quis nostrud exe </h5>
+                <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+            </div>
+        </div>
+    </div>
+</div> </section> 
           <section class="ss-section" id="comparison"> <h1>Comparison</h1><p>A full list of comparision type content and markup can be found on <a href="https://api.allianz.com/ndbx/?p=viewall-content-table-enhanced">Pattern Lab</a>. The example below is Comparison 3 Columns.</p>
 <hr>
 <h2>js-comparison</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"js-comparison"</span>&gt;</span>

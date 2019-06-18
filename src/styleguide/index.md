@@ -114,6 +114,380 @@
 
 
 
+# Colours
+
+A full list NDBX colours can be found on [Pattern Lab](https://api.allianz.com/ndbx/?p=global-colors).
+
+Colouring can be applied to text <code>.t-colour-key</code>, background <code>.t-bg-colour-key</code> and border <code>.t-border-colour-key</code> elements as per below.
+
+Product groups (Car, Home, Pet, Boat, Business, MyAllianz & Customers) have specfific colours that should be applied to backgrounds and text. A reference for these colours can be found here in [Product Style](https://sketch.cloud/s/yyxGz/a/JbMPMb/play).
+
+---
+
+## Text Colour
+
+```html
+<h2 class="c-heading">Headline text with <span class="t-rich-red">coloured text section</span></h2>
+<p class="c-copy t-primary-brand">Paragraph text coloured</p>
+```
+<h2 class="c-heading">Headline text with <span class="t-rich-red">coloured text section</span></h2>
+<p class="c-copy t-primary-brand">Paragraph text coloured</p>
+
+---
+
+## Background Colour
+
+```html
+<div class="t-bg-vibrant-blue-light u-padding-md">
+    <h2 class="c-heading">Standard headline text</h2>
+</div>
+<div class="t-bg-grey-tone-3 u-padding-md">
+    <h2 class="c-heading c-heading--negative">Standard headline text</h2>
+</div>
+```
+<div class="t-bg-vibrant-blue-light u-padding-md">
+    <h2 class="c-heading">Standard headline text</h2>
+</div>
+<div class="t-bg-grey-tone-3 u-padding-md">
+    <h2 class="c-heading c-heading--negative">Standard headline text</h2>
+</div>
+
+---
+
+## Border Colour
+
+Inline styles just added to display a border for demo <code>style="border-width: 1px; border-style: solid;"</code>.
+
+```html
+<div class="t-border-vibrant-blue u-padding-md" style="border-width: 1px; border-style: solid;">
+    <h2 class="c-heading">Standard headline text</h2>
+</div>
+<div class="t-border-grey-tone-5 u-padding-md" style="border-width: 1px; border-style: solid;">
+    <h2 class="c-heading">Standard headline text</h2>
+</div>
+```
+<div class="t-border-vibrant-blue u-padding-md" style="border-width: 1px; border-style: solid;">
+    <h2 class="c-heading">Standard headline text</h2>
+</div>
+<div class="t-border-grey-tone-5 u-padding-md" style="border-width: 1px; border-style: solid;">
+    <h2 class="c-heading">Standard headline text</h2>
+</div>
+
+
+
+# Icons
+
+A full refernce for AI NDBX Sites icons can be found on the [Icons Page](components/icons.html).
+
+Standard icons can be changed on the site by updating the <code>c-icon--specific-icon</code> class.
+
+Custom icons (Not part of supplied icon font) have there own SVG markup partials for inline injection.
+
+---
+
+## Standard icons
+
+```html
+<i class="c-icon c-icon--s c-icon--product-car-front"></i>
+<i class="c-icon c-icon--m c-icon--product-car-front"></i>
+<i class="c-icon c-icon--l t-primary-action-bright c-icon--product-car-front"></i>
+<i class="c-icon c-icon--xl t-rich-red c-icon--product-car-front"></i><br>
+<i class="c-icon c-icon--m t-bg-primary-action-bright t-white c-icon--fill  u-margin-bottom-m c-icon--product-car-front"></i><br>
+<i class="c-icon c-icon--m t-border-primary-action-bright t-primary-action-bright c-icon--outline c-icon--product-car-front"></i>
+```
+<i class="c-icon c-icon--s c-icon--product-car-front"></i>
+<i class="c-icon c-icon--m c-icon--product-car-front"></i>
+<i class="c-icon c-icon--l t-primary-action-bright c-icon--product-car-front"></i>
+<i class="c-icon c-icon--xl t-rich-red c-icon--product-car-front"></i><br>
+<i class="c-icon c-icon--m t-bg-primary-action-bright t-white c-icon--fill  u-margin-bottom-m c-icon--product-car-front"></i><br>
+<i class="c-icon c-icon--m t-border-primary-action-bright t-primary-action-bright c-icon--outline c-icon--product-car-front"></i>
+
+---
+
+## Custom icons
+
+The <code>custom-svg</code> class replaces the <code>c-icon--specific-icon</code> class and custom SVG code is added inline.
+
+```html
+<i class="c-icon c-icon--s custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+<i class="c-icon c-icon--m custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+<i class="c-icon c-icon--l t-primary-action-bright custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+<i class="c-icon c-icon--xl t-rich-red custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i><br>
+<i class="c-icon c-icon--m t-bg-primary-action-bright t-white c-icon--fill  u-margin-bottom-m custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i><br>
+<i class="c-icon c-icon--m t-border-primary-action-bright t-primary-action-bright c-icon--outline custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+```
+<i class="c-icon c-icon--s custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+<i class="c-icon c-icon--m custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+<i class="c-icon c-icon--l t-primary-action-bright custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+<i class="c-icon c-icon--xl t-rich-red custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i><br>
+<i class="c-icon c-icon--m t-bg-primary-action-bright t-white c-icon--fill  u-margin-bottom-m custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i><br>
+<i class="c-icon c-icon--m t-border-primary-action-bright t-primary-action-bright c-icon--outline custom-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="24" height="24"/>
+    <path fill="currentColor" d="M17.75,19.249 C15.131,19.249 13,17.118 13,14.499 C12.998,13.945 12.549,13.499 12.001,13.499 C11.45,13.499 11.001,13.947 11.001,14.499 C11.001,14.508 11,14.518 10.999,14.528 C10.991,17.126 8.862,19.249 6.25,19.249 C3.812,19.249 1.784,17.401 1.532,14.999 L0.5,14.999 C0.224,14.999 0,14.775 0,14.499 C0,14.223 0.224,13.999 0.5,13.999 L1.532,13.999 C1.784,11.597 3.812,9.749 6.25,9.749 C6.647,9.749 7.049,9.802 7.446,9.906 L10.996,7.869 L6.228,5.134 C6.076,5.046 5.904,5 5.73,5 C5.373,5 5.04,5.191 4.862,5.499 C4.773,5.653 4.607,5.749 4.429,5.749 C4.342,5.749 4.255,5.726 4.179,5.682 C3.94,5.544 3.858,5.238 3.996,4.999 C4.352,4.383 5.017,4 5.731,4 C6.08,4 6.424,4.092 6.727,4.267 L12,7.293 L17.275,4.267 C17.577,4.093 17.921,4.001 18.269,4.001 C18.983,4.001 19.647,4.384 20.004,4.999 C20.142,5.237 20.06,5.544 19.822,5.682 C19.745,5.726 19.659,5.749 19.571,5.749 C19.393,5.749 19.227,5.653 19.138,5.499 C18.96,5.192 18.627,5 18.27,5 C18.096,5 17.925,5.046 17.773,5.133 L13.004,7.869 L16.554,9.906 C16.951,9.802 17.353,9.749 17.75,9.749 C20.188,9.749 22.216,11.597 22.468,13.999 L23.5,13.999 C23.776,13.999 24,14.223 24,14.499 C24,14.775 23.776,14.999 23.5,14.999 L22.468,14.999 C22.216,17.401 20.188,19.249 17.75,19.249 Z M14,14.503 C14.002,16.568 15.684,18.249 17.75,18.249 C19.818,18.249 21.5,16.567 21.5,14.499 C21.5,12.431 19.818,10.749 17.75,10.749 C15.688,10.749 14.006,12.427 14,14.49 C14.001,14.494 14.001,14.499 14,14.503 L14,14.503 Z M6.25,10.749 C4.182,10.749 2.5,12.431 2.5,14.499 C2.5,16.567 4.182,18.249 6.25,18.249 C8.318,18.249 10,16.567 10,14.499 C10,12.431 8.318,10.749 6.25,10.749 Z M8.617,10.387 C9.603,10.958 10.362,11.877 10.736,12.953 C11.09,12.661 11.533,12.5 12.001,12.5 C12.469,12.5 12.911,12.661 13.265,12.952 C13.639,11.878 14.398,10.959 15.383,10.388 L12,8.447 L8.617,10.387 Z"/>
+  </g>
+</svg></i>
+
+
+
+# Images
+
+---
+
+## c-image
+
+```html
+<picture class="c-image">
+    <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg"/>
+</picture>
+```
+<picture class="c-image">
+    <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg"/>
+</picture>
+
+---
+
+## c-image with caption
+
+```html
+<picture class="c-image">
+    <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
+</picture>
+<figcaption class="c-image__caption u-margin-top-sm">
+    <p class="c-copy u-text-center">Caption for image</p>
+</figcaption>
+```
+<picture class="c-image">
+    <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
+</picture>
+<figcaption class="c-image__caption u-margin-top-sm">
+    <p class="c-copy u-text-center">Caption for image</p>
+</figcaption>
+
+---
+
+## c-image cropped variations
+
+```html
+<div class="l-grid__row">
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--1by1dot1 - 1:1.1 ratio</p>
+        <picture class="c-image c-image--1by1dot1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--1dot2by1 - 1.2:1 ratio</p>
+        <picture class="c-image c-image--1dot2by1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--1dot8by1 - 1.8:1 ratio</p>
+        <picture class="c-image c-image--1dot8by1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--2dot6by1 - 2.6:1 ratio</p>
+        <picture class="c-image c-image--2dot6by1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+</div>
+```
+<div class="l-grid__row">
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--1by1dot1 - 1:1.1 ratio</p>
+        <picture class="c-image c-image--1by1dot1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--1dot2by1 - 1.2:1 ratio</p>
+        <picture class="c-image c-image--1dot2by1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--1dot8by1 - 1.8:1 ratio</p>
+        <picture class="c-image c-image--1dot8by1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-6">
+        <p class="c-copy u-margin-bottom-10">c-image--2dot6by1 - 2.6:1 ratio</p>
+        <picture class="c-image c-image--2dot6by1">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+</div>
+
+---
+
+## c-image position variations
+Images are styled to cover the given area and are positioned center-center. These poisition overides allow the image to be cropped so the focal area is in view.
+
+```html
+<div class="l-grid__row">
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--top-left</p>
+        <picture class="c-image c-image--1dot2by1 c-image--top-left">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--top-center</p>
+        <picture class="c-image c-image--1dot2by1 c-image--top-center">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--top-right</p>
+        <picture class="c-image c-image--1dot2by1 c-image--top-right">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--middle-left</p>
+        <picture class="c-image c-image--1dot2by1 c-image--middle-left">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--middle-center</p>
+        <picture class="c-image c-image--1dot2by1 c-image--middle-center">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--middle-right</p>
+        <picture class="c-image c-image--1dot2by1 c-image--middle-right">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--bottom-center</p>
+        <picture class="c-image c-image--1dot2by1 c-image--bottom-center">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--bottom-right</p>
+        <picture class="c-image c-image--1dot2by1 c-image--bottom-right">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture>
+    </div>
+</div>
+```
+<div class="l-grid__row">
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--top-left</p>
+        <picture class="c-image c-image--1dot2by1 c-image--top-left">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--top-center</p>
+        <picture class="c-image c-image--1dot2by1 c-image--top-center">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--top-right</p>
+        <picture class="c-image c-image--1dot2by1 c-image--top-right">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--middle-left</p>
+        <picture class="c-image c-image--1dot2by1 c-image--middle-left">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--middle-center</p>
+        <picture class="c-image c-image--1dot2by1 c-image--middle-center">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--middle-right</p>
+        <picture class="c-image c-image--1dot2by1 c-image--middle-right">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--bottom-center</p>
+        <picture class="c-image c-image--1dot2by1 c-image--bottom-center">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+    <div class="l-grid__column-medium-4">
+        <p class="c-copy u-margin-bottom-10">c-image--bottom-right</p>
+        <picture class="c-image c-image--1dot2by1 c-image--bottom-right">
+            <img class="c-image__img" src="assets/img/teaser/teaser-car-lake.jpg" />
+        </picture><br>
+    </div>
+</div>
+
+
+
 # Links
 
 ---
@@ -1934,49 +2308,237 @@ Map component does not seem to working as expected as per [Pattern Lab](https://
 
 
 
-# Lists
+# Tooltips
 
 ---
 
-## c-list (unordered)
+## c-tooltip
 
 ```html
-<ul class="c-list">
-    <li class="c-list__item"> Select your individual options </li>
-    <li class="c-list__item"> Come back to us to change at any time </li>
-    <li class="c-list__item"> All changes and upgrades are immediately effective </li>
-    <li class="c-list__item"> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. </li>
-</ul>
+<div class="l-grid__row u-text-center">
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-1">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-1" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">Default</p>
+    </div>
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--top js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-4">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-4" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">c-tooltip--top</p>
+    </div>
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--right js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-3">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-3" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">c-tooltip--right</p>
+    </div>
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--left js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-2">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-2" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">c-tooltip--left</p>
+    </div>
+</div>
 ```
-<ul class="c-list">
-    <li class="c-list__item"> Select your individual options </li>
-    <li class="c-list__item"> Come back to us to change at any time </li>
-    <li class="c-list__item"> All changes and upgrades are immediately effective </li>
-    <li class="c-list__item"> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. </li>
-</ul>
+<div class="l-grid__row u-text-center">
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-1">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-1" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">Default</p>
+    </div>
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--top js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-4">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-4" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">c-tooltip--top</p>
+    </div>
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--right js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-3">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-3" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">c-tooltip--right</p>
+    </div>
+    <div class="l-grid__column-medium-6 u-padding-md">
+        <div class="c-tooltip c-tooltip--v2 js-toggle-tooltip c-tooltip--left js-tooltip-adaptable js-tooltip-fix-overflow">
+            <a role="button" href="#" class="c-link c-link--block js-toggle-tooltip__link " aria-describedby="tooltip-overview-2">
+                <i class='c-icon js-toggle-icon c-icon--info-circle-o u-margin-left-sm font-size-xlg'></i>
+            </a>
+            <div role="tooltip" class="c-tooltip__item" aria-hidden="true">
+                <div class="c-tooltip__arrow"></div>
+                <p id="tooltip-overview-2" class="c-copy"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+            </div>
+        </div>
+        <p class="c-copy u-margin-left-sm">c-tooltip--left</p>
+    </div>
+</div>
 
 
 
-# Lists
+# Tabs
 
 ---
 
-## c-list (unordered)
+## c-tabs
 
 ```html
-<ul class="c-list">
-    <li class="c-list__item"> Select your individual options </li>
-    <li class="c-list__item"> Come back to us to change at any time </li>
-    <li class="c-list__item"> All changes and upgrades are immediately effective </li>
-    <li class="c-list__item"> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. </li>
-</ul>
+<div class="c-tabs js-tabs l-grid l-grid--max-width">
+    <div class="l-grid__row">
+        <ul class="c-tabs__nav l-grid__column-small-12 " role="tablist">
+            <li class="c-tabs__nav-item active" tabindex="0" data-content-id="FirstContent" role="tab">
+                <input id="FirstInput" tabindex="-1" class="c-tabs__input" aria-controls="FirstContent" name="tab-1" type="radio" checked aria-selected="true" />
+                <label id="FirstTab" tabindex="-1" for="FirstInput" class="c-tabs__label">
+                    <div class="c-tabs__label-container"> Lorem </div>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-down"></span>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-up"></span>
+                </label>
+                <div class="c-tabs__content-item u-hidden-medium-up">
+                    <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> strud exercitation ullamc </h5>
+                    <p class="c-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+            <li class="c-tabs__nav-item " tabindex="-1" data-content-id="SecondContent" role="tab">
+                <input id="SecondInput" tabindex="-1" class="c-tabs__input" aria-controls="SecondContent" name="tab-1" type="radio" />
+                <label id="SecondTab" tabindex="-1" for="SecondInput" class="c-tabs__label">
+                    <div class="c-tabs__label-container"> Ipsum </div>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-down"></span>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-up"></span>
+                </label>
+                <div class="c-tabs__content-item u-hidden-medium-up">
+                    <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Ut enim ad minim veniam </h5>
+                    <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+                </div>
+            </li>
+            <li class="c-tabs__nav-item " tabindex="-1" data-content-id="ThirdContent" role="tab">
+                <input id="ThirdInput" tabindex="-1" class="c-tabs__input" aria-controls="ThirdContent" name="tab-1" type="radio" />
+                <label id="ThirdTab" tabindex="-1" for="ThirdInput" class="c-tabs__label">
+                    <div class="c-tabs__label-container"> Dolor </div>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-down"></span>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-up"></span>
+                </label>
+                <div class="c-tabs__content-item u-hidden-medium-up">
+                    <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Veniam, quis nostrud exe </h5>
+                    <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+                </div>
+            </li>
+        </ul>
+        <div class="c-tabs__content offset-large-1 offset-medium-1 l-grid__column-large-10 l-grid__column-medium-10 u-hidden-small-down" tabindex="0">
+            <div id="FirstContent" class="c-tabs__content-item active" aria-labeledby="FirstTab" role="tabpanel">
+                <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> strud exercitation ullamc </h5>
+                <p class="c-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="SecondContent" class="c-tabs__content-item " aria-labeledby="SecondTab" role="tabpanel">
+                <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Ut enim ad minim veniam </h5>
+                <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+            </div>
+            <div id="ThirdContent" class="c-tabs__content-item " aria-labeledby="ThirdTab" role="tabpanel">
+                <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Veniam, quis nostrud exe </h5>
+                <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+            </div>
+        </div>
+    </div>
+</div>
 ```
-<ul class="c-list">
-    <li class="c-list__item"> Select your individual options </li>
-    <li class="c-list__item"> Come back to us to change at any time </li>
-    <li class="c-list__item"> All changes and upgrades are immediately effective </li>
-    <li class="c-list__item"> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. </li>
-</ul>
+<div class="c-tabs js-tabs l-grid l-grid--max-width">
+    <div class="l-grid__row">
+        <ul class="c-tabs__nav l-grid__column-small-12 " role="tablist">
+            <li class="c-tabs__nav-item active" tabindex="0" data-content-id="FirstContent" role="tab">
+                <input id="FirstInput" tabindex="-1" class="c-tabs__input" aria-controls="FirstContent" name="tab-1" type="radio" checked aria-selected="true" />
+                <label id="FirstTab" tabindex="-1" for="FirstInput" class="c-tabs__label">
+                    <div class="c-tabs__label-container"> Lorem </div>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-down"></span>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-up"></span>
+                </label>
+                <div class="c-tabs__content-item u-hidden-medium-up">
+                    <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> strud exercitation ullamc </h5>
+                    <p class="c-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+            <li class="c-tabs__nav-item " tabindex="-1" data-content-id="SecondContent" role="tab">
+                <input id="SecondInput" tabindex="-1" class="c-tabs__input" aria-controls="SecondContent" name="tab-1" type="radio" />
+                <label id="SecondTab" tabindex="-1" for="SecondInput" class="c-tabs__label">
+                    <div class="c-tabs__label-container"> Ipsum </div>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-down"></span>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-up"></span>
+                </label>
+                <div class="c-tabs__content-item u-hidden-medium-up">
+                    <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Ut enim ad minim veniam </h5>
+                    <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+                </div>
+            </li>
+            <li class="c-tabs__nav-item " tabindex="-1" data-content-id="ThirdContent" role="tab">
+                <input id="ThirdInput" tabindex="-1" class="c-tabs__input" aria-controls="ThirdContent" name="tab-1" type="radio" />
+                <label id="ThirdTab" tabindex="-1" for="ThirdInput" class="c-tabs__label">
+                    <div class="c-tabs__label-container"> Dolor </div>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-down"></span>
+                    <span aria-hidden="true" class="c-tabs__icon c-icon c-icon--chevron-up"></span>
+                </label>
+                <div class="c-tabs__content-item u-hidden-medium-up">
+                    <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Veniam, quis nostrud exe </h5>
+                    <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+                </div>
+            </li>
+        </ul>
+        <div class="c-tabs__content offset-large-1 offset-medium-1 l-grid__column-large-10 l-grid__column-medium-10 u-hidden-small-down" tabindex="0">
+            <div id="FirstContent" class="c-tabs__content-item active" aria-labeledby="FirstTab" role="tabpanel">
+                <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> strud exercitation ullamc </h5>
+                <p class="c-copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="SecondContent" class="c-tabs__content-item " aria-labeledby="SecondTab" role="tabpanel">
+                <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Ut enim ad minim veniam </h5>
+                <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+            </div>
+            <div id="ThirdContent" class="c-tabs__content-item " aria-labeledby="ThirdTab" role="tabpanel">
+                <h5 class="c-heading c-heading--subsection-large c-heading__tabs"> Veniam, quis nostrud exe </h5>
+                <p class="c-copy">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
