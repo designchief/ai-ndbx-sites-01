@@ -33,6 +33,10 @@
 .c-stage--cutout {
     height: auto;
     min-height: auto;
+    
+    .c-stage__content {
+        height: auto;
+    }
 }
 
 .c-stage--cutout {
