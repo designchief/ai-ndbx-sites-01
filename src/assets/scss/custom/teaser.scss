@@ -2,10 +2,10 @@
 
 // Standard Section Tile
 .c-teaser-group {
-    padding-bottom: map-get($sizes, l);
+    padding-bottom: map-get($sizes, xl);
 
     @include media-breakpoint-response(mobile) {
-        padding-bottom: map-get($sizes, 4m);
+        padding-bottom: 0;
     }
 }
 
@@ -32,7 +32,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  align-items: center;
+  align-items: top;
   margin-bottom: map-get($sizes, m);
   overflow: hidden;
 

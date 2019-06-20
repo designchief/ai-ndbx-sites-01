@@ -55,3 +55,34 @@
     }
   } 
 }
+
+header {
+    .c-navigation__accordion {
+        .c-navcontent__links {
+            margin-bottom: map-get($sizes, 2m);
+
+            .c-navcontent__headline {
+                @include media-breakpoint-response(mobile) {
+                    margin-top: map-get($sizes, 2xs);
+                    margin-bottom: map-get($sizes, s);
+                }
+            }
+
+            .c-navcontent__list {
+                margin-bottom: map-get($sizes, xs);
+            }
+
+            .c-navcontent__list-item {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            a {
+                margin-bottom: 0;
+                display: block;
+                padding-top: map-get($sizes, 2xs);
+                padding-bottom: map-get($sizes, 2xs);
+            }
+        }
+    }
+}

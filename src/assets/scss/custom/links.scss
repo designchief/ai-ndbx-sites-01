@@ -5,3 +5,42 @@
         vertical-align: baseline;
     }
 }
+
+
+.c-icon-text {
+    display: inline-flex;
+    font-size: map-get($font-sizes, 3xs);
+    letter-spacing: map-get($letter-spacings, 2m);
+    line-height: map-get($line-heights, 2xs);
+    position: relative;
+    text-decoration: none;
+    transition: color .2s ease, box-shadow .2s ease;
+    vertical-align: top;
+    z-index: 1;
+    // variation of link for having an icon on the right side of the linktext
+    .c-icon-text__icon,
+    .c-icon-text__icon.fa {
+      vertical-align: top;
+      line-height: map-get($line-heights, 2xs);
+      float: left;
+      height: map-get($sizes, m);
+      // if there is a Icon in the link (standard on left side)
+      &::before {
+        line-height: inherit;
+        margin: 0 map-get($sizes, 2xs) 0 0;
+        font-size: map-get($sizes, m);
+        width: map-get($sizes, m);
+        height: map-get($sizes, m);
+        display: inline-block;
+      }
+    }
+    &.c-icon-text--icon-right {
+      display: inline-flex;
+      flex-direction: row-reverse;
+      .c-icon-text__icon {
+        &::before {
+          margin: 0 0 0 map-get($sizes, 2xs);
+        }
+      }
+    }
+  }

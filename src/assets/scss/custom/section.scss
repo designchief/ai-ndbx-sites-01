@@ -39,4 +39,11 @@
         color: map-get($color-basic, primary-white);
     }
 
+    .c-tile--link {
+        display: block;
+        @include media-breakpoint-response(mobile) {
+            margin-bottom: map-get($sizes, m);
+        }
+    }
+
 }

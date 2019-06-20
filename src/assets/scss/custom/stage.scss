@@ -1,52 +1,55 @@
-// Stage Overides
+// Fixing padding on hero stages
 
-.c-stage--auto-height {
-    height: auto !important;
-    min-height: auto !important;
-}
-
-.c-stage--content-page {
+.c-stage {
     .c-stage__content {
-        height: auto !important;
-        min-height: auto !important;
-    }
-}
+        padding-top: map-get($sizes, l);
 
-.c-stage--cutout {
-    height: auto;
-    overflow: hidden;
-    .c-stage__cutout-image {
-        margin-bottom: 0;
-
-        
-    }
-} 
-
-.c-stage--breadcrumb {
-    .c-stage__content {
-        padding-top: map-get($sizes, l) !important;
+        @include media-breakpoint-response(tablet) {
+            padding-top: map-get($sizes, l);
+        }
 
         @include media-breakpoint-response(mobile) {
-            padding-top: map-get($sizes, m) !important;
+            padding-top: map-get($sizes, m);
         }
     }
 }
 
 .c-stage--with-navigation,
-.c-stage--landing {
+.c-stage--landing,
+.c-stage--no-breadcrumb {
     .c-stage__content {
-        padding-top: map-get($sizes, m);
+        padding-top: map-get($sizes, 2m);
+
+        @include media-breakpoint-response(mobile) {
+            padding-top: map-get($sizes, m);
+        }
     }
 }
 
-.c-stage--with-navigation,
-.c-stage--landing,
+// Stage height auto overide
+
+.c-stage--auto-height,
+.c-stage--content-page,
 .c-stage--cutout {
-    h1.c-stage__headline {
-        margin-bottom: map-get($sizes, xs);
+    height: auto;
+    min-height: auto;
+}
+
+.c-stage--cutout {
+    .c-stage__cutout-image {
+        margin-bottom: map-get($sizes, s);
+        margin-top: map-get($sizes, xs);
+    }
+}
+
+// Stage typography
+
+.c-stage {
+    .c-stage__headline {
+        margin-bottom: map-get($sizes, xs) !important;
 
         @include media-breakpoint-response(mobile) {
-            margin-bottom: map-get($sizes, 2xs);
+            margin-bottom: map-get($sizes, 2xs) !important;
         }
     }
     .c-stage__topline {
@@ -72,12 +75,20 @@
     }
 }
 
-.c-stage--landing {
-    .c-stage__button__grid {
-        .c-button {
-            &:last-of-type {
-                margin-bottom: 0;
-            }
+.c-stage--article {
+    .c-stage__additional-info {
+        @include media-breakpoint-response(mobile) {
+            margin-bottom: map-get($sizes, 2xs) !important;
         }
     }
 }
+
+// .c-stage--landing {
+//     .c-stage__button__grid {
+//         .c-button {
+//             &:last-of-type {
+//                 margin-bottom: 0;
+//             }
+//         }
+//     }
+// }

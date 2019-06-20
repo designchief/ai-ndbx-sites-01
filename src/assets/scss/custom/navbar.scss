@@ -1,5 +1,9 @@
-// Navbar Overides
+// Fixing icon spacing on More link
 
-// .c-flyout {
-//     z-index: 200 !important;
-//   }
+.c-nav-product__more-link {
+    .c-icon {
+        &::before {
+            margin: 0 0 0 map-get($sizes, 2xs);
+        }
+    }
+}
