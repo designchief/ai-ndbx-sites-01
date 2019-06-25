@@ -5,12 +5,28 @@
     // margin-top: map-get($sizes, s);
 
     img {
-        width: 252px;
-        height: 140px;
+        max-width: 224px;
+        max-height: 124px;
+        font-family: "object-fit: contain;";
+        object-fit: contain;
 
         @include media-breakpoint-response(mobile) {
-            width: 216px;
-            height: 120px;
+            max-width: 198px;
+            max-height: 110px;
+        }
+    }
+
+    &.ill-small {
+        img {
+            max-width: 198px;
+            max-height: 110px;
+            font-family: "object-fit: contain;";
+            object-fit: contain;
+    
+            @include media-breakpoint-response(mobile) {
+                max-width: 162px;
+                max-height: 90px;
+            }
         }
     }
 }
