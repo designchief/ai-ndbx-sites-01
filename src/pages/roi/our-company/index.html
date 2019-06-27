@@ -1,0 +1,56 @@
+---
+layout: roi-footer-light
+country: roi
+product-style: default
+product-specific: about
+product-title: Our Company
+product-slug: our-company
+category-title: Our Company
+article-title: About Allianz
+article-author: Andrew Kelliher
+article-date: April 16th, 2019
+article-image: teaser-home-girl-on-tablet
+---
+
+<div class="c-stage c-stage--article">
+    <div class="c-stage__wrapper">
+        <div class="l-grid l-grid--max-width u-hidden-small-down">
+            <div class="l-grid__row">
+                <div class="l-grid__column-12">
+                    <div class="c-stage__breadcrumb">
+                        <nav aria-label="Breadcrumbs" class="c-breadcrumb c-breadcrumb--negative u-hidden-small-down u-text-left">
+                            <span class="u-aria-only">You are here:</span>
+                            <ul class="c-breadcrumb__list">
+                                <li class="c-breadcrumb__item">
+                                    <a class="c-breadcrumb__link " href="{{root}}{{country}}/">Home</a>
+                                </li>
+                                <li class="c-breadcrumb__item">
+                                    <i class="c-icon c-icon--chevron-right" aria-hidden="true"></i>
+                                    <a class="c-breadcrumb__link " href="{{root}}{{country}}/our-company/">About</a>
+                                </li>
+                                <li class="c-breadcrumb__item">
+                                    <i class="c-icon c-icon--chevron-right" aria-hidden="true"></i>
+                                    <a class="c-breadcrumb__link is-active" href="#">{{category-title}}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-stage__image-container">
+            <picture class="c-image c-stage__image">
+                <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="{{root}}assets/img/teaser/{{article-image}}.jpg" />
+            </picture>
+        </div>
+        <div class="l-grid l-grid--max-width c-stage__content">
+            <div class="l-grid__row justify-content-center">
+                <div class="l-grid__column-medium-10">
+                    <h1 class="c-heading c-stage__headline u-text-weight-light">{{article-title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> section-placeholder-content}}

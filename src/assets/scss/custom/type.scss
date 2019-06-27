@@ -16,6 +16,7 @@ p {
     cite {
         display: block;
         margin-top: map-get($sizes, 2xs) !important;
+        margin-bottom: 0 !important;
         color: map-get($color-grey-tones, grey-tone-3);
     }
 }

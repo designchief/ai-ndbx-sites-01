@@ -1,0 +1,14 @@
+// Add extended button option
+
+.c-content-card {
+    text-align: left;
+    margin-bottom: map-get($sizes, m);
+
+    @include media-breakpoint-up('medium') {
+        padding: map-get($sizes, 2m) map-get($sizes, 2m) map-get($sizes, 3m);
+    }
+
+    @include media-breakpoint-response(mobile) {
+        padding: map-get($sizes, 2m) map-get($sizes, m) map-get($sizes, 3m);
+    }
+}
