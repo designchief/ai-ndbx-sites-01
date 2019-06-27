@@ -782,7 +782,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
       <div class="c-teaser__image-container">
         <picture class="c-image c-teaser__image">
-          <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+          <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
         </picture>
       </div>
       <div class="c-teaser__content t-bg-soft-blue-light">
@@ -800,7 +800,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
       <div class="c-teaser__image-container">
         <picture class="c-image c-teaser__image">
-          <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+          <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
         </picture>
       </div>
       <div class="c-teaser__content t-bg-soft-blue-light">
@@ -824,7 +824,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
       <div class="c-teaser__image-container">
         <picture class="c-image c-teaser__image">
-          <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+          <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
         </picture>
       </div>
       <div class="c-teaser__content t-bg-soft-blue-light">
@@ -842,7 +842,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
       <div class="c-teaser__image-container">
         <picture class="c-image c-teaser__image">
-          <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+          <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
         </picture>
       </div>
       <div class="c-teaser__content t-bg-soft-blue-light">
@@ -866,7 +866,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
         <a href="#" class="c-teaser__link-area" aria-label="More information about short description of teaser content">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
-                    <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                    <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
                 </picture>
             </div>
             <div class="c-teaser__content t-bg-soft-blue-light">
@@ -884,7 +884,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
         <a href="#" class="c-teaser__link-area" aria-label="More information about short description of teaser content">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
-                    <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                    <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
                 </picture>
             </div>
             <div class="c-teaser__content t-bg-soft-blue-light">
@@ -908,7 +908,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
         <a href="#" class="c-teaser__link-area" aria-label="More information about short description of teaser content">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
-                    <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                    <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
                 </picture>
             </div>
             <div class="c-teaser__content t-bg-soft-blue-light">
@@ -926,7 +926,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
         <a href="#" class="c-teaser__link-area" aria-label="More information about short description of teaser content">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
-                    <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                    <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
                 </picture>
             </div>
             <div class="c-teaser__content t-bg-soft-blue-light">
@@ -950,7 +950,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
         <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
-                    <img class="c-image__img c-teaser__image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                    <img class="c-image__img c-teaser__image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
                 </picture>
             </div>
             <div class="c-teaser__content t-bg-soft-blue-light">
@@ -972,7 +972,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
         <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
-                    <img class="c-image__img c-teaser__image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                    <img class="c-image__img c-teaser__image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
                 </picture>
             </div>
             <div class="c-teaser__content t-bg-soft-blue-light">
@@ -1001,7 +1001,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
         <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
-                    <img class="c-image__img c-teaser__image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                    <img class="c-image__img c-teaser__image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
                 </picture>
             </div>
             <div class="c-teaser__content t-bg-rich-blue">
@@ -1023,7 +1023,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
         <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
-                    <img class="c-image__img c-teaser__image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+                    <img class="c-image__img c-teaser__image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
                 </picture>
             </div>
             <div class="c-teaser__content t-bg-rich-blue">
@@ -1136,7 +1136,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
       <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
         <div class="c-teaser__image-container">
           <picture class="c-image c-teaser__image">
-            <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+            <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
           </picture>
         </div>
         <div class="c-teaser__content t-bg-soft-blue-light">
@@ -1152,7 +1152,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <div class="c-teaser c-teaser--50-50">
       <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
         <picture class="c-image c-teaser__image u-hidden-medium-down">
-          <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-faqs-hands-up.jpg" />
+          <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-faqs-hands-up.jpg" />
         </picture>
         <div class="c-teaser__content t-bg-soft-blue">
           <p class="c-copy c-teaser__date">Subheadline / Date</p>
@@ -1166,7 +1166,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <div class="c-teaser c-teaser--50-50 c-teaser--negative">
       <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
         <picture class="c-image c-teaser__image u-hidden-medium-down">
-          <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-breakdown-assist.jpg" />
+          <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-breakdown-assist.jpg" />
         </picture>
         <div class="c-teaser__content t-bg-rich-blue">
           <p class="c-copy c-teaser__date">Subheadline / Date</p>
@@ -1187,7 +1187,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
       <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
         <div class="c-teaser__image-container">
           <picture class="c-image c-teaser__image">
-            <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-car-lake.jpg" />
+            <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
           </picture>
         </div>
         <div class="c-teaser__content t-bg-soft-blue-light">
@@ -1203,7 +1203,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <div class="c-teaser c-teaser--50-50">
       <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
         <picture class="c-image c-teaser__image u-hidden-medium-down">
-          <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-faqs-hands-up.jpg" />
+          <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-faqs-hands-up.jpg" />
         </picture>
         <div class="c-teaser__content t-bg-soft-blue">
           <p class="c-copy c-teaser__date">Subheadline / Date</p>
@@ -1217,7 +1217,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <div class="c-teaser c-teaser--50-50 c-teaser--negative">
       <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
         <picture class="c-image c-teaser__image u-hidden-medium-down">
-          <img class="c-image__img c-teaser__image-img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-breakdown-assist.jpg" />
+          <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-breakdown-assist.jpg" />
         </picture>
         <div class="c-teaser__content t-bg-rich-blue">
           <p class="c-copy c-teaser__date">Subheadline / Date</p>
@@ -1241,7 +1241,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
             <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
                 <div class="c-teaser__image-container">
                     <picture class="c-image c-teaser__image">
-                        <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-family-laughing-on-bed.jpg" />
+                        <img class="c-image__img" alt="" src="assets/img/teaser/teaser-family-laughing-on-bed.jpg" />
                     </picture>
                 </div>
                 <div class="c-teaser__content">
@@ -1255,7 +1255,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
             <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
                 <div class="c-teaser__image-container">
                     <picture class="c-image c-teaser__image u-hidden-small-down">
-                        <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-documents-woman-reading.jpg" />
+                        <img class="c-image__img" alt="" src="assets/img/teaser/teaser-documents-woman-reading.jpg" />
                     </picture>
                 </div>
                 <div class="c-teaser__content">
@@ -1275,7 +1275,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
             <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
                 <div class="c-teaser__image-container">
                     <picture class="c-image c-teaser__image">
-                        <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-family-laughing-on-bed.jpg" />
+                        <img class="c-image__img" alt="" src="assets/img/teaser/teaser-family-laughing-on-bed.jpg" />
                     </picture>
                 </div>
                 <div class="c-teaser__content">
@@ -1289,7 +1289,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
             <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
                 <div class="c-teaser__image-container">
                     <picture class="c-image c-teaser__image u-hidden-small-down">
-                        <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="assets/img/teaser/teaser-documents-woman-reading.jpg" />
+                        <img class="c-image__img" alt="" src="assets/img/teaser/teaser-documents-woman-reading.jpg" />
                     </picture>
                 </div>
                 <div class="c-teaser__content">
@@ -2228,7 +2228,7 @@ A full list of table configurations can be found on [Pattern Lab](https://api.al
         <p class="c-copy c-agent-card__position">General agent</p>
         <div class="c-agent-card__image-block">
             <picture class="c-image c-image--rounded c-agent-card__image">
-                <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="assets/img/content/authors/andrew-kelliher.png" />
+                <img class="c-image__img" alt="" src="assets/img/content/authors/andrew-kelliher.png" />
             </picture>
         </div>
         <p class="c-copy c-agent-card__info"> Mon - Fri, 9am - 5pm<br />Leopoldstr. 100<br />80802 München</p>
@@ -2249,7 +2249,7 @@ A full list of table configurations can be found on [Pattern Lab](https://api.al
         <p class="c-copy c-agent-card__position">General agent</p>
         <div class="c-agent-card__image-block">
             <picture class="c-image c-image--rounded c-agent-card__image">
-                <img class="c-image__img" alt="useful description of image if informative and not decoration only." src="assets/img/content/authors/andrew-kelliher.png" />
+                <img class="c-image__img" alt="" src="assets/img/content/authors/andrew-kelliher.png" />
             </picture>
         </div>
         <p class="c-copy c-agent-card__info"> Mon - Fri, 9am - 5pm<br />Leopoldstr. 100<br />80802 München</p>
