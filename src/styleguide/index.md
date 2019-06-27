@@ -779,7 +779,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```html
 <div class="c-teaser c-teaser--33-66">
   <div class="l-grid l-grid--max-width u-padding-none">
-    <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
+    <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="">
       <div class="c-teaser__image-container">
         <picture class="c-image c-teaser__image">
           <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -797,7 +797,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```
 <div class="c-teaser c-teaser--33-66">
   <div class="l-grid l-grid--max-width u-padding-none">
-    <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
+    <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="">
       <div class="c-teaser__image-container">
         <picture class="c-image c-teaser__image">
           <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -821,7 +821,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```html
 <div class="c-teaser c-teaser--33-66 c-teaser--33-66-image-left-fix">
   <div class="l-grid l-grid--max-width u-padding-none">
-    <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
+    <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="">
       <div class="c-teaser__image-container">
         <picture class="c-image c-teaser__image">
           <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -839,7 +839,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```
 <div class="c-teaser c-teaser--33-66 c-teaser--33-66-image-left-fix">
   <div class="l-grid l-grid--max-width u-padding-none">
-    <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
+    <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="">
       <div class="c-teaser__image-container">
         <picture class="c-image c-teaser__image">
           <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -863,7 +863,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```html
 <div class="c-teaser c-teaser--66-33">
     <div class="l-grid l-grid--max-width u-padding-none">
-        <a href="#" class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+        <a href="#" class="c-teaser__link-area" aria-label="">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
                     <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -881,7 +881,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```
 <div class="c-teaser c-teaser--66-33">
     <div class="l-grid l-grid--max-width u-padding-none">
-        <a href="#" class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+        <a href="#" class="c-teaser__link-area" aria-label="">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
                     <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -905,7 +905,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```html
 <div class="c-teaser c-teaser--66-33 c-teaser--66-33-image-left">
     <div class="l-grid l-grid--max-width u-padding-none">
-        <a href="#" class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+        <a href="#" class="c-teaser__link-area" aria-label="">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
                     <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -923,7 +923,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```
 <div class="c-teaser c-teaser--66-33 c-teaser--66-33-image-left">
     <div class="l-grid l-grid--max-width u-padding-none">
-        <a href="#" class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+        <a href="#" class="c-teaser__link-area" aria-label="">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
                     <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -947,7 +947,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```html
 <div class="c-teaser c-teaser--vertical-50-50">
     <div class="l-grid l-grid--max-width u-padding-none">
-        <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+        <div class="c-teaser__link-area" aria-label="">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
                     <img class="c-image__img c-teaser__image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -969,7 +969,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```
 <div class="c-teaser c-teaser--vertical-50-50">
     <div class="l-grid l-grid--max-width u-padding-none">
-        <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+        <div class="c-teaser__link-area" aria-label="">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
                     <img class="c-image__img c-teaser__image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -998,7 +998,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```html
 <div class="c-teaser c-teaser--vertical-50-50 c-teaser--negative c-teaser--vertical-50-50-image-right">
     <div class="l-grid l-grid--max-width u-padding-none">
-        <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+        <div class="c-teaser__link-area" aria-label="">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
                     <img class="c-image__img c-teaser__image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -1020,7 +1020,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
 ```
 <div class="c-teaser c-teaser--vertical-50-50 c-teaser--negative c-teaser--vertical-50-50-image-right">
     <div class="l-grid l-grid--max-width u-padding-none">
-        <div class="c-teaser__link-area" aria-label="More information about short description of teaser content">
+        <div class="c-teaser__link-area" aria-label="">
             <div class="c-teaser__image-container">
                 <picture class="c-image c-teaser__image">
                     <img class="c-image__img c-teaser__image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -1133,7 +1133,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
   <h3 class="c-heading c-teaser-group__headline u-text-weight-light u-text-center">Learn more about our <em class="u-text-weight-semibold">insurance</em></h3>
   <div class="c-teaser c-teaser--33-66">
     <div class="l-grid l-grid--max-width u-padding-none">
-      <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
+      <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="">
         <div class="c-teaser__image-container">
           <picture class="c-image c-teaser__image">
             <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -1150,7 +1150,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
   </div>
   <div class="c-teaser-group__row">
     <div class="c-teaser c-teaser--50-50">
-      <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
+      <a class="c-teaser__link-area" aria-label="" href="#">
         <picture class="c-image c-teaser__image u-hidden-medium-down">
           <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-faqs-hands-up.jpg" />
         </picture>
@@ -1164,7 +1164,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
       </a>
     </div>
     <div class="c-teaser c-teaser--50-50 c-teaser--negative">
-      <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
+      <a class="c-teaser__link-area" aria-label="" href="#">
         <picture class="c-image c-teaser__image u-hidden-medium-down">
           <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-breakdown-assist.jpg" />
         </picture>
@@ -1184,7 +1184,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
   <h3 class="c-heading c-teaser-group__headline u-text-weight-light u-text-center">Learn more about our <em class="u-text-weight-semibold">insurance</em></h3>
   <div class="c-teaser c-teaser--33-66">
     <div class="l-grid l-grid--max-width u-padding-none">
-      <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="More information about short description of teaser content">
+      <div class="c-teaser__link-area c-teaser__link-no-pointer" aria-label="">
         <div class="c-teaser__image-container">
           <picture class="c-image c-teaser__image">
             <img class="c-image__img" alt="" src="assets/img/teaser/teaser-car-lake.jpg" />
@@ -1201,7 +1201,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
   </div>
   <div class="c-teaser-group__row">
     <div class="c-teaser c-teaser--50-50">
-      <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
+      <a class="c-teaser__link-area" aria-label="" href="#">
         <picture class="c-image c-teaser__image u-hidden-medium-down">
           <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-faqs-hands-up.jpg" />
         </picture>
@@ -1215,7 +1215,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
       </a>
     </div>
     <div class="c-teaser c-teaser--50-50 c-teaser--negative">
-      <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
+      <a class="c-teaser__link-area" aria-label="" href="#">
         <picture class="c-image c-teaser__image u-hidden-medium-down">
           <img class="c-image__img c-teaser__image-img" alt="" src="assets/img/teaser/teaser-breakdown-assist.jpg" />
         </picture>
@@ -1238,7 +1238,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <h2 class="c-heading c-teaser-group__headline u-text-weight-light u-text-center">Learn more about our <em class="u-text-weight-semibold">insurance</em></h2>
     <div class="c-teaser-group--horizontal">
         <div class="c-teaser c-teaser--horizontal-66-33 t-bg-soft-nude-light">
-            <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
+            <a class="c-teaser__link-area" aria-label="" href="#">
                 <div class="c-teaser__image-container">
                     <picture class="c-image c-teaser__image">
                         <img class="c-image__img" alt="" src="assets/img/teaser/teaser-family-laughing-on-bed.jpg" />
@@ -1252,7 +1252,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
             </a>
         </div>
         <div class="c-teaser c-teaser--horizontal-33-66 u-margin-bottom-0  t-bg-soft-nude">
-            <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
+            <a class="c-teaser__link-area" aria-label="" href="#">
                 <div class="c-teaser__image-container">
                     <picture class="c-image c-teaser__image u-hidden-small-down">
                         <img class="c-image__img" alt="" src="assets/img/teaser/teaser-documents-woman-reading.jpg" />
@@ -1272,7 +1272,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
     <h2 class="c-heading c-teaser-group__headline u-text-weight-light u-text-center">Learn more about our <em class="u-text-weight-semibold">insurance</em></h2>
     <div class="c-teaser-group--horizontal">
         <div class="c-teaser c-teaser--horizontal-66-33 t-bg-soft-nude-light">
-            <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
+            <a class="c-teaser__link-area" aria-label="" href="#">
                 <div class="c-teaser__image-container">
                     <picture class="c-image c-teaser__image">
                         <img class="c-image__img" alt="" src="assets/img/teaser/teaser-family-laughing-on-bed.jpg" />
@@ -1286,7 +1286,7 @@ Images are styled to cover the given area and are positioned center-center. Thes
             </a>
         </div>
         <div class="c-teaser c-teaser--horizontal-33-66 u-margin-bottom-0  t-bg-soft-nude">
-            <a class="c-teaser__link-area" aria-label="More information about short description of teaser content" href="#">
+            <a class="c-teaser__link-area" aria-label="" href="#">
                 <div class="c-teaser__image-container">
                     <picture class="c-image c-teaser__image u-hidden-small-down">
                         <img class="c-image__img" alt="" src="assets/img/teaser/teaser-documents-woman-reading.jpg" />
