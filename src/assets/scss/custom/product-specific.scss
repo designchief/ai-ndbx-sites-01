@@ -11,9 +11,11 @@
         }
     }
 
-    .c-stage--negative {
+    .c-stage--negative,
+    .c-stage--negative-dark,
+    .c-stage--negative-text {
         em {
-            color: map-get($color-soft, soft-blue);
+            color: map-get($color-vibrant, vibrant-blue);
         }
     }
 }

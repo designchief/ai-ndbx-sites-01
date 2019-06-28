@@ -96,3 +96,43 @@
 //         }
 //     }
 // }
+
+.c-stage--negative-text {
+    color: map-get($color-basic, primary-white);
+
+    .c-stage__list,
+    .c-breadcrumb,
+    .c-link {
+        color: map-get($color-basic, primary-white);
+    }
+
+    .c-stage__content {
+        background-color: transparent;
+    }
+}
+
+.c-stage--negative-dark {
+    color: map-get($color-basic, primary-white);
+
+    .c-stage__list,
+    .c-breadcrumb,
+    .c-link {
+        color: map-get($color-basic, primary-white);
+    }
+
+    .c-stage__image {
+        &:after {
+            content: ' ';
+            position: absolute;
+            top: map-get($sizes, 5xs);
+            left: map-get($sizes, 5xs);
+            width: 100%;
+            height: 100%;
+            background: rgba(map-get($color-basic, primary-black), .75);
+        }
+    }
+
+    .c-stage__content {
+        background-color: transparent;
+    }
+}
