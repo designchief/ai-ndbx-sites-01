@@ -1,0 +1,69 @@
+---
+layout: roi
+country: roi
+product-style: car
+product-specific: taxi
+product-title: Taxi Insurance
+product-slug: taxi-insurance
+product-offer: <em class="u-text-weight-bold">Save 14%</em> on a new policy online&nbsp;today!
+bg-colour-benefits: t-bg-soft-blue-lightest
+bg-colour-reviews: t-bg-soft-blue-light
+bg-colour-cta: t-bg-soft-blue-light
+bg-colour-offer: t-bg-soft-blue
+stage-image: stage-taxi-01-dark
+stage-topline: Allianz <em class="u-text-weight-semibold">Car Insurance</em>
+stage-headline: Drive safely, <em class="u-text-weight-bold">we’re with you</em>
+stage-highlight: <em class="u-text-weight-bold">14% off</em> new policies&nbsp;online*
+stage-button-text: Get Quote
+stage-button-link: #
+stage-terms: <span class="ai-terms">Calls may be recorded.</span>
+curtain-headline: Why choose Allianz?
+curtain-button-text: About Allianz
+curtain-button-link: #
+curtain-copy: A simple promise, built on TRUST is at the core of Allianz’s business. Allianz staff are committed to helping our policyholders and meeting their needs quickly and sensitively at a time of crisis.
+teaser-image-01: teaser-car-lake
+teaser-colour-01: t-bg-soft-blue-light
+teaser-image-02: teaser-faqs-hands-up
+teaser-colour-02: t-bg-soft-blue
+teaser-image-03: teaser-breakdown-assist
+teaser-colour-03: t-bg-rich-blue
+---
+
+<div class="c-stage c-stage--landing c-stage--1by1dot4-ratio c-stage--negative-text">
+    <div class="c-stage__wrapper">
+        <div class="c-stage__image-container">
+            <picture class="c-image c-stage__image c-stage__image--cover c-image--middle-left">
+                <img class="c-image__img" alt="" src="{{root}}assets/img/stage/{{stage-image}}.jpg" />
+            </picture>
+        </div>
+        <div class="l-grid l-grid--max-width c-stage__content">
+            <div class="l-grid__row c-stage__content__grid">
+                <div class="l-grid__column-large-8 offset-large-2 l-grid__column-medium-10 offset-medium-1">
+                    <h4 class="c-heading c-stage__topline">{{{stage-topline}}}</h4>
+                </div>
+                <div class="l-grid__column-large-10 offset-large-1 l-grid__column-medium-10 offset-medium-1">
+                    <h1 class="c-heading c-stage__headline u-text-weight-light">{{{stage-headline}}}</h1>
+                </div>
+                <div class="l-grid__column-medium-10 offset-medium-1 l-grid__column-large-8 offset-large-2">
+                    <h3 class="c-heading c-stage__highlight-text u-text-weight-bold">{{{stage-highlight}}}</h3>
+                    <p class="c-copy c-copy--medium">{{{stage-terms}}}</p>
+                </div>
+                <div class="l-grid__column-medium-8 offset-medium-2 c-stage__button__grid">
+                    <a href="{{stage-button-link}}" class="c-button">{{stage-button-text}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> navbar-product-taxi}}
+
+{{> tile-benefit-master}}
+
+{{> section-product-offer-master}}
+
+{{> tile-product-reviews-master}}
+
+{{> teaser-group-master}}
+
+{{> tile-cta-master}}

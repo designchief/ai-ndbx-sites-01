@@ -1,4 +1,4 @@
-// Tile Overides
+// Product Group Colour Overides
 
 .car {
     .c-stage,
@@ -8,6 +8,106 @@
 
         em {
             color: map-get($color-rich, rich-blue);
+        }
+    }
+
+    .c-stage--negative,
+    .c-stage--negative-dark,
+    .c-stage--negative-text {
+        em {
+            color: map-get($color-vibrant, vibrant-blue);
+        }
+    }
+}
+
+.home {
+    .c-stage,
+    .c-benefit-communication-tile,
+    .c-teaser-group,
+    .c-section {
+
+        em {
+            color: map-get($color-rich, rich-red);
+        }
+    }
+
+    .c-stage--negative,
+    .c-stage--negative-dark,
+    .c-stage--negative-text {
+        em {
+            color: map-get($color-vibrant, vibrant-orange);
+        }
+    }
+}
+
+.pet {
+    .c-stage,
+    .c-benefit-communication-tile,
+    .c-teaser-group,
+    .c-section {
+
+        em {
+            color: map-get($color-rich, rich-olive);
+        }
+    }
+
+    .c-stage--negative,
+    .c-stage--negative-dark,
+    .c-stage--negative-text {
+        em {
+            color: map-get($color-vibrant, vibrant-green);
+        }
+    }
+}
+
+.boat {
+    .c-stage,
+    .c-benefit-communication-tile,
+    .c-teaser-group,
+    .c-section {
+
+        em {
+            color: map-get($color-rich, rich-petrol);
+        }
+    }
+
+    .c-stage--negative,
+    .c-stage--negative-dark,
+    .c-stage--negative-text {
+        em {
+            color: map-get($color-vibrant, vibrant-turquoise);
+        }
+    }
+}
+
+.business {
+    .c-stage,
+    .c-benefit-communication-tile,
+    .c-teaser-group,
+    .c-section {
+
+        em {
+            color: map-get($color-rich, rich-grey);
+        }
+    }
+
+    .c-stage--negative,
+    .c-stage--negative-dark,
+    .c-stage--negative-text {
+        em {
+            color: map-get($color-rich-light, rich-grey-light);
+        }
+    }
+}
+
+.myallianz {
+    .c-stage,
+    .c-benefit-communication-tile,
+    .c-teaser-group,
+    .c-section {
+
+        em {
+            color: map-get($color-process, process-info);
         }
     }
 

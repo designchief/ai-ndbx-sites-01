@@ -87,15 +87,15 @@
     }
 }
 
-// .c-stage--landing {
-//     .c-stage__button__grid {
-//         .c-button {
-//             &:last-of-type {
-//                 margin-bottom: 0;
-//             }
-//         }
-//     }
-// }
+.c-stage--landing {
+    .c-stage__button__grid {
+        .c-button {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 
 .c-stage--negative-text {
     color: map-get($color-basic, primary-white);
