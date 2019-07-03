@@ -119,3 +119,23 @@
         }
     }
 }
+
+.customer {
+    .c-stage,
+    .c-benefit-communication-tile,
+    .c-teaser-group,
+    .c-section {
+
+        em {
+            color: map-get($color-vibrant, vibrant-purple);
+        }
+    }
+
+    .c-stage--negative,
+    .c-stage--negative-dark,
+    .c-stage--negative-text {
+        em {
+            color: map-get($color-vibrant-light, vibrant-purple-light);
+        }
+    }
+}
