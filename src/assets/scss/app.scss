@@ -7,6 +7,7 @@
 @import 'pattern-lab-1.4/themes/allianz/color-object';
 @import 'pattern-lab-1.4/common/breakpoints';
 @import 'pattern-lab-1.4/common/grid';
+@import 'pattern-lab-1.4/common/mixins/gradients';
 @import 'pattern-lab-1.4/common/utilities/spacing';
 
 
@@ -29,6 +30,7 @@
 @import 'custom/card';
 @import 'custom/tile';
 @import 'custom/carousel';
+@import 'custom/comparison';
 @import 'custom/navbar';
 @import 'custom/teaser';
 @import 'custom/section';

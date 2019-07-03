@@ -1,0 +1,27 @@
+// Comparison panel colour overides to apply neutral colours that work with all product layouts
+
+.c-product-comparison {
+    background-color: map-get($color-soft-light, soft-nude-light);
+}
+
+.c-product-comparison-bg {
+
+    @include gradient(map-get($color-soft-lightest, soft-rose-lightest), map-get($color-soft-light, soft-nude-light));
+}
+
+.c-product-comparison-bg-with-image {
+
+    @include gradient-60(map-get($color-soft-lightest, soft-rose-lightest), map-get($color-soft-light, soft-nude-light));
+
+    @include media-breakpoint-response(mobile) {
+        @include gradient(map-get($color-soft-lightest, soft-rose-lightest), map-get($color-soft-light, soft-nude-light));
+    }
+
+    &.c-product-comparison-bg--5-cols {
+        @include gradient(map-get($color-soft-lightest, soft-rose-lightest), map-get($color-soft-light, soft-nude-light));
+    }
+}
+
+.c-product-comparison__col-recommanded {
+    display: block;
+}
