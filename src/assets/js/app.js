@@ -4,3 +4,4 @@ import './pattern-lab/application';
 
 // Custom
 import './custom/anchor-scroll';
+import './custom/scroll-top-button';

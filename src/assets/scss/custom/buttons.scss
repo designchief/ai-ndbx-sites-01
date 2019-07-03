@@ -29,3 +29,21 @@
         }
     }
 }
+
+
+// Scroll Top Button
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: map-get($sizes, s);
+    right: map-get($sizes, s);
+    z-index: 9999;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 20px 0px $c-black-shadow-light;
+
+    @include media-breakpoint-response(mobile) {
+        bottom: map-get($sizes, 2xs);
+        right: map-get($sizes, 2xs);
+    }
+}
