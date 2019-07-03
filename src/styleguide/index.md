@@ -2287,6 +2287,8 @@ A full list of table configurations can be found on [Pattern Lab](https://api.al
     </div>
 </div>
 
+---
+
 ## c-map
 
 Map component does not seem to working as expected as per [Pattern Lab](https://api.allianz.com/ndbx/?p=content-map). For now we are using an iFrame inside the <code>div.c-map</code> as shown on the [Contact Page](roi/contact/) page.
@@ -2304,6 +2306,36 @@ Map component does not seem to working as expected as per [Pattern Lab](https://
     data-mapstyle="" 
     data-lat="48.104576" 
     data-lng="11.645687">
+</div>
+
+---
+
+## soundcloud
+
+The custom <code>.c-media-holder</code> div element just adds some margin bottom for use withing content.
+
+```html
+<div class="c-media-holder">
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/106801654&color=%230d6dbe&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+</div>
+```
+<div class="c-media-holder">
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/106801654&color=%230d6dbe&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+</div>
+
+---
+
+## twitter
+
+The custom <code>.c-media-holder</code> div element just adds some margin bottom for use withing content.
+
+```html
+<div class="c-media-holder">
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hard luck to the boys today. They put up a great display against a strong Glenswilly team in the <a href="https://twitter.com/cnambnaisiunta?ref_src=twsrc%5Etfw">@cnambnaisiunta</a> Roinn 2 County final. <a href="https://twitter.com/aodhruadh?ref_src=twsrc%5Etfw">@aodhruadh</a> <a href="https://twitter.com/cumanndl?ref_src=twsrc%5Etfw">@cumanndl</a> <a href="https://twitter.com/AllianzIreland?ref_src=twsrc%5Etfw">@AllianzIreland</a></p>&mdash; Creevy National School (@CreevyNS) <a href="https://twitter.com/CreevyNS/status/1141718129523023872?ref_src=twsrc%5Etfw">June 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+```
+<div class="c-media-holder">
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hard luck to the boys today. They put up a great display against a strong Glenswilly team in the <a href="https://twitter.com/cnambnaisiunta?ref_src=twsrc%5Etfw">@cnambnaisiunta</a> Roinn 2 County final. <a href="https://twitter.com/aodhruadh?ref_src=twsrc%5Etfw">@aodhruadh</a> <a href="https://twitter.com/cumanndl?ref_src=twsrc%5Etfw">@cumanndl</a> <a href="https://twitter.com/AllianzIreland?ref_src=twsrc%5Etfw">@AllianzIreland</a></p>&mdash; Creevy National School (@CreevyNS) <a href="https://twitter.com/CreevyNS/status/1141718129523023872?ref_src=twsrc%5Etfw">June 20, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
 
