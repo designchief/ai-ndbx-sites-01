@@ -1,12 +1,13 @@
 // Additional Colours
 
 $color-vibrant-lightest : (
-    vibrant-purple-lightest      : #F0E7F5,
-    vibrant-blue-lightest      : #EFFAFE,
-    vibrant-turquoise-lightest      : #E1F3F3,
+    vibrant-purple-lightest : #F0E7F5,
+    vibrant-blue-lightest : #EFFAFE,
+    vibrant-turquoise-lightest : #E1F3F3,
 );
 
 .t-bg {
+
     //background vibrant light
     @each $key,
     $color in $color-vibrant-lightest {
@@ -15,6 +16,42 @@ $color-vibrant-lightest : (
         }
     }
 }
+
+.t {
+
+    // text colour soft
+    @each $key,
+    $color in $color-soft {
+        &-#{$key} {
+            color: $color;
+        }
+    }
+
+    // text colour soft light
+    @each $key,
+    $color in $color-soft-light {
+        &-#{$key} {
+            color: $color;
+        }
+    }
+
+    // text colour soft lightest
+    @each $key,
+    $color in $color-soft-lightest {
+        &-#{$key} {
+            color: $color;
+        }
+    }
+
+    // text colour vibrant lightest
+    @each $key,
+    $color in $color-vibrant-lightest {
+        &-#{$key} {
+            color: $color;
+        }
+    }
+}
+
 
 // Smooth Anchor Links
 html {
