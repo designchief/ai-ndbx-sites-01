@@ -56,7 +56,7 @@
 
     .c-footer__legal-link {
         @include media-breakpoint-response(mobile) {
-            margin-bottom: map-get($sizes, 2xs);
+            margin-bottom: map-get($sizes, 4xs);
             display: block;
             padding-top: map-get($sizes, 2xs);
             padding-bottom: map-get($sizes, 2xs);
@@ -65,7 +65,10 @@
 }
 
 .c-footer__navigation-item {
-    margin-bottom: map-get($sizes, 4xs);
+
+    @include media-breakpoint-response(mobile) {
+        margin-bottom: map-get($sizes, 4xs);
+    }
 
     > a {
         @include media-breakpoint-response(mobile) {
