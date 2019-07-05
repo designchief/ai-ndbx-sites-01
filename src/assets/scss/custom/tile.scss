@@ -28,6 +28,27 @@
     }
 }
 
+.c-tile__product--container {
+
+    &.custom-bg-image {
+
+        .custom-bg-image__content {
+            padding-bottom: 400px;
+        
+            @include media-breakpoint-response(mobile) {
+                padding-bottom: 50px;
+            }
+        }
+
+    }
+
+}
+
+.c-tile__product--title {
+    @include media-breakpoint-response(mobile) {
+        margin-top: 0;
+    }
+}
 
 
 
@@ -84,9 +105,9 @@
     .c-tile__reviews--title {
       margin-bottom: 0;
 
-      @include media-breakpoint-response(mobile) {
-        margin-bottom: map-get($sizes, s);
-      }
+    //   @include media-breakpoint-response(mobile) {
+    //     margin-bottom: map-get($sizes, s);
+    //   }
 
     }
 
