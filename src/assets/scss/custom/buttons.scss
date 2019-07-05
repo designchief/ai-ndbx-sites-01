@@ -43,7 +43,7 @@
     box-shadow: 0px 8px 20px 0px $c-black-shadow-light;
 
     @include media-breakpoint-response(mobile) {
-        bottom: map-get($sizes, 2xs);
-        right: map-get($sizes, 2xs);
+        // bottom: map-get($sizes, xs);
+        right: map-get($sizes, xs);
     }
 }

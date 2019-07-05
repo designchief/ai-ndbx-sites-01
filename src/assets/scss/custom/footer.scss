@@ -32,6 +32,10 @@
 .c-footer__signoff {
     padding-top: map-get($sizes, m);
     padding-bottom: map-get($sizes, m);
+
+    @include media-breakpoint-response(mobile) {
+        text-align: center;
+    }
 }
 
 .c-footer__service--ai {
@@ -45,7 +49,30 @@
     text-align: left;
 
     @include media-breakpoint-response(mobile) {
+        padding: map-get($sizes, m);
         flex-direction: column;
         text-align: center;
+    }
+
+    .c-footer__legal-link {
+        @include media-breakpoint-response(mobile) {
+            margin-bottom: map-get($sizes, 2xs);
+            display: block;
+            padding-top: map-get($sizes, 2xs);
+            padding-bottom: map-get($sizes, 2xs);
+        }
+    }
+}
+
+.c-footer__navigation-item {
+    margin-bottom: map-get($sizes, 4xs);
+
+    > a {
+        @include media-breakpoint-response(mobile) {
+            
+            display: block;
+            padding-top: map-get($sizes, 2xs);
+            padding-bottom: map-get($sizes, 2xs);
+        }
     }
 }
