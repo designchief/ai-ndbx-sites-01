@@ -15,7 +15,7 @@
 // Importing Pattern Lab dist styles
 @import 'pattern-lab-1.4/style';
 
-// AI Customisation
+// DC Customisation
 @import 'custom/utilities';
 @import 'custom/type';
 @import 'custom/links';
@@ -38,6 +38,7 @@
 @import 'custom/page-section';
 @import 'custom/pagination';
 @import 'custom/product-specific';
-
-// Mockups - Not for production
 @import 'custom/styleguide';
+
+// pTools Customisation
+@import 'custom/ptools-additional.scss';

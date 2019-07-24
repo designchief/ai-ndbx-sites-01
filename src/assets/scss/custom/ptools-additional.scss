@@ -1,0 +1,41 @@
+  .c-stage--negative .addthis_counter .addthis_button_expanded,
+  .c-stage--negative .addthis_counter:hover .addthis_button_expanded {
+      color: #fff !important;
+  }
+
+  .addthis_counter:hover .addthis_button_expanded {
+      color: #008ed6 !important;
+  }
+
+  .addthis_counter .addthis_button_expanded {
+      font-family: "Allianz Neo", sans-serif !important;
+      background: none !important;
+      width: auto !important;
+      height: 24px !important;
+      line-height: 24px !important;
+      color: #006192 !important;
+      font-weight: 600 !important;
+      letter-spacing: 1px;
+      margin: 0 !important;
+      padding: 0 !important;
+      -webkit-transition: color .2s ease, -webkit-box-shadow .2s ease;
+      transition: color .2s ease, box-shadow .2s ease, -webkit-box-shadow .2s ease;
+  }
+
+  .addthis_counter .addthis_button_expanded:before {
+      position: relative;
+      top: -1px;
+      display: inline-block;
+      vertical-align: top;
+      font-family: Allianz-Icons;
+      content: '\e933';
+      margin: 0 8px 0 0;
+      font-size: 24px;
+      width: 24px;
+      line-height: 24px;
+      font-weight: 300;
+  }
+
+  .addthis_button_compact {
+      display: none !important;
+  }
