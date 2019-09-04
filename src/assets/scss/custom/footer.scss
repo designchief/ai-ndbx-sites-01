@@ -16,6 +16,17 @@
 .c-footer__social--ai {
     padding-top: 0;
     padding-bottom: 0;
+
+    .c-footer__social-link {
+        padding: 0;
+    }
+
+    .c-social-icon {
+        @include media-breakpoint-response(mobile) {
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
 }
 
 .c-footer__socialtile {
