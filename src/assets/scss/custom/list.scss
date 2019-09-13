@@ -1,3 +1,34 @@
+// List size overides
+.c-list {
+    font-size: map-get($font-sizes, 3xs);
+    line-height: map-get($line-heights, 2xs);
+}
+
+.c-list--small {
+    font-size: map-get($font-sizes, 5xs);
+    line-height: map-get($line-heights, 4xs);
+    letter-spacing: map-get($letter-spacings, m);
+    -webkit-font-smoothing: subpixel-antialiased; // sass-lint:disable-line no-vendor-prefixes
+}
+
+.c-list--medium {
+    font-size: map-get($font-sizes, 4xs);
+    line-height: map-get($line-heights, 3xs);
+    letter-spacing: map-get($letter-spacings, xs);
+}
+
+.c-list--large {
+    font-size: map-get($font-sizes, 2xs);
+    line-height: map-get($line-heights, 2xs);
+    letter-spacing: map-get($letter-spacings, xs);
+}
+
+.c-list--xlarge {
+    font-size: $font-size-xxlarge;
+    line-height: $line-height-xxlarge;
+}
+  
+
 // List customisation
 
 .c-list--links {
@@ -7,5 +38,5 @@
         &:before {
             display: none;
         }
-    }  
+    }
 }

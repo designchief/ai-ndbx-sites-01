@@ -591,15 +591,43 @@ Images are styled to cover the given area and are positioned center-center. Thes
 <ul class="c-list">
     <li class="c-list__item"> Select your individual options </li>
     <li class="c-list__item"> Come back to us to change at any time </li>
-    <li class="c-list__item"> All changes and upgrades are immediately effective </li>
-    <li class="c-list__item"> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. </li>
+</ul>
+<ul class="c-list c-list--small">
+    <li class="c-list__item"> Select your individual options </li>
+    <li class="c-list__item"> Come back to us to change at any time </li>
+</ul>
+<ul class="c-list c-list--medium">
+    <li class="c-list__item"> Select your individual options </li>
+    <li class="c-list__item"> Come back to us to change at any time </li>
+</ul>
+<ul class="c-list c-list--large">
+    <li class="c-list__item"> Select your individual options </li>
+    <li class="c-list__item"> Come back to us to change at any time </li>
+</ul>
+<ul class="c-list c-list--xlarge">
+    <li class="c-list__item"> Select your individual options </li>
+    <li class="c-list__item"> Come back to us to change at any time </li>
 </ul>
 ```
 <ul class="c-list">
     <li class="c-list__item"> Select your individual options </li>
     <li class="c-list__item"> Come back to us to change at any time </li>
-    <li class="c-list__item"> All changes and upgrades are immediately effective </li>
-    <li class="c-list__item"> Mei et eruditi dolorem oportere,sonet admodum tacimates nec ei. </li>
+</ul>
+<ul class="c-list c-list--small">
+    <li class="c-list__item"> Select your individual options </li>
+    <li class="c-list__item"> Come back to us to change at any time </li>
+</ul>
+<ul class="c-list c-list--medium">
+    <li class="c-list__item"> Select your individual options </li>
+    <li class="c-list__item"> Come back to us to change at any time </li>
+</ul>
+<ul class="c-list c-list--large">
+    <li class="c-list__item"> Select your individual options </li>
+    <li class="c-list__item"> Come back to us to change at any time </li>
+</ul>
+<ul class="c-list c-list--xlarge">
+    <li class="c-list__item"> Select your individual options </li>
+    <li class="c-list__item"> Come back to us to change at any time </li>
 </ul>
 
 ---
