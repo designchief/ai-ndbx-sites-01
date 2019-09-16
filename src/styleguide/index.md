@@ -1487,7 +1487,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content1" role="region" aria-labelledby="accordion1" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1496,7 +1502,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content2" role="region" aria-labelledby="accordion2" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1505,7 +1517,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content3" role="region" aria-labelledby="accordion3" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -1517,7 +1535,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content1" role="region" aria-labelledby="accordion1" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1526,7 +1550,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content2" role="region" aria-labelledby="accordion2" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1535,7 +1565,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content3" role="region" aria-labelledby="accordion3" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -1550,7 +1586,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content1" role="region" aria-labelledby="accordion1" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1559,7 +1601,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content2" role="region" aria-labelledby="accordion2" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1568,7 +1616,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content3" role="region" aria-labelledby="accordion3" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -1580,7 +1634,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content1" role="region" aria-labelledby="accordion1" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1589,7 +1649,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content2" role="region" aria-labelledby="accordion2" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1598,7 +1664,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content3" role="region" aria-labelledby="accordion3" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -1613,7 +1685,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content1" role="region" aria-labelledby="accordion1" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1622,7 +1700,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content2" role="region" aria-labelledby="accordion2" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1631,7 +1715,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content3" role="region" aria-labelledby="accordion3" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -1643,7 +1733,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content1" role="region" aria-labelledby="accordion1" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1652,7 +1748,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content2" role="region" aria-labelledby="accordion2" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1661,7 +1763,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content3" role="region" aria-labelledby="accordion3" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -1677,7 +1785,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content1" role="region" aria-labelledby="accordion1" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1687,7 +1801,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content2" role="region" aria-labelledby="accordion2" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1697,7 +1817,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content3" role="region" aria-labelledby="accordion3" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -1710,7 +1836,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content1" role="region" aria-labelledby="accordion1" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1720,7 +1852,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content2" role="region" aria-labelledby="accordion2" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="c-accordion__item-wrapper">
@@ -1730,7 +1868,13 @@ This mobile float <code>c-message</code> variant can be seen on the [Cookie Demo
             <i class="c-accordion__chevron c-icon c-icon--chevron-down" aria-hidden="true"></i>
         </button>
         <div id="content3" role="region" aria-labelledby="accordion3" class="js-accordion__item-content c-accordion__item-content">
-            <p class="c-copy c-accordion__item-text">Die Inhalte dieser Allianz Webseiten werden stets sorgfältig erarbeitet. Dabei wird insbesondere darauf Wert gelegt, zutreffende und aktuelle Informationen bereitzustellen. Gleichwohl können Fehler auftreten. Gewähr für Aktualität, Richtigkeit und Vollständigkeit der Informationen wird nicht übernommen. Für die Nutzung der Allianz Webseiten gelten im Übrigen die folgenden Bedingungen.</p>
+            <div class="c-accordion__item-text">
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+                <ul class="c-list">
+                    <li class="c-list__item"> Select your individual options </li>
+                    <li class="c-list__item"> Come back to us to change at any time </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
