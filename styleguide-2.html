@@ -13,14 +13,14 @@
       <div class="l-grid__row">
         <div class="l-grid__column-medium-2">
           <div class="c-link-list sticky-list-styleguide"> 
-            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#section-layout-examples"><span class="c-link__text">Section Layout Examples</span></a></div>
+            <div class="c-link-list__link-row"><a class="c-link c-link--block" href="#section-layouts"><span class="c-link__text">Section Layouts</span></a></div>
           </div>
         </div>
         <div class="l-grid__column-medium-10">
           <h1 class="c-heading u-text-weight-semibold">AI NDBX Style Guide</h1>
           <p class="c-copy">This usage guide demos the core HTML markup for AI NDBX Sites and is based on the code found on <a class="c-link c-link--text" href='https://api.allianz.com/ndbx/' aria-label="text link"><span class="c-link__text">Pattern Lab</span></a>. <br>Further documentation, additional components and options are available on Pattern Lab and the HTML markup there should work as expected. Some customisations have been made so check this page 1st for reference.</p>
           <hr class="c-divider u-margin-top-m u-margin-bottom-m" aria-hidden="true" />
-          <section class="ss-section" id="section-layout-examples"> <h1>Section Layout Examples</h1><hr>
+          <section class="ss-section" id="section-layouts"> <h1>Section Layouts</h1><hr>
 <h2>c-section (1 button)</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-section l-container l-container--full-width t-bg-soft-nude-light"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid l-grid--max-width"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center"</span>&gt;</span>
@@ -109,13 +109,91 @@
 </div>
 
 <hr>
-<h2>c-section (2 buttons App Store)</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-section l-container l-container--full-width t-bg-soft-nude-light"</span>&gt;</span>
+<h2>c-section (2 buttons App Store)</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-section l-container l-container--full-width t-bg-vibrant-blue-light"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid l-grid--max-width"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-10"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-icon c-icon--m c-icon--centered u-margin-bottom-s t-bg-white t-primary-action-dark c-icon--fill c-icon--product-save"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading u-margin-bottom-2xs"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">em</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-text-weight-bold"</span>&gt;</span>Save 14%<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span> on a new policy online&amp;nbsp;today!<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Please note:<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ai-terms"</span>&gt;</span>*Minimum premium of &amp;euro;284 applies. The premium reduction does not apply to the personal accident, personal effects, windscreen cover or breakdown assistance&amp;nbsp;options.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image u-margin-bottom-s"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"app-icon"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/ai-app-icon.png"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"80"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"80"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading u-margin-bottom-2xs"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">em</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-text-weight-bold"</span>&gt;</span>Headline<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span> for section layouts<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy"</span>&gt;</span>Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-9 l-grid__column-large-8"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row c-button-group justify-content-center"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image--button"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/badge-ios-app-store.png"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image--button end"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/badge-android-play-store.png"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="c-section l-container l-container--full-width t-bg-vibrant-blue-light">
+    <div class="l-grid l-grid--max-width">
+        <div class="l-grid__row justify-content-center">
+            <div class="l-grid__column-medium-10">
+                <picture class="c-image u-margin-bottom-s">
+                    <img class="app-icon" src="assets/img/content/ai-app-icon.png" width="80" height="80" alt="" />
+                </picture>
+                <h3 class="c-heading u-margin-bottom-2xs"><em class="u-text-weight-bold">Headline</em> for section layouts</h3>
+                <p class="c-copy">Curabitur eu rhoncus turpis. Aenean nec malesuada tortor. In maximus ligula ut faucibus tincidunt. Vivamus at pretium tellus, quis sodales nulla. Vestibulum finibus mi a lorem tempus, sodales turpis.</p>
+            </div>
+        </div>
+        <div class="l-grid__row justify-content-center">
+            <div class="l-grid__column-medium-9 l-grid__column-large-8">
+                <div class="l-grid__row c-button-group justify-content-center">
+                    <a href="#" class=""><img class="c-image--button" alt="" src="assets/img/content/badge-ios-app-store.png" /></a>
+                    <a href="#" class=""><img class="c-image--button end" alt="" src="assets/img/content/badge-android-play-store.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<h2>c-section (4 images)</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-section l-container l-container--full-width t-bg-soft-nude-light"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid l-grid--max-width"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-10"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--illustration"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/illustration/ill-cover.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading u-margin-bottom-m"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">em</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-text-weight-bold"</span>&gt;</span>Headline<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span> for section layouts<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center u-margin-bottom-s"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-11 l-grid__column-large-10"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center u-text-center"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-3 u-margin-bottom-m"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--illustration"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/global-reviews-badge-2018.png"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-xs"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block c-tile__info-link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">'#'</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Read More"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__icon c-icon c-icon--arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-comment">&lt;!-- Fix White Space issue--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__text"</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-3 u-margin-bottom-m"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--illustration"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/badge-over-100-years.png"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-xs"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block c-tile__info-link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">'#'</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Read More"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__icon c-icon c-icon--arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-comment">&lt;!-- Fix White Space issue--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__text"</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-3 u-margin-bottom-m"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--illustration"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/badge-countries-70.png"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-xs"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block c-tile__info-link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">'#'</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Read More"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__icon c-icon c-icon--arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-comment">&lt;!-- Fix White Space issue--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__text"</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-3 u-margin-bottom-m"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--illustration"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/badge-customers-ireland.png"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-xs"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block c-tile__info-link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">'#'</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Read More"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__icon c-icon c-icon--arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-comment">&lt;!-- Fix White Space issue--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__text"</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center"</span>&gt;</span>
@@ -123,9 +201,6 @@
                 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row c-button-group justify-content-center"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6"</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button c-button--extended"</span>&gt;</span>Get Quote<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button c-button--secondary c-button--extended"</span>&gt;</span>Retrieve Quote<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -135,26 +210,148 @@
     <div class="l-grid l-grid--max-width">
         <div class="l-grid__row justify-content-center">
             <div class="l-grid__column-medium-10">
-                <i class="c-icon c-icon--m c-icon--centered u-margin-bottom-s t-bg-white t-primary-action-dark c-icon--fill c-icon--product-save"></i>
-                <h3 class="c-heading u-margin-bottom-2xs"><em class="u-text-weight-bold">Save 14%</em> on a new policy online&nbsp;today!</h3>
-                <p class="c-copy"><strong>Please note:</strong> <span class="ai-terms">*Minimum premium of &euro;284 applies. The premium reduction does not apply to the personal accident, personal effects, windscreen cover or breakdown assistance&nbsp;options.</span></p>
+                <picture class="c-image c-image--illustration">
+                    <img class="c-image__img" src="assets/img/illustration/ill-cover.png" alt="" />
+                </picture>
+                <h2 class="c-heading u-margin-bottom-m"><em class="u-text-weight-bold">Headline</em> for section layouts</h2>
+            </div>
+        </div>
+        <div class="l-grid__row justify-content-center u-margin-bottom-s">
+            <div class="l-grid__column-medium-11 l-grid__column-large-10">
+                <div class="l-grid__row justify-content-center u-text-center">
+                    <div class="l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-3 u-margin-bottom-m">
+                        <picture class="c-image c-image--illustration">
+                            <img class="c-image__img" alt="" src="assets/img/content/global-reviews-badge-2018.png" />
+                        </picture>
+                        <p class="c-copy u-margin-bottom-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a class="c-link c-link--block c-tile__info-link" href='#' aria-label="Read More"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue--><span class="c-link__text">Read More</span></a>
+                    </div>
+                    <div class="l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-3 u-margin-bottom-m">
+                        <picture class="c-image c-image--illustration">
+                            <img class="c-image__img" alt="" src="assets/img/content/badge-over-100-years.png" />
+                        </picture>
+                        <p class="c-copy u-margin-bottom-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a class="c-link c-link--block c-tile__info-link" href='#' aria-label="Read More"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue--><span class="c-link__text">Read More</span></a>
+                    </div>
+                    <div class="l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-3 u-margin-bottom-m">
+                        <picture class="c-image c-image--illustration">
+                            <img class="c-image__img" alt="" src="assets/img/content/badge-countries-70.png" />
+                        </picture>
+                        <p class="c-copy u-margin-bottom-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a class="c-link c-link--block c-tile__info-link" href='#' aria-label="Read More"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue--><span class="c-link__text">Read More</span></a>
+                    </div>
+                    <div class="l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-3 u-margin-bottom-m">
+                        <picture class="c-image c-image--illustration">
+                            <img class="c-image__img" alt="" src="assets/img/content/badge-customers-ireland.png" />
+                        </picture>
+                        <p class="c-copy u-margin-bottom-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a class="c-link c-link--block c-tile__info-link" href='#' aria-label="Read More"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue--><span class="c-link__text">Read More</span></a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="l-grid__row justify-content-center">
-            <div class="l-grid__column-medium-9 l-grid__column-large-8">
+            <div class="l-grid__column-medium-9 l-grid__column-large-6">
                 <div class="l-grid__row c-button-group justify-content-center">
                     <div class="l-grid__column-medium-6">
-                        <a href="#" class=""><img class="c-image--button" alt="" src="assets/img/content/badge-ios-app-store.png" /></a>
-                    </div>
-                    <div class="l-grid__column-medium-6">
-                        <a href="#" class=""><img class="c-image--button" alt="" src="assets/img/content/badge-android-play-store.png" /></a>
+                        <a class="c-button c-button--extended">Get Quote</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
- </section> 
+
+<hr>
+<h2>c-section (3 images)</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-section l-container l-container--full-width t-bg-soft-nude-light"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid l-grid--max-width"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-10"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-heading u-margin-bottom-m"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">em</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-text-weight-bold"</span>&gt;</span>Headline<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span> for section layouts<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center u-margin-bottom-s"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-11 l-grid__column-large-10"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center u-text-center"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-4 u-margin-bottom-m"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--illustration"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/badge-over-100-years.png"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-xs"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block c-tile__info-link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">'#'</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Read More"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__icon c-icon c-icon--arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-comment">&lt;!-- Fix White Space issue--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__text"</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-4 u-margin-bottom-m"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--illustration"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/badge-countries-70.png"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-xs"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block c-tile__info-link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">'#'</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Read More"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__icon c-icon c-icon--arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-comment">&lt;!-- Fix White Space issue--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__text"</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-4 u-margin-bottom-m"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">picture</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image c-image--illustration"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-image__img"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/content/badge-customers-ireland.png"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">picture</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-copy u-margin-bottom-xs"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link c-link--block c-tile__info-link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">'#'</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Read More"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__icon c-icon c-icon--arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-comment">&lt;!-- Fix White Space issue--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-link__text"</span>&gt;</span>Read More<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row justify-content-center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-9 l-grid__column-large-6"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__row c-button-group justify-content-center"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"l-grid__column-medium-6"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button c-button--extended"</span>&gt;</span>Get Quote<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="c-section l-container l-container--full-width t-bg-soft-nude-light">
+    <div class="l-grid l-grid--max-width">
+        <div class="l-grid__row justify-content-center">
+            <div class="l-grid__column-medium-10">
+                <h2 class="c-heading u-margin-bottom-m"><em class="u-text-weight-bold">Headline</em> for section layouts</h2>
+            </div>
+        </div>
+        <div class="l-grid__row justify-content-center u-margin-bottom-s">
+            <div class="l-grid__column-medium-11 l-grid__column-large-10">
+                <div class="l-grid__row justify-content-center u-text-center">
+                    <div class="l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-4 u-margin-bottom-m">
+                        <picture class="c-image c-image--illustration">
+                            <img class="c-image__img" alt="" src="assets/img/content/badge-over-100-years.png" />
+                        </picture>
+                        <p class="c-copy u-margin-bottom-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a class="c-link c-link--block c-tile__info-link" href='#' aria-label="Read More"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue--><span class="c-link__text">Read More</span></a>
+                    </div>
+                    <div class="l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-4 u-margin-bottom-m">
+                        <picture class="c-image c-image--illustration">
+                            <img class="c-image__img" alt="" src="assets/img/content/badge-countries-70.png" />
+                        </picture>
+                        <p class="c-copy u-margin-bottom-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a class="c-link c-link--block c-tile__info-link" href='#' aria-label="Read More"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue--><span class="c-link__text">Read More</span></a>
+                    </div>
+                    <div class="l-grid__column-small-12 l-grid__column-medium-6 l-grid__column-large-4 u-margin-bottom-m">
+                        <picture class="c-image c-image--illustration">
+                            <img class="c-image__img" alt="" src="assets/img/content/badge-customers-ireland.png" />
+                        </picture>
+                        <p class="c-copy u-margin-bottom-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a class="c-link c-link--block c-tile__info-link" href='#' aria-label="Read More"><span aria-hidden="true" class="c-link__icon c-icon c-icon--arrow-right"></span><!-- Fix White Space issue--><span class="c-link__text">Read More</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l-grid__row justify-content-center">
+            <div class="l-grid__column-medium-9 l-grid__column-large-6">
+                <div class="l-grid__row c-button-group justify-content-center">
+                    <div class="l-grid__column-medium-6">
+                        <a class="c-button c-button--extended">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> </section> 
         </div>
       </div>
     </div>
