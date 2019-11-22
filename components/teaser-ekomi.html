@@ -18,6 +18,50 @@
 
     <div class="main-content-wrapper">
         
+        
+        
+        
+        
+        
+        <div class="l-grid l-grid--max-width u-margin-bottom-lg u-margin-top-lg">
+            <div class="l-grid__column-12">
+                <h2 class="c-heading "> Teaser eKomi Widget JS</h2>
+            </div>
+        </div>
+        <div class="c-section l-container l-container--full-width t-bg-soft-nude-light">
+            <div class="l-grid l-grid--max-width">
+                <div class="l-grid__row justify-content-center">
+                    <div class="l-grid__column-medium-10">
+                        <div id="widget-container" class="data-ekomi-emp ekomi-widget-container ekomi-widget-sf1363265dd530718dc47"></div>
+        <div id="ekomi-product-widget-identifier" class="prod-data-emp"  style="visibility: hidden">productIDwillbeHere</div>
+        <script type="text/javascript">
+        
+            (function (w) {
+                w['_ekomiWidgetsServerUrl'] = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//widgets.ekomi.com';
+                w['_customerId'] = 136326;
+                w['_ekomiDraftMode'] = true;
+                w['_language'] = 'en';
+            
+                if(typeof(w['_ekomiWidgetTokens']) !== 'undefined'){
+                    w['_ekomiWidgetTokens'][w['_ekomiWidgetTokens'].length] = 'sf1363265dd530718dc47';
+                } else {
+                    w['_ekomiWidgetTokens'] = new Array('sf1363265dd530718dc47');
+                }
+            
+                if(typeof(ekomiWidgetJs) == 'undefined') {
+                    ekomiWidgetJs = true;
+            
+                                var scr = document.createElement('script');scr.src = 'https://sw-assets.ekomiapps.de/static_resources/widget.js';
+                    var head = document.getElementsByTagName('head')[0];head.appendChild(scr);
+                            }
+            })(window);
+            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
         <div class="l-grid l-grid--max-width u-margin-bottom-lg u-margin-top-lg">
             <div class="l-grid__column-12">
                 <h2 class="c-heading "> Teaser eKomi Widget </h2>
@@ -176,7 +220,9 @@
                 </div>
             </div>
         </div>
-        <hr class="c-divider " aria-hidden="true" />    </div> 
+        <hr class="c-divider " aria-hidden="true" />
+        
+    </div> 
 
 <script src="../assets/js/app.js"></script>
 </body>
